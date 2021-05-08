@@ -46,3 +46,18 @@ Parachutage :
 	On ne peut pas parachuter une pièce sur une case d'où elle ne pourrait plus partir.
 	Un pion ne peut pas être parachuté sur une colonne où se trouve déjà un pion non promu du même camp.
 	Un pion ne peut pas être parachuté devant le roi pour faire échec et mat directement.
+
+disposition : 
+
+J = Jade = Roi opposant
+
+	9 8 7 6 5 4 3 2 1 
+	L C A O J O A C L a
+	  T	      F	  b
+	P P P P P P P P P c
+			  d
+			  e
+			  f
+	P P P P P P P P P g
+	  F	      T	  h
+	L C A O R O A C L i
