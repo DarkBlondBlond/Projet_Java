@@ -4,38 +4,36 @@
  */
 
 public class Piece {
-    // nom pièce
+    // Attribue un nom à la pièce :
     private String nom = "";
-    // appartenance de la pièce au joueur 1 ou 2
+    // Détermine l'appartenance d'une pièce au joueur 1 ou 2 :
     private int joueur;
 
-    // constructeur :
+    // Constructeur :
     public Piece(int j) {
         this.joueur = j;
     }
 
-    // méthodes getters :
+    // Mise en place des getters :
     public String getNom() {
-        return nom;
+        return nom;  // pour récupérer la variable "nom" depuis les attributs de la classe Piece
     }
 
     public int getJoueur() {
-        return joueur;
+        return joueur;  // pour récupérer la variable "nom" depuis les attributs de la classe Piece
     }
 
-    // Méthodes setters
+    // Mise en place des setters :
     public void setNom(String n) {
-        this.nom = n;
+        this.nom = n;  // permet de modifier la variable "nom"
     }
 
     public void setJoueur(int j) {
-        this.joueur = j;
+        this.joueur = j;  // permet de modifier la variable "joueur"
     }
 
-    // Méthode déplacement :
-    // return false de base car le mouvement est impossible de base, la pièce
-    // n'ayant pas de nom
+    // Mise en place de la méthode peutSeDeplacer :
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
-        return false;
+        return false;  // va retourner "false" de base car le mouvement est considéré comme impossible de base, la pièce n'ayant pas encore de nom pour le moment
     }
 }
