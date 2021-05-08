@@ -33,5 +33,9 @@ public class Piece {
     }
 
     // Méthode déplacement :
-
+    // return false de base car le mouvement est impossible de base, la pièce
+    // n'ayant pas de nom
+    public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
+        return false;
+    }
 }
