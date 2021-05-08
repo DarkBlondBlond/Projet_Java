@@ -1,0 +1,48 @@
+Objectif : 
+	Prendre le Roi adverse; Si le roi ne peut pas fuir il est 'mat'
+
+Joueurs : 
+	2 joueurs
+	Le joueur 1 commence systématiquement
+
+Plateau : 
+	Le plateau fait 9x9 cases soit 81.
+	Les trois lignes les plus éloignées forment la zone de promotions
+
+Pièces : 
+	20 pièces par joueurs :
+		1 roi
+		1 tour
+		1 fou
+		2 généraux d'or
+		2 généraux d'argent
+		2 cavaliers
+		2 lances
+		9 pions
+		Les pièces font faces à leurs adversaires
+
+Déplacement :
+	Roi : Toutes directions / 1 case
+	Tour : Ligne droite à l'horizontal ou vertical / Autant que voulu ; Promu : rajoute à ces déplacement 1 case en diagnnale toutes directions
+	Fou : Diagonales / Autant que voulu ; Promu : Ajoute 1 une case vertical ou horizontal
+	Général d'or : Toutes directions sauf diagonales en arrière / 1 case
+	Général d'argent : Toutes directions sauf horizontales et arrière / 1 case ; Promu = Même que le général d'or
+	Cavalier : 2 en avant + 1 à l'horizontal uniquement ; Promu = Même que le général d'or
+	Lance : En avant / Autant que voulu ; Promu = Même que général d'or
+	Pion : 1 en avant ; Promu = Même que général d'or
+
+Prise :
+	Lorsqu'on prend une pièce, on la garde en évidence sur son côté droit du plateau
+
+Promotion : 
+	Lorsqu'une pièce pénètre la zone de promotion (elle passe la 3e ligne la plus éloigné du joueur) elle peut être promue si on le souhaite.
+	Lorsque la pièce est immobilisé dans la zone de promotion elle DOIT être promue.
+	Une pièce parachuté dans la zone de promotions ne peut être promue de suite, il faut que cela suive un déplacement;
+	cepandant si elle se déplace (entre où sort du camp adverse) elle pourra être promu.
+
+Parachutage :
+	Une pièce est toujours parachutée non promue.
+	Pour promouvoir une pièce parachutée, il faut la déplacer entièrement ou partiellement dans la zone de promotion.
+	On ne peut pas parachuter une pièce sur une case d'où elle ne pourrait plus partir.
+	Un pion ne peut pas être parachuté sur une colonne où se trouve déjà un pion non promu du même camp.
+	Un pion ne peut pas être parachuté devant le roi pour faire échec et mat directement.
