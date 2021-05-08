@@ -1,35 +1,40 @@
 /**
- * 
+ * Classe Case, objets indépendants avec leurs propres coordonnées, qui seront ensuite associés dans la classe Plateau
  */
+
 public class Case {
-    // Déterminer l'abscisse de la case :
+    // Attribue une abscisse à la case :
     private int x;
-    //l'ordonnée :
+    // Attribue une ordonnée à la case :
     private int y;
-    // appel de la pièce à poser sur la case
+    // Appel de la pièce à poser sur la case :
     private Piece p;
 
-    // constructeur :
+    // Constructeur :
     public Case(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    // Getters :
+    // Mise en place des getters :
     public int getX() {
-        return x;
-    }
-    public int getY() {
-        return y;
-    }
-    public Piece getP() {
-        return p;
+        return x;  // pour récupérer la variable "x" depuis les attributs de la classe Case
     }
 
-    // Setter :
-    // les cases ne sont pas modifiables, donc pas de setters pour l'abscisse et
-    // l'ordonnée => uniquement pour l'objet que l'on veut créer, une pièce
+    public int getY() {
+        return y;  // pour récupérer la variable "y" depuis les attributs de la classe Case
+    }
+
+    public Piece getP() {
+        return p;  // pour récupérer la variable "p" depuis les attributs de la classe Piece
+    }
+
+    // Mise en place du setter :
     public void setP(Piece p) {
-        this.p = p;
+        this.p = p;  
+    /* les cases ne sont pas modifiables, donc pas de setters pour l'abscisse et l'ordonnée 
+    => seul l'objet (la pièce qui va être associée à la case) l'est, c'est à lui que l'on va
+    associer des coordonnées
+    */
     }
 }
