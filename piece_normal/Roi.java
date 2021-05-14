@@ -14,7 +14,8 @@ public class Roi extends Piece {
 
         // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
         if(posArrivee.getP() != null) {  
-            if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {  // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux
+            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux
+            if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {  
                 return false;
             }
         }  
