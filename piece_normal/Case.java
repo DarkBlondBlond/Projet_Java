@@ -32,9 +32,9 @@ public class Case {
     // Mise en place du setter :
     public void setP(Piece p) {
         this.p = p;  
-    /* les cases ne sont pas modifiables, donc pas de setters pour l'abscisse et l'ordonnée 
-    => seul l'objet (la pièce qui va être associée à la case) l'est, c'est à lui que l'on va
-    associer des coordonnées
-    */
+    /** les cases ne sont pas modifiables, donc pas de setters pour l'abscisse et l'ordonnée 
+     * => seul l'objet (la pièce qui va être associée à la case) l'est, c'est à lui que l'on va
+     * associer des coordonnées
+     */
     }
 }
