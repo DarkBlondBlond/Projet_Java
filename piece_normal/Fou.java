@@ -35,10 +35,9 @@ public class Fou extends Piece {
                     return false;
                 }
             }
-
-            return true;
         }
 
-        // Si aucune de ces conditions n'est validée, la pièce ne peut pas se déplacer 
-        return false;
+        // Si aucune de ces conditions n'est validée, la pièce peut se déplacer 
+        return true;
+    }
 }

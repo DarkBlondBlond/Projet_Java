@@ -21,8 +21,7 @@ public class Roi extends Piece {
         }  
 
         // vérifie que le déplacement ne sera que d'une case maximum, en ordonnée et en abscisse
-        if((Math.abs(posDepart.getY() - posArrivee.getY()) <= 1) && 
-        (Math.abs(posDepart.getX() - posArrivee.getX()) <= 1)) {
+        if((Math.abs(posDepart.getY() - posArrivee.getY()) <= 1) && (Math.abs(posDepart.getX() - posArrivee.getX()) <= 1)) {
             return true;
         }
 

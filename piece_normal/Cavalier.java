@@ -19,4 +19,24 @@ public class Cavalier extends Piece {
                 return false;
             }
         }
+
+        // Déplacement joueur 1
+        if(joueur == 1) {
+            // Vérifie que le cavalier ne se déplace bien que de 2 cases en avant et qu'il ne se déplace bien que d'une case latéralement 
+            if(posDepart.getX() - posArrivee.getX() != -2 || Math.abs(posDepart.getY() - posArrivee.getY()) != 1 ) {
+                return false;
+            }
+        }
+
+        // Déplacement joueur 2
+        else if (joueur == 2) {
+            // Vérifie que le cavalier ne se déplace bien que de 2 cases en avant et qu'il ne se déplace bien que d'une case latéralement
+            if (posDepart.getX() - posArrivee.getX() != 2 || Math.abs(posDepart.getY() - posArrivee.getY()) != 1) {
+                return false;
+            }
+        }
+
+        // Déplacement possible si les conditions dessu ne sont pas vérifiées
+        return true;
+    }
 }

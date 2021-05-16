@@ -2,7 +2,7 @@
  * Caractéristiques de la pièce "Lancier"
  */
 
-public class Pion extends Piece {
+public class Lancier extends Piece {
 
     // constructeur
     public Lancier(int joueur) {
@@ -23,13 +23,13 @@ public class Pion extends Piece {
         // Verifie que la pièce reste sur la même colone
         if(posDepart.getY() == posArrivee.getY()) {
             // Vérifie si sa trajectoire est vide si c'est le joueur 1
-            if(joueur = 1) {
+            if(joueur == 1) {
                 // Vérifie qu'il tente bien de descendre le tableau
                 if(posDepart.getX() - posArrivee.getX() < 0) {
                     // Parcours la colonne
                     for(int i = posDepart.getX() + 1; i < posArrivee.getX(); i++) {
                         // Vérifie que la case est vide
-                        if(plateau.getCase(i, posDepart.getY().getP()) != null) {
+                        if(plateau.getCase(i, posDepart.getY()).getP() != null) {
                             return false;
                         }
                     }
@@ -39,10 +39,10 @@ public class Pion extends Piece {
                 return false;
             }
 
-            if(joueur = 2) {
+            if(joueur == 2) {
                 if(posDepart.getX() - posArrivee.getX() > 0) {
-                    for(int i = posDepart.getX() - 1; i > posArrivee.getX(); i++) {
-                        if(plateau.getCase(i, posDepart.getY().getP()) != null) {
+                    for(int i = posDepart.getX() - 1; i > posArrivee.getX(); i--) {
+                        if(plateau.getCase(i, posDepart.getY()).getP() != null) {
                             return false;
                         }
                     }
@@ -51,7 +51,12 @@ public class Pion extends Piece {
             else {
                 return false;
             }
+
+            // Déplacement possible 
             return true;
         }
+
+        // Déplacement par défaut
+        return false;
     }
 }

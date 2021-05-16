@@ -26,7 +26,7 @@ Déplacement :
 	Tour : Ligne droite à l'horizontal ou vertical / Autant que voulu ; Promu : rajoute à ces déplacement 1 case en diagnnale toutes directions
 	Fou : Diagonales / Autant que voulu ; Promu : Ajoute 1 une case vertical ou horizontal
 	Général d'or : Toutes directions sauf diagonales en arrière / 1 case
-	Général d'argent : Toutes directions sauf horizontales et arrière / 1 case ; Promu = Même que le général d'or
+	Général d'argent : Toutes directions avant et diagonales arrière / 1 case ; Promu = Même que le général d'or
 	Cavalier : 2 en avant + 1 à l'horizontal uniquement ; Promu = Même que le général d'or
 	Lance : En avant / Autant que voulu ; Promu = Même que général d'or
 	Pion : 1 en avant ; Promu = Même que général d'or

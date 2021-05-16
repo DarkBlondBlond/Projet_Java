@@ -20,14 +20,16 @@ public class Pion extends Piece {
             }
         }
 
-        // Joueur 1 remonte le plateau tandis que joueur 2 le descend (le pion ne peut avancer que d'une case en avant)
+        // Joueur 1 descend le plateau tandis que joueur 2 le remonte (le pion ne peut avancer que d'une case en avant (1 ou -1))
         if(joueur == 1 && posDepart.getX() - posArrivee.getX() == -1 
             || joueur == 2 && posDepart.getX() - posArrivee.getX() == 1) {
-                // Le pion doit rester sur la même ligne
+                // Le pion doit rester sur la même ligne (ne peut se déplacer que d'une seule case en avant)
                 if(posDepart.getY() == posArrivee.getY()) {
                     return true;
                 }
-            }
-        return false
+        }
+
+        // si les conditions précédentes ne sont pas réalisées, le pion ne peut pas se déplacer
+        return false;
     }
 }

@@ -7,7 +7,7 @@ public class Piece {
     // Attribue un nom à la pièce :
     private String nom = "";
     // Détermine l'appartenance d'une pièce au joueur 1 ou 2 :
-    private int joueur;
+    protected int joueur;
 
     // Constructeur :
     public Piece(int j) {
@@ -38,5 +38,29 @@ public class Piece {
                         * va retourner "false" de base car le mouvement est considéré comme impossible de 
                         * base, la pièce n'ayant pas encore de nom pour le moment 
                         */
+    }
+
+    public PiecePromue estPromue(Piece p) {
+        // récupérer les coordonnées d'une pièece et le nom de la pièce
+        if (p.getJoueur == 1) {
+            // Promotion ne se déclenche que pour les cases 6-7-8
+            if (p.getX() >= 6) {
+                String n = p.getNom();
+                Case pos = p.getCase();
+                p = null;
+            }
+        }
+
+        else if(p.getJoueur == 2) {
+            // Promotion ne se déclenche que pour les cases 2-1-0
+            if (p.getX() <= 2) {
+                String n = p.getNom();
+                Case pos = p.getCase();
+                p = null;
+            }
+        }
+
+        // Retourne l'objet obtenu 
+        return p;
     }
 }
