@@ -41,26 +41,28 @@ public class Piece {
     }
 
     public PiecePromue estPromue(Piece p) {
-        // récupérer les coordonnées d'une pièece et le nom de la pièce
-        if (p.getJoueur == 1) {
-            // Promotion ne se déclenche que pour les cases 6-7-8
-            if (p.getX() >= 6) {
-                String n = p.getNom();
-                Case pos = p.getCase();
-                p = null;
-            }
-        }
+        String n = p.getNom();
+        int x = p.getX();
+        int y = p.getY();
+        int j = p.getJoueur();
 
-        else if(p.getJoueur == 2) {
-            // Promotion ne se déclenche que pour les cases 2-1-0
-            if (p.getX() <= 2) {
-                String n = p.getNom();
-                Case pos = p.getCase();
-                p = null;
-            }
+        if(n == "Pion"){
+            plateau[x][y].setP(new PionPromu(j))
         }
-
-        // Retourne l'objet obtenu 
-        return p;
+        if(n == "Tour"){
+            plateau[x][y].setP(new TourPromu(j))
+        }
+        if(n == "Fou"){
+            plateau[x][y].setP(new FouPromu(j))
+        }
+        if(n == "GeneralArgent"){
+            plateau[x][y].setP(new GeneralArgentPromu(j))
+        }
+        if(n == "Cavalier"){
+            plateau[x][y].setP(new CavalierPromu(j))
+        }
+        if(n == "Lancier"){
+            plateau[x][y].setP(new LancierPromu(j))
+        }
     }
 }
