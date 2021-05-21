@@ -47,22 +47,22 @@ public class Piece {
         int j = p.getJoueur();
 
         if(n == "Pion"){
-            plateau[x][y].setP(new PionPromu(j))
+            plateau[x][y].setP(new PionPromu(j));
         }
         if(n == "Tour"){
-            plateau[x][y].setP(new TourPromu(j))
+            plateau[x][y].setP(new TourPromu(j));
         }
         if(n == "Fou"){
-            plateau[x][y].setP(new FouPromu(j))
+            plateau[x][y].setP(new FouPromu(j));
         }
         if(n == "GeneralArgent"){
-            plateau[x][y].setP(new GeneralArgentPromu(j))
+            plateau[x][y].setP(new GeneralArgentPromu(j));
         }
         if(n == "Cavalier"){
-            plateau[x][y].setP(new CavalierPromu(j))
+            plateau[x][y].setP(new CavalierPromu(j));
         }
         if(n == "Lancier"){
-            plateau[x][y].setP(new LancierPromu(j))
+            plateau[x][y].setP(new LancierPromu(j));
         }
     }
 }
