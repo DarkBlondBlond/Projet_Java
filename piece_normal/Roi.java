@@ -13,15 +13,15 @@ public class Roi extends Piece {
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
 
         // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
-        if(posArrivee.getP() != null) {  
+        if (posArrivee.getP() != null) {  
             // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux
-            if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {  
+            if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {  
                 return false;
             }
         }  
 
         // vérifie que le déplacement ne sera que d'une case maximum, en ordonnée et en abscisse
-        if((Math.abs(posDepart.getY() - posArrivee.getY()) <= 1) && (Math.abs(posDepart.getX() - posArrivee.getX()) <= 1)) {
+        if ((Math.abs(posDepart.getY() - posArrivee.getY()) <= 1) && (Math.abs(posDepart.getX() - posArrivee.getX()) <= 1)) {
             return true;
         }
 

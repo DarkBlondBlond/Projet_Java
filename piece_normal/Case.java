@@ -26,7 +26,7 @@ public class Case {
     }
 
     public Piece getP() {
-        return p;  // pour récupérer la variable "p" depuis les attributs de la classe Piece
+        return p;  // pour récupérer un objet "p" de type Piece présent sur une case
     }
 
     // Mise en place du setter :

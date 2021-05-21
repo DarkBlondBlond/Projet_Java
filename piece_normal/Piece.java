@@ -24,11 +24,11 @@ public class Piece {
     }
 
     // Mise en place des setters :
-    public void setNom(String n) {
+    public void setNom (String n) {
         this.nom = n;  // permet de modifier la variable "nom"
     }
 
-    public void setJoueur(int j) {
+    public void setJoueur (int j) {
         this.joueur = j;  // permet de modifier la variable "joueur"
     }
 
@@ -40,29 +40,23 @@ public class Piece {
                         */
     }
 
-    public PiecePromue estPromue(Piece p) {
-        String n = p.getNom();
-        int x = p.getX();
-        int y = p.getY();
-        int j = p.getJoueur();
+    public PiecePromue estPromue() {
+        String n = this.getNom();
+        int x = this.getX();
+        int y = this.getY();
+        int j = this.getJoueur();
+        // p = null;
 
-        if(n == "Pion"){
-            plateau[x][y].setP(new PionPromu(j));
+        if(n.equals("Tour")){
+            plateau[x][y].setP(new TourPromue(j));
         }
-        if(n == "Tour"){
-            plateau[x][y].setP(new TourPromu(j));
-        }
-        if(n == "Fou"){
+        if(n.equals("Fou")){
             plateau[x][y].setP(new FouPromu(j));
         }
-        if(n == "GeneralArgent"){
-            plateau[x][y].setP(new GeneralArgentPromu(j));
-        }
-        if(n == "Cavalier"){
-            plateau[x][y].setP(new CavalierPromu(j));
-        }
-        if(n == "Lancier"){
-            plateau[x][y].setP(new LancierPromu(j));
+        
+        else {
+            plateau[x][y].setP(new PiecePromue(j, n));
         }
     }
+
 }
