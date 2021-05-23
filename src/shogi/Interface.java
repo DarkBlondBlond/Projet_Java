@@ -1,4 +1,8 @@
-package Shogi;
+package shogi;
+
+/**
+ * Interface graphique pour le jeu de shogi
+ */
 
 import java.awt.GridLayout;
 import javax.swing.JButton;
@@ -7,12 +11,9 @@ import javax.swing.JPanel;
 
 public class Interface extends JFrame {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	
-	// Création de la fenêtre qui va contenir le jeu
+	// Création de la fenètre qui va contenir le jeu
 	static JFrame fenetre = new JFrame ();
 	
 	// Création d'un panneau comprenant le plateau
@@ -27,11 +28,12 @@ public class Interface extends JFrame {
 	// Création du plateau
 	static Plateau p = new Plateau();
 	
-	// Création d'une varaible pour stocker la case sélectionnée par le joueur pour le déplacement
+	// Création d'une variable pour stocker la case sélectionnée par le joueur pour le déplacement
 	static Case caseSelectionnee = null;
 	
-	// Création d'une variable pour stocker les tours
+	// Création d'une variable pour stocker le numéro du tour de jeu
 	public static int tour = 2;
 	
 	
 }
+

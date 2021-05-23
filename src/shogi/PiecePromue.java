@@ -1,3 +1,11 @@
+package shogi;
+
+/** 
+ * Classe PiecePromue regroupant les caractéristiques des pièces Pion, Général d'Argent,
+ * Cavalier et Lancier lorsqu'elles sont promues (après promotion, toutes ces pièces 
+ * possèdent les mêmes caractéristiques de déplacement que le Général d'Or)
+ */
+
 public class PiecePromue extends Piece {
 
     // Constructeur
@@ -19,20 +27,19 @@ public class PiecePromue extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
 
-        // vÃ©rifier la prÃ©sence ou non d'une piÃ¨ce sur la case oÃ¹ veut se dÃ©placer
+        // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
         if (posArrivee.getP() != null) {
-            // vÃ©rifie que la piÃ¨ce sur laquelle on veut se dÃ©placer ne nous appartient pas,
-            // sinon retourne faux :
+            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux :
             if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {
                 return false;
             }
         }
 
-        // DÃ©pacement limitÃ© Ã  une seule case
+        // Dépacement limité à une seule case
         if ((Math.abs(posDepart.getX() - posArrivee.getX()) <= 1)
                 && (Math.abs(posDepart.getY() - posArrivee.getY()) <= 1)) {
             if (joueur == 1) {
-                // VÃ©rifie que le dÃ©placement arriÃ¨re ne soit pas une diagonale
+                // Vérifie que le déplacement arrière ne soit pas une diagonale
                 if (posDepart.getX() - posArrivee.getX() == 1) {
                     if (posDepart.getY() != posArrivee.getY()) {
                         return false;
@@ -41,7 +48,7 @@ public class PiecePromue extends Piece {
             }
 
             else if (joueur == 2) {
-                // VÃ©rifie que le dÃ©placement arriÃ¨re ne soit pas une diagonale
+                // Vérifie que le déplacement arrière ne soit pas une diagonale
                 if (posDepart.getX() - posArrivee.getX() == -1) {
                     if (posDepart.getY() != posArrivee.getY()) {
                         return false;
@@ -50,8 +57,7 @@ public class PiecePromue extends Piece {
             }
         }
 
-        // DÃ©placement possible si les conditions du dÃ©placement limitÃ© Ã  1 case sont
-        // remplies
+        // Déplacement possible si les conditions du déplacement limité à 1 case sont remplies
         return true;
     }
 

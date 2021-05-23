@@ -1,5 +1,7 @@
+package shogi;
+
 /**
- * CaractÃ©ristiques de la piÃ¨ce "Fou"
+ * Caractéristiques de la pièce "Fou"
  */
 
 public class Fou extends Piece {
@@ -12,32 +14,32 @@ public class Fou extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
 
-        // vÃ©rifier la prÃ©sence ou non d'une piÃ¨ce sur la case oÃ¹ veut se dÃ©placer
+        // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
         if (posArrivee.getP() != null) {
-            // vÃ©rifie que la piÃ¨ce sur laquelle on veut se dÃ©placer ne nous appartient pas, sinon retourne faux :
+            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux :
             if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) { 
                 return false;
             }
         }
 
-        // VÃ©rifier que les coordonnÃ©es X et Y sont Ã©gales et le restent tout le dÃ©placement
+        // Vérifier que les coordonnées X et Y sont égales et le restent tout le déplacement
         if(Math.abs(posDepart.getX() - posArrivee.getX()) == Math.abs(posDepart.getY() - posArrivee.getY())) {
 
-            // VÃ©rifier la direction du dÃ©placement : gauche/droite, haut/bas
+            // Vérifier la direction du déplacement : gauche/droite, haut/bas
             int trajectoireX = posArrivee() > posDepart() ? 1 : -1;
             int trajectoireY = posArrivee() > posDepart() ? 1 : -1;
 
             // Parcours toutes les cases de la diagonales 
             for(int i = 1; i < Math.abs(posArrivee.getY() - posDepart.getY()); i++) {
 
-                // VÃ©rifier que les cases soient libres
+                // Vérifier que les cases soient libres
                 if(plateau.getCase(posDepart.getX() + i * trajectoireX, posDepart.getY() + i * trajectoireY) != null) {
                     return false;
                 }
             }
         }
 
-        // Si aucune de ces conditions n'est validÃ©e, la piÃ¨ce peut se dÃ©placer 
+        // Si aucune de ces conditions n'est validée, la pièce peut se déplacer 
         return true;
     }
 }

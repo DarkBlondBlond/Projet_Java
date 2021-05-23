@@ -1,5 +1,7 @@
+package shogi;
+
 /**
- * CaractÃ©ristiques de la piÃ¨ce "Lancier"
+ * Caractéristiques de la pièce "Lancier"
  */
 
 public class Lancier extends Piece {
@@ -12,23 +14,23 @@ public class Lancier extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
 
-        // vÃ©rifier la prÃ©sence ou non d'une piÃ¨ce sur la case oÃ¹ veut se dÃ©placer
+        // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
         if (posArrivee.getP() != null) {
-            // vÃ©rifie que la piÃ¨ce sur laquelle on veut se dÃ©placer ne nous appartient pas, sinon retourne faux :
+            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux :
             if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) { 
                 return false;
             }
         }
 
-        // Verifie que la piÃ¨ce reste sur la mÃªme colone
+        // Verifie que la pièce reste sur la même colone
         if(posDepart.getY() == posArrivee.getY()) {
-            // VÃ©rifie si sa trajectoire est vide si c'est le joueur 1
+            // Vérifie si sa trajectoire est vide si c'est le joueur 1
             if(joueur == 1) {
-                // VÃ©rifie qu'il tente bien de descendre le tableau
+                // Vérifie qu'il tente bien de descendre le tableau
                 if(posDepart.getX() - posArrivee.getX() < 0) {
                     // Parcours la colonne
                     for(int i = posDepart.getX() + 1; i < posArrivee.getX(); i++) {
-                        // VÃ©rifie que la case est vide
+                        // Vérifie que la case est vide
                         if(plateau.getCase(i, posDepart.getY()).getP() != null) {
                             return false;
                         }
@@ -52,11 +54,11 @@ public class Lancier extends Piece {
                 return false;
             }
 
-            // DÃ©placement possible 
+            // Déplacement possible 
             return true;
         }
 
-        // DÃ©placement par dÃ©faut
+        // Déplacement par défaut
         return false;
     }
 }

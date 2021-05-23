@@ -1,3 +1,0 @@
-Pour promotion :
-	Quand pièce promu : Méthode/Interface EstPromu.java => Déréférence l'objet et crée un nouvel obj de la classe de la pièce promu à sa place (?)
-

@@ -1,5 +1,7 @@
+package shogi;
+
 /**
- * CaractÃ©ristiques de la piÃ¨ce "Cavalier"
+ * Caractéristiques de la pièce "Cavalier"
  */
 
 public class Cavalier extends Piece {
@@ -12,31 +14,31 @@ public class Cavalier extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
 
-        // vÃ©rifier la prÃ©sence ou non d'une piÃ¨ce sur la case oÃ¹ veut se dÃ©placer
+        // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
         if (posArrivee.getP() != null) {
-            // vÃ©rifie que la piÃ¨ce sur laquelle on veut se dÃ©placer ne nous appartient pas, sinon retourne faux :
+            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux :
             if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) { 
                 return false;
             }
         }
 
-        // DÃ©placement joueur 1
+        // Déplacement joueur 1
         if(joueur == 1) {
-            // VÃ©rifie que le cavalier ne se dÃ©place bien que de 2 cases en avant et qu'il ne se dÃ©place bien que d'une case latÃ©ralement 
+            // Vérifie que le cavalier ne se déplace bien que de 2 cases en avant et qu'il ne se déplace bien que d'une case latéralement 
             if(posDepart.getX() - posArrivee.getX() != -2 || Math.abs(posDepart.getY() - posArrivee.getY()) != 1 ) {
                 return false;
             }
         }
 
-        // DÃ©placement joueur 2
+        // Déplacement joueur 2
         else if (joueur == 2) {
-            // VÃ©rifie que le cavalier ne se dÃ©place bien que de 2 cases en avant et qu'il ne se dÃ©place bien que d'une case latÃ©ralement
+            // Vérifie que le cavalier ne se déplace bien que de 2 cases en avant et qu'il ne se déplace bien que d'une case latéralement
             if (posDepart.getX() - posArrivee.getX() != 2 || Math.abs(posDepart.getY() - posArrivee.getY()) != 1) {
                 return false;
             }
         }
 
-        // DÃ©placement possible si les conditions dessu ne sont pas vÃ©rifiÃ©es
+        // Déplacement possible si les conditions dessu ne sont pas vérifiées
         return true;
     }
 }

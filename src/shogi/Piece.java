@@ -1,12 +1,14 @@
+package shogi;
+
 /**
- * Classe principale Piece, avec les caractÃ©ristiques de bases communes Ã  chaque piÃ¨ce
- * A extends Ã  chaque piÃ¨ce.
+ * Classe principale Piece, avec les caractéristiques de bases communes à chaque pièce
+ * A extends à chaque pièce.
  */
 
 public class Piece {
-    // Attribue un nom Ã  la piÃ¨ce :
+    // Attribue un nom à la pièce :
     private String nom = "";
-    // DÃ©termine l'appartenance d'une piÃ¨ce au joueur 1 ou 2 :
+    // Détermine l'appartenance d'une pièce au joueur 1 ou 2 :
     protected int joueur;
 
     // Constructeur :
@@ -16,11 +18,11 @@ public class Piece {
 
     // Mise en place des getters :
     public String getNom() {
-        return nom;  // pour rÃ©cupÃ©rer la variable "nom" depuis les attributs de la classe Piece
+        return nom;  // pour récupérer la variable "nom" depuis les attributs de la classe Piece
     }
 
     public int getJoueur() {
-        return joueur;  // pour rÃ©cupÃ©rer la variable "nom" depuis les attributs de la classe Piece
+        return joueur;  // pour récupérer la variable "nom" depuis les attributs de la classe Piece
     }
 
     // Mise en place des setters :
@@ -32,12 +34,11 @@ public class Piece {
         this.joueur = j;  // permet de modifier la variable "joueur"
     }
 
-    // Mise en place de la mÃ©thode peutSeDeplacer :
+    // Mise en place de la méthode peutSeDeplacer :
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
-        return false;  /**
-                        * va retourner "false" de base car le mouvement est considÃ©rÃ© comme impossible de 
-                        * base, la piÃ¨ce n'ayant pas encore de nom pour le moment 
-                        */
+        return false;  
+        /* va retourner "false" de base car le mouvement est considéré comme impossible de base, 
+         * la pièce n'ayant pas encore de nom pour le moment */
     }
 
     public PiecePromue estPromue() {

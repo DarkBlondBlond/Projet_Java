@@ -1,5 +1,7 @@
+package shogi;
+
 /**
- * CaractÃ©ristiques de la piÃ¨ce "GÃ©nÃ©ral d'argent (aussi appelÃ©e "argent")"
+ * Caractéristiques de la pièce "Général d'argent (aussi appelée "argent")"
  */
 
 public class GeneralArgent extends Piece {
@@ -12,20 +14,20 @@ public class GeneralArgent extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
 
-        // vÃ©rifier la prÃ©sence ou non d'une piÃ¨ce sur la case oÃ¹ veut se dÃ©placer
+        // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
         if (posArrivee.getP() != null) {
-            // vÃ©rifie que la piÃ¨ce sur laquelle on veut se dÃ©placer ne nous appartient pas, sinon retourne faux :
+            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux :
             if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {
                 return false;
             }
         }
 
-        // DÃ©pacement limitÃ© Ã  une seule case 
+        // Dépacement limité à une seule case 
         if((Math.abs(posDepart.getX() - posArrivee.getX()) <= 1) && (Math.abs(posDepart.getY() - posArrivee.getY()) <= 1)) {
             if(joueur == 1) {
-                // VÃ©rifie qu'il y ait un changement de ligne pour le dÃ©placement
+                // Vérifie qu'il y ait un changement de ligne pour le déplacement
                 if(posDepart.getX() - posArrivee.getX() == 1) {
-                    // VÃ©rifie que le GÃ©nÃ©ral d'Argent ne se dÃ©place pas d'une case en arriÃ¨re dans la mÃªme colonne
+                    // Vérifie que le Général d'Argent ne se déplace pas d'une case en arrière dans la même colonne
                     if(posDepart.getY() == posArrivee.getY()) {
                         return false;
                     }
@@ -39,13 +41,13 @@ public class GeneralArgent extends Piece {
                 }
             }
 
-            // VÃ©rifie que la piÃ¨ce ne se dÃ©place pas latÃ©ralement et qu'elle change de ligne
+            // Vérifie que la pièce ne se déplace pas latéralement et qu'elle change de ligne
             if(posDepart.getX() == posArrivee.getX()) {
                 return false;
             }
         }
 
-        // DÃ©placement possible si toutes les conditions au-dessus ne sont pas rÃ©alisÃ©es
+        // Déplacement possible si toutes les conditions au-dessus ne sont pas réalisées
         return true;
     }
 }
