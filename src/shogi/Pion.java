@@ -9,10 +9,10 @@ import javax.swing.ImageIcon;
 public class Pion extends Piece {
 
     // constructeur
-    public Pion(int joueur) {
+    public Pion(int joueur) {	
         super(joueur);
         setNom("Pion");
-        ImageIcon icone = createImageIcon("../../drops/0FU.svg");
+        ImageIcon pion = new ImageIcon("../../drops/0FU.svg", "pion");
     }
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
