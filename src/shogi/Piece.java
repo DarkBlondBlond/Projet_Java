@@ -1,5 +1,7 @@
 package shogi;
 
+import javax.swing.ImageIcon;
+
 /**
  * Classe principale Piece, avec les caractéristiques de bases communes à chaque pièce
  * A extends à chaque pièce.
@@ -10,6 +12,7 @@ public class Piece {
     private String nom = "";
     // Détermine l'appartenance d'une pièce au joueur 1 ou 2 :
     protected int joueur;
+    ImageIcon icon;
 
     // Constructeur :
     public Piece(int j) {
@@ -24,6 +27,11 @@ public class Piece {
     public int getJoueur() {
         return joueur;  // pour récupérer la variable "nom" depuis les attributs de la classe Piece
     }
+    
+    //
+    public ImageIcon getIcone() {
+    	return this.icon;
+    }
 
     // Mise en place des setters :
     public void setNom (String n) {
@@ -32,6 +40,11 @@ public class Piece {
 
     public void setJoueur (int j) {
         this.joueur = j;  // permet de modifier la variable "joueur"
+    }
+    
+    public void setIcon() {
+        String nom = this.getNom();
+        this.icon = new ImageIcon("../../drops/"+ nom +".svg", nom);
     }
 
     // Mise en place de la méthode peutSeDeplacer :

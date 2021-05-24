@@ -23,6 +23,7 @@ public class PiecePromue extends Piece {
         if (n.equals("Lancier")) {
             this.setNom("LancierPromu");
         }
+        setIcon();
     }
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {

@@ -10,6 +10,7 @@ public class GeneralArgent extends Piece {
     public GeneralArgent(int joueur) {
         super(joueur);
         setNom("GeneralArgent");
+        setIcon();
     }
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {

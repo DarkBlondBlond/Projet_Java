@@ -10,6 +10,7 @@ public class GeneralOr extends Piece {
     public GeneralOr(int joueur) {
         super(joueur);
         setNom("GeneralOr");
+        setIcon();
     }
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {

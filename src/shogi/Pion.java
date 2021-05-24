@@ -12,7 +12,7 @@ public class Pion extends Piece {
     public Pion(int joueur) {	
         super(joueur);
         setNom("Pion");
-        ImageIcon pion = new ImageIcon("../../drops/0FU.svg", "pion");
+        setIcon();
     }
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {

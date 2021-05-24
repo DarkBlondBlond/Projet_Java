@@ -10,6 +10,7 @@ public class FouPromu extends Piece {
     public FouPromu (int joueur) {
         super (joueur);
         setNom ("FouPromu");
+        setIcon();
     }
 
     public boolean peutSeDeplacer (Case posDepart, Case posArrivee, Plateau p) {

@@ -10,6 +10,7 @@ public class TourPromue extends Piece {
     public TourPromue(int joueur) {
         super(joueur);
         setNom("TourPromue");
+        setIcon();
     }
 
     public boolean peutSeDeplacer (Case posDepart, Case posArrivee, Plateau p) {

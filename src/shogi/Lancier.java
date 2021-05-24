@@ -10,6 +10,7 @@ public class Lancier extends Piece {
     public Lancier(int joueur) {
         super(joueur);
         setNom("Lancier");
+        setIcon();
     }
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {

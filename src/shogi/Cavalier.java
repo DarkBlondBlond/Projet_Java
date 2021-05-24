@@ -10,6 +10,7 @@ public class Cavalier extends Piece {
     public Cavalier(int joueur) {
         super(joueur);
         setNom("Cavalier");
+        setIcon();
     }
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {

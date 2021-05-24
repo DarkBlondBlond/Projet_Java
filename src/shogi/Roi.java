@@ -10,6 +10,7 @@ public class Roi extends Piece {
     public Roi(int joueur) {
         super(joueur);
         setNom("Roi");
+        setIcon();
     }
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
