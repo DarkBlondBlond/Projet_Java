@@ -44,7 +44,8 @@ public class Piece {
     
     public void setIcon() {
         String nom = this.getNom();
-        this.icon = new ImageIcon("../../drops/"+ nom +".svg", nom);
+        String j = String.valueOf(this.getJoueur());
+        this.icon = new ImageIcon("../../drops/"+ nom + j +".svg", nom);
     }
 
     // Mise en place de la méthode peutSeDeplacer :
