@@ -13,7 +13,7 @@ public class Lancier extends Piece {
         setIcon();
     }
 
-    public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
+    public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau plateau) {
 
         // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
         if (posArrivee.getP() != null) {

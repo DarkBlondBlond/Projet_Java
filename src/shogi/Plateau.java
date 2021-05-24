@@ -132,9 +132,9 @@ public class Plateau {
                                     else {
                                         p.setJoueur(1);
                                     }
+                                    reserveJoueur[j].ajouterPiece(p);
+                                    throw new Exception();
                                 }
-                                reserveJoueur[j].ajouterPiece(p);
-                                throw new Exception();
                             }
                         }
                     }

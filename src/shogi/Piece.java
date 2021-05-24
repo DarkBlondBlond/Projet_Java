@@ -49,7 +49,7 @@ public class Piece {
     }
 
     // Mise en place de la méthode peutSeDeplacer :
-    public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
+    public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau plateau) {
         return false;  
         /* va retourner "false" de base car le mouvement est considéré comme impossible de base, 
          * la pièce n'ayant pas encore de nom pour le moment */

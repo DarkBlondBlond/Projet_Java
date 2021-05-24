@@ -1,7 +1,5 @@
 package shogi;
 
-import javax.swing.ImageIcon;
-
 /**
  * Caractéristiques de la pièce "Pion"
  */

@@ -13,7 +13,7 @@ public class FouPromu extends Piece {
         setIcon();
     }
 
-    public boolean peutSeDeplacer (Case posDepart, Case posArrivee, Plateau p) {
+    public boolean peutSeDeplacer (Case posDepart, Case posArrivee, Plateau plateau) {
 
         // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
         if (posArrivee.getP() != null) {
@@ -29,8 +29,8 @@ public class FouPromu extends Piece {
         if (Math.abs(posDepart.getX() - posArrivee.getX()) == Math.abs(posDepart.getY() - posArrivee.getY())) {
 
             // Vérifier la direction du déplacement : gauche/droite, haut/bas
-            int trajectoireX = posArrivee() > posDepart() ? 1 : -1;
-            int trajectoireY = posArrivee() > posDepart() ? 1 : -1;
+            int trajectoireX = posArrivee.getX() > posDepart.getX() ? 1 : -1;
+            int trajectoireY = posArrivee.getY() > posDepart.getY() ? 1 : -1;
 
             // Parcours toutes les cases de la diagonales
             for (int i = 1; i < Math.abs(posArrivee.getY() - posDepart.getY()); i++) {
