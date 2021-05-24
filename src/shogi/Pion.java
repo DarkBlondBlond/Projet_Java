@@ -1,5 +1,7 @@
 package shogi;
 
+import javax.swing.ImageIcon;
+
 /**
  * Caractéristiques de la pièce "Pion"
  */
@@ -10,6 +12,7 @@ public class Pion extends Piece {
     public Pion(int joueur) {
         super(joueur);
         setNom("Pion");
+        ImageIcon icone = createImageIcon("../../drops/0FU.svg");
     }
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
