@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class LancementJeu{
-    public static void main(String args[]){
+    public static void main(String [] args){
         creationFenetre();
     }
 
