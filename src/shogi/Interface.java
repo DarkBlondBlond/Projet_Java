@@ -157,6 +157,9 @@ public class Interface extends JFrame {
 				UIplateau.add(cases[x][y]);
 			}
 		}
+		fenetre.setVisible(true);
+		fenetre.revalidate();
+		fenetre.repaint();
 	}
 }
 
