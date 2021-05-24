@@ -3,14 +3,14 @@ package shogi;
 import javax.swing.ImageIcon;
 
 /**
- * Classe principale Piece, avec les caractéristiques de bases communes à chaque pièce
- * A extends à chaque pièce.
+ * Classe principale Piece, avec les caractï¿½ristiques de bases communes ï¿½ chaque piï¿½ce
+ * A extends ï¿½ chaque piï¿½ce.
  */
 
 public class Piece {
-    // Attribue un nom à la pièce :
+    // Attribue un nom ï¿½ la piï¿½ce :
     private String nom = "";
-    // Détermine l'appartenance d'une pièce au joueur 1 ou 2 :
+    // Dï¿½termine l'appartenance d'une piï¿½ce au joueur 1 ou 2 :
     protected int joueur;
     ImageIcon icon;
 
@@ -21,11 +21,11 @@ public class Piece {
 
     // Mise en place des getters :
     public String getNom() {
-        return nom;  // pour récupérer la variable "nom" depuis les attributs de la classe Piece
+        return nom;  // pour rï¿½cupï¿½rer la variable "nom" depuis les attributs de la classe Piece
     }
 
     public int getJoueur() {
-        return joueur;  // pour récupérer la variable "nom" depuis les attributs de la classe Piece
+        return joueur;  // pour rï¿½cupï¿½rer la variable "nom" depuis les attributs de la classe Piece
     }
     
     //
@@ -48,11 +48,11 @@ public class Piece {
         this.icon = new ImageIcon("../../drops/"+ nom + j +".svg", nom);
     }
 
-    // Mise en place de la méthode peutSeDeplacer :
+    // Mise en place de la mï¿½thode peutSeDeplacer :
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau plateau) {
         return false;  
-        /* va retourner "false" de base car le mouvement est considéré comme impossible de base, 
-         * la pièce n'ayant pas encore de nom pour le moment */
+        /* va retourner "false" de base car le mouvement est considï¿½rï¿½ comme impossible de base, 
+         * la piï¿½ce n'ayant pas encore de nom pour le moment */
     }
 
     public void estPromue(Case c, Case[][] plateau) {

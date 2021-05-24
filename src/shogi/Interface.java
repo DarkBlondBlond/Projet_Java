@@ -141,11 +141,13 @@ public class Interface extends JFrame {
 											} else {
 												tour = 1;
 											}
+											miseAJourPlateau();
 										} catch (Exception e2) {
 											// D�placement impossible
 											e2.printStackTrace(System.out);
 											System.out.println("Mouvement invalide");
 											caseSelectionnee = null;
+											miseAJourPlateau();
 										}
 									}
 								}
@@ -158,8 +160,39 @@ public class Interface extends JFrame {
 			}
 		}
 		fenetre.setVisible(true);
-		fenetre.revalidate();
-		fenetre.repaint();
+		miseAJourPlateau();
+	}
+	public static void miseAJourPlateau(){
+		//For pieces in the 9x9 board
+		for(int r=0;r<9;r++) {
+			for(int c=0;c<9;c++) {
+				if(p.getCase(r, c).getP() != null) {
+					//Set the piece text based on the piece symbol
+					cases[r][c].setIcon("../../" + p.getCase(r, c).getP().getNom() + ".svg", "alt");
+				} else {
+					//If square is empty, clear text
+					cases[r][c].setText("");
+					cases[r][c].setForeground(Color.BLACK);
+				}
+			}
+		}
+		//For pieces in the players' hands
+		for(int j=1;j<=2;j++) {
+			for(int i=0;i<38;i++) {
+				if(p.getReserve(j).getPiece(i) != null) {
+					//Set the square text to the piece symbol
+					boutonReserve[j][i].setIcon("../../drops/" + p.getReserve(j).getPiece(i).getNom() + ".svg");
+					//If there's a piece, make the button visible
+					playerHandsButtons[j][i].setVisible(true);
+				} else {
+					//If there are no pieces in the hand button, hide it
+					playerHandsButtons[j][i].setVisible(false);
+				}
+			}
+			//Redraw the graphics after each move
+			frame.revalidate();
+			frame.repaint();
+		}
 	}
 }
 
