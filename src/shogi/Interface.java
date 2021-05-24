@@ -9,7 +9,6 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -83,7 +82,6 @@ public class Interface extends JFrame {
 									pi.setJoueur(p.getReserve(finalJoueur).getJoueur());
 									c.setP(pi);
 									caseSelectionnee = c;   // Ajout de la case sélectionnée dans la case "c" temporaire
-									boutonReserve[finalJoueur][n].setText("") ;   // Supprime l'icône de la pièce associée à cette case
 									boutonReserve[finalJoueur][n].setVisible(false);   // Rend l'icône de la pièce invisible
 									p.getReserve(finalJoueur).setPiece(n, null);   // déréférencie la pièce de la réserve
 								}
@@ -143,37 +141,22 @@ public class Interface extends JFrame {
 											} else {
 												tour = 1;
 											}
-											actuPlateau();
 										} catch (Exception e2) {
 											// Déplacement impossible
 											e2.printStackTrace(System.out);
 											System.out.println("Mouvement invalide");
 											caseSelectionnee = null;
-											actuPlateau();
 										}
 									}
 								}
 							}
 						}
-						
 					}
-					
 				});
 				// Ajouter chaque case obtenue à UIplateau
 				UIplateau.add(cases[x][y]);
 			}
 		}
-		
-		// Mise à jour de UIplateau avec les nouvelles positions de pièces
-		actuPlateau();
-		fenetre.setVisible(true);
-		fenetre.revalidate();
-		fenetre.repaint();
 	}
-	
-	public static void actuPlateau() {
-		
-	}
-	
 }
 

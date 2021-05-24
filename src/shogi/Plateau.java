@@ -26,7 +26,7 @@ public class Plateau {
         // positionnement des pions sur le plateau
         for(int i = 0; i < 9; i++) {
             // [i] car i va parcourir toutes les colonnes de la ligne 2 et comme "i" s'incrémente de 0 à 9
-            plateau[2][i].setP(new Pion(1)); // à remplacer par "new Pion" par la suite
+            plateau[2][i].setP(new Pion(1)); 
             plateau[6][i].setP(new Pion(2));
         }
         // positionnement des pièces Roi et Général de Jade :
