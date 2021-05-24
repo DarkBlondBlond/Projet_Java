@@ -1,16 +1,16 @@
 package shogi;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
-
 /**
  * Interface graphique pour le jeu de shogi
  */
 
+import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -43,6 +43,8 @@ public class Interface extends JFrame {
 	
 	// Création d'une variable pour stocker le numéro du tour de jeu
 	public static int tour = 2;
+	
+	ImageIcon icone = createImageIcon("../../drops/0FU.svg", "Pion");
 	
 	// Constructeur
 	public Interface() {
