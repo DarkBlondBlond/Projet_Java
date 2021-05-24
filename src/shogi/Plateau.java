@@ -84,12 +84,12 @@ public class Plateau {
                 try {
                     // Vérifie si le joueur 1 déplace une de ses pièces dans sa zone de promotion (cases 6, 7, 8)
                     if (posArrivee.getX() >= 6 && posDepart.getP().getJoueur() == 1) {
-                        posDepart.getP().estPromue();
+                        posDepart.getP().estPromue(posDepart, plateau);
                     }
 
                     // Vérifie si le joueur 2 déplace une de ses pièces dans sa zone de promotion (cases 0, 1, 2)
                     if (posArrivee.getX() <= 2 && posDepart.getP().getJoueur() == 2) {
-                        posDepart.getP().estPromue();
+                        posDepart.getP().estPromue(posDepart, plateau);
                     }
                 } catch(Exception e) {}
 

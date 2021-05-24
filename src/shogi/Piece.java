@@ -55,10 +55,10 @@ public class Piece {
          * la pièce n'ayant pas encore de nom pour le moment */
     }
 
-    public PiecePromue estPromue() {
+    public void estPromue(Case c, Case[][] plateau) {
         String n = this.getNom();
-        int x = this.getX();
-        int y = this.getY();
+        int x = c.getX();
+        int y = c.getY();
         int j = this.getJoueur();
         // p = null;
 
