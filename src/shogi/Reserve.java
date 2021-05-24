@@ -7,7 +7,7 @@ package shogi;
 import java.util.ArrayList;
 
 public class Reserve {
-    private ArrayList<Pieces> pieces = new ArrayList<Pieces>();
+    private ArrayList<Piece> pieces = new ArrayList<Piece>();
     private int joueur;
     
     // Constructeur 

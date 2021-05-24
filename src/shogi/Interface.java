@@ -103,7 +103,7 @@ public class Interface extends JFrame {
 				cases[x][y].setOpaque(true);
 				cases[x][y].setSize(108, 108);
 				cases[x][y].setBorder(new LineBorder(Color.black));
-				cases[x][y].setBackground(Color.decode("704a37"));
+				cases[x][y].setBackground(Color.decode("#704a37"));
 				cases[x][y].addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						for (int x = 0; x < 9; x ++) {
