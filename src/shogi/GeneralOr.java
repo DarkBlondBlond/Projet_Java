@@ -48,4 +48,3 @@ public class GeneralOr extends Piece {
         return true;
     }
 }
-
