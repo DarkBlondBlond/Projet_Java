@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -50,7 +51,7 @@ public class Interface extends JFrame {
 		fenetre.setSize(972,1200);
 		fenetre.setTitle("Jeu de shogi");
 		fenetre.add(UIplateau, BorderLayout.CENTER);
-		fenetre.setResizable(false);
+		fenetre.setResizable(true);
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		// Ajouter les r�serves des 2 joueurs
@@ -162,13 +163,20 @@ public class Interface extends JFrame {
 		fenetre.setVisible(true);
 		miseAJourPlateau();
 	}
-	public static void miseAJourPlateau(){
+	public static void miseAJourPlateau() {
 		//For pieces in the 9x9 board
 		for(int r=0;r<9;r++) {
 			for(int c=0;c<9;c++) {
 				if(p.getCase(r, c).getP() != null) {
 					//Set the piece text based on the piece symbol
-					cases[r][c].setIcon("../../" + p.getCase(r, c).getP().getNom() + ".svg", "alt");
+					cases[r][c].setText(p.getCase(r, c).getP().getNom());
+					if(p.getCase(r, c).getP().getJoueur() == 1) {
+						//Set piece color for player one
+						cases[r][c].setForeground(Color.BLACK);
+					} else {
+						//Set piece color for player two
+						cases[r][c].setForeground(Color.WHITE);
+					}
 				} else {
 					//If square is empty, clear text
 					cases[r][c].setText("");
@@ -181,17 +189,14 @@ public class Interface extends JFrame {
 			for(int i=0;i<38;i++) {
 				if(p.getReserve(j).getPiece(i) != null) {
 					//Set the square text to the piece symbol
-					boutonReserve[j][i].setIcon("../../drops/" + p.getReserve(j).getPiece(i).getNom() + ".svg");
+					boutonReserve[j][i].setText(p.getReserve(j).getPiece(i).getNom());
 					//If there's a piece, make the button visible
-					playerHandsButtons[j][i].setVisible(true);
+					boutonReserve[j][i].setVisible(true);
 				} else {
 					//If there are no pieces in the hand button, hide it
-					playerHandsButtons[j][i].setVisible(false);
+					boutonReserve[j][i].setVisible(false);
 				}
 			}
-			//Redraw the graphics after each move
-			frame.revalidate();
-			frame.repaint();
 		}
 	}
 }
