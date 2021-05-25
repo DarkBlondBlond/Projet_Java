@@ -1,5 +1,7 @@
 package shogi;
 
+import java.awt.Image;
+
 import javax.swing.ImageIcon;
 
 /**
@@ -13,6 +15,8 @@ public class Piece {
     // D�termine l'appartenance d'une pi�ce au joueur 1 ou 2 :
     protected int joueur;
     
+    ImageIcon i;
+
     ImageIcon icon;
 
     protected boolean promu = false;
@@ -32,7 +36,7 @@ public class Piece {
     }
     
     //
-    public ImageIcon getIcone() {
+    public ImageIcon getIcon() {
     	return this.icon;
     }
 
@@ -48,7 +52,10 @@ public class Piece {
     public void setIcon() {
         String nom = this.getNom();
         String j = String.valueOf(this.getJoueur());
-        this.icon = new ImageIcon("../../drops/"+ nom + j +".svg", nom);
+        i = new ImageIcon("drops/"+ nom + j +".png", nom);
+        Image image = i.getImage();
+        Image newimg = image.getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
+        this.icon = new ImageIcon(newimg);
     }
 
     // Mise en place de la m�thode peutSeDeplacer :
