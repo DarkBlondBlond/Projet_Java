@@ -1,7 +1,7 @@
 package shogi;
 
 /**
- * Caractéristiques de la pièce "Roi (régnant)"
+ * Caracteristiques de la piece "Roi (Regnant)"
  */
 
 public class Roi extends Piece {
@@ -15,20 +15,22 @@ public class Roi extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
 
-        // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
+    	// Deplacement possible si les conditions ci-dessous sont remplies
+    	// Controle si une piece est deja presente sur la case ou le joueur veut deplacer sa piece
         if (posArrivee.getP() != null) {  
-            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux
+        	
+            // Interdit le deplacement si le joueur veut deplacer sa piece sur une case occupee par une de ses pieces
             if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {  
                 return false;
             }
         }  
 
-        // vérifie que le déplacement ne sera que d'une case maximum, en ordonnée et en abscisse
+        // Limite le deplacement a 1 case maximum en ordonnee et en abscisse
         if ((Math.abs(posDepart.getY() - posArrivee.getY()) <= 1) && (Math.abs(posDepart.getX() - posArrivee.getX()) <= 1)) {
             return true;
         }
 
-        // retourne faux (méthode-parent) si on ne se trouve pas dans l'un des deux cas précédents
+        // Deplacement interdit si les conditions ci-dessus ne sont pas remplies
         return false;
     }
 }
