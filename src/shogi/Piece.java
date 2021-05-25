@@ -61,4 +61,8 @@ public class Piece {
     public void estPromue(){
         promu = true;
     }
+    
+    public void retrograde(){
+        promu = false;
+    }
 }

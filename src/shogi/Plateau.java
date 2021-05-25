@@ -139,35 +139,13 @@ public class Plateau {
                         }
                     }
                     // Parachutage d'une pi�ce sur une case vide :
+                    pieceDepart.retrograde();
                     posDepart.setP(null);
                     posArrivee.setP(null);
-                    // Si la pi�ce parachut�e �tait un fou promu
-                    if (pieceDepart.getNom().equals("FouPromu")) {
-                        posArrivee.setP(new Fou(pieceDepart.getJoueur()));
-                    }
-                    // Si la pi�ce parachut�e �tait une tour promue
-                    if (pieceDepart.getNom().equals("TourPromue")) {
-                        posArrivee.setP(new Tour(pieceDepart.getJoueur()));
-                    }
-                    // Si la pi�ce parachut�e �tait un pion promu
-                    if (pieceDepart.getNom().equals("PionPromu")) {
-                        posArrivee.setP(new Pion(pieceDepart.getJoueur()));
-                    }
-                    // Si la pi�ce parachut�e �tait un G�n�ral d'Argent promu
-                    if (pieceDepart.getNom().equals("GeneralArgentPromu")) {
-                        posArrivee.setP(new GeneralArgent(pieceDepart.getJoueur()));
-                    }
-                    // Si la pi�ce parachut�e �tait un Cavalier promu
-                    if (pieceDepart.getNom().equals("CavalierPromu")) {
-                        posArrivee.setP(new Cavalier(pieceDepart.getJoueur()));
-                    }
-                    // Si la pi�ce parachut�e �tait un Lancier promu
-                    if (pieceDepart.getNom().equals("LancierPromu")) {
-                        posArrivee.setP(new Lancier(pieceDepart.getJoueur()));
-                    }
+                    posArrivee.setP(pieceDepart);
                     
                     // Parachutage sur une case occup�e (mouvement non valide, renvoie la pi�ce qui va �tre parachut�e dans la r�serve)
-                    else {
+                } else {
                         Piece p = posDepart.getP();
                         int j = p.getJoueur();
                         if (pieceDepart.getJoueur() == 1) {
@@ -176,18 +154,15 @@ public class Plateau {
                         else {
                             p.setJoueur(1);
                         }
-                    reserveJoueur[j].ajouterPiece(p);
-                    throw new Exception();
-                    }
+                        reserveJoueur[j].ajouterPiece(p);
+                        throw new Exception();
                 }
             }
-
             // Si le parachutage n'est pas possible :
             else {
                 throw new Exception();
             }
-        } 
-        
+        }
         // Si le joueur joue en dehors de son tour :
         else {
             throw new Exception();
