@@ -28,7 +28,5 @@ public class LancementJeu{
                 fenetreLancement.dispose();
             }
         });
-        fenetreLancement.revalidate();
-        fenetreLancement.repaint();
     }
 }
