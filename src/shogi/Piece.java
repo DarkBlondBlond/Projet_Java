@@ -3,8 +3,13 @@ package shogi;
 import javax.swing.ImageIcon;
 
 /**
+<<<<<<< HEAD
  * Classe principale Piece, avec les caractï¿½ristiques de bases communes ï¿½ chaque piï¿½ce
  * A extends ï¿½ chaque piï¿½ce.
+=======
+ * Classe principale Piece, avec les caractéristiques de bases communes à chaque pièce
+ * à étendre à chaque pièce.
+>>>>>>> refs/remotes/origin/master
  */
 
 public class Piece {

@@ -87,4 +87,3 @@ public class Tour extends Piece {
         return true;
     }
 }
-

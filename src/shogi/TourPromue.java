@@ -93,6 +93,3 @@ public class TourPromue extends Piece {
         return true;
     }
 }
-
-
-
