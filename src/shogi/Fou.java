@@ -1,7 +1,7 @@
 package shogi;
 
 /**
- * Caractéristiques de la pièce "Fou"
+ * Caractï¿½ristiques de la piï¿½ce "Fou"
  */
 
 public class Fou extends Piece {
@@ -15,32 +15,33 @@ public class Fou extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau plateau) {
 
-        // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
-        if (posArrivee.getP() != null) {
-            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux :
-            if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) { 
-                return false;
-            }
-        }
 
-        // Vérifier que les coordonnées X et Y sont égales et le restent tout le déplacement
+
+        // Vï¿½rifier que les coordonnï¿½es X et Y sont ï¿½gales et le restent tout le dï¿½placement
         if(Math.abs(posDepart.getX() - posArrivee.getX()) == Math.abs(posDepart.getY() - posArrivee.getY())) {
 
-            // Vérifier la direction du déplacement : gauche/droite, haut/bas
+            // Vï¿½rifier la direction du dï¿½placement : gauche/droite, haut/bas
             int trajectoireX = posArrivee.getX() > posDepart.getX() ? 1 : -1;
             int trajectoireY = posArrivee.getY() > posDepart.getY() ? 1 : -1;
 
             // Parcours toutes les cases de la diagonales 
             for(int i = 1; i < Math.abs(posArrivee.getY() - posDepart.getY()); i++) {
 
-                // Vérifier que les cases soient libres
-                if(plateau.getCase(posDepart.getX() + i * trajectoireX, posDepart.getY() + i * trajectoireY) != null) {
+                // Vï¿½rifier que les cases soient libres
+                if(plateau.getCase(posDepart.getX() + i * trajectoireX, posDepart.getY() + i * trajectoireY).getP() != null) {
                     return false;
                 }
             }
-        }
 
-        // Si aucune de ces conditions n'est validée, la pièce peut se déplacer 
-        return true;
+            // vï¿½rifier la prï¿½sence ou non d'une piï¿½ce sur la case oï¿½ veut se dï¿½placer
+            if (posArrivee.getP() != null) {
+                // vï¿½rifie que la piï¿½ce sur laquelle on veut se dï¿½placer ne nous appartient pas, sinon retourne faux :
+                if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) { 
+                    return false;
+                }
+            }
+            return true;
+        }
+        return false;
     }
 }

@@ -1,7 +1,7 @@
 package shogi;
 
 /**
- * Caractéristiques de la pièce "Lancier"
+ * Caractï¿½ristiques de la piï¿½ce "Lancier"
  */
 
 public class Lancier extends Piece {
@@ -15,31 +15,24 @@ public class Lancier extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau plateau) {
 
-        // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
-        if (posArrivee.getP() != null) {
-            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux :
-            if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) { 
-                return false;
-            }
-        }
-
-        // Verifie que la pièce reste sur la même colone
+        // Verifie que la piï¿½ce reste sur la mï¿½me colone
         if(posDepart.getY() == posArrivee.getY()) {
-            // Vérifie si sa trajectoire est vide si c'est le joueur 1
+            // Vï¿½rifie si sa trajectoire est vide si c'est le joueur 1
             if(joueur == 1) {
-                // Vérifie qu'il tente bien de descendre le tableau
+                // Vï¿½rifie qu'il tente bien de descendre le tableau
                 if(posDepart.getX() - posArrivee.getX() < 0) {
                     // Parcours la colonne
                     for(int i = posDepart.getX() + 1; i < posArrivee.getX(); i++) {
-                        // Vérifie que la case est vide
+                        // Vï¿½rifie que la case est vide
                         if(plateau.getCase(i, posDepart.getY()).getP() != null) {
                             return false;
                         }
                     }
                 }
-            }
-            else {
-                return false;
+                else {
+                    return false;
+                }
+            
             }
 
             if(joueur == 2) {
@@ -50,16 +43,24 @@ public class Lancier extends Piece {
                         }
                     }
                 }
+                else {
+                    return false;
+                }
             }
-            else {
-                return false;
+            
+        // vï¿½rifier la prï¿½sence ou non d'une piï¿½ce sur la case oï¿½ veut se dï¿½placer
+            if (posArrivee.getP() != null) {
+                // vï¿½rifie que la piï¿½ce sur laquelle on veut se dï¿½placer ne nous appartient pas, sinon retourne faux :
+                if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) { 
+                    return false;
+                }
             }
 
-            // Déplacement possible 
+            // Dï¿½placement possible 
             return true;
         }
 
-        // Déplacement par défaut
+        // Dï¿½placement par dï¿½faut
         return false;
     }
 }

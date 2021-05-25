@@ -1,7 +1,7 @@
 package shogi;
 
 /**
- * Caractéristiques de la pièce "Général d'argent (aussi appelée "argent")"
+ * Caractï¿½ristiques de la piï¿½ce "Gï¿½nï¿½ral d'argent (aussi appelï¿½e "argent")"
  */
 
 public class GeneralArgent extends Piece {
@@ -15,20 +15,12 @@ public class GeneralArgent extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
 
-        // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
-        if (posArrivee.getP() != null) {
-            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux :
-            if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {
-                return false;
-            }
-        }
-
-        // Dépacement limité à une seule case 
+        // Dï¿½pacement limitï¿½ ï¿½ une seule case 
         if((Math.abs(posDepart.getX() - posArrivee.getX()) <= 1) && (Math.abs(posDepart.getY() - posArrivee.getY()) <= 1)) {
             if(joueur == 1) {
-                // Vérifie qu'il y ait un changement de ligne pour le déplacement
+                // Vï¿½rifie qu'il y ait un changement de ligne pour le dï¿½placement
                 if(posDepart.getX() - posArrivee.getX() == 1) {
-                    // Vérifie que le Général d'Argent ne se déplace pas d'une case en arrière dans la même colonne
+                    // Vï¿½rifie que le Gï¿½nï¿½ral d'Argent ne se dï¿½place pas d'une case en arriï¿½re dans la mï¿½me colonne
                     if(posDepart.getY() == posArrivee.getY()) {
                         return false;
                     }
@@ -42,13 +34,20 @@ public class GeneralArgent extends Piece {
                 }
             }
 
-            // Vérifie que la pièce ne se déplace pas latéralement et qu'elle change de ligne
+            // Vï¿½rifie que la piï¿½ce ne se dï¿½place pas latï¿½ralement et qu'elle change de ligne
             if(posDepart.getX() == posArrivee.getX()) {
                 return false;
             }
+            
+            // vï¿½rifier la prï¿½sence ou non d'une piï¿½ce sur la case oï¿½ veut se dï¿½placer
+            if (posArrivee.getP() != null) {
+                // vï¿½rifie que la piï¿½ce sur laquelle on veut se dï¿½placer ne nous appartient pas, sinon retourne faux :
+                if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {
+                    return false;
+                }
+            }
+            return true;
         }
-
-        // Déplacement possible si toutes les conditions au-dessus ne sont pas réalisées
-        return true;
+        return false;
     }
 }
