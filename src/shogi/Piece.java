@@ -60,6 +60,14 @@ public class Piece {
         this.icon = new ImageIcon(newimg);
     }
 
+    public void setIcon(String nomPiece){
+        String j = String.valueOf(this.getJoueur());
+        i = new ImageIcon("drops/" + nomPiece + "Promu" + j + ".png");
+        Image image = i.getImage();
+        Image newimg = image.getScaledInstance(56, 60, java.awt.Image.SCALE_SMOOTH);
+        this.icon = new ImageIcon(newimg);
+    }
+
     // Mise en place de la m�thode peutSeDeplacer :
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau plateau) {
         return false;  
@@ -69,9 +77,11 @@ public class Piece {
 
     public void estPromue(){
         promu = true;
+        setIcon(this.getNom());
     }
     
     public void retrograde(){
         promu = false;
+        setIcon();
     }
 }

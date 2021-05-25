@@ -48,10 +48,10 @@ public class Interface extends JFrame {
 		
 		// Cr�ation de la fen�tre du jeu
 		fenetre.setLayout(new BorderLayout());
-		fenetre.setSize(972,1200);
+		fenetre.setSize(1080, 972);
 		fenetre.setTitle("Jeu de shogi");
 		fenetre.add(UIplateau, BorderLayout.CENTER);
-		fenetre.setResizable(true);
+		fenetre.setResizable(false);
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		// Ajouter les r�serves des 2 joueurs
@@ -60,8 +60,8 @@ public class Interface extends JFrame {
 		
 		// Taille des diff�rents �l�ments de la fen�tre
 		UIplateau.setSize(972, 972);
-		UIreserve[1].setSize(972, 114);
-		UIreserve[2].setSize(972, 114);
+		UIreserve[1].setSize(1080, 54);
+		UIreserve[2].setSize(1080, 54);
 		
 		// Ajout de boutons pour les pi�ces pr�sentes dans chaque r�serve
 		for (int joueur = 1; joueur <= 2; joueur ++) {
@@ -127,6 +127,7 @@ public class Interface extends JFrame {
 												for (int o = 0; o < 9; o ++) {
 													if (p.getCase(x, y).getP().peutSeDeplacer(p.getCase(x, y), p.getCase(a, o), p)) {
 														cases[a][o].setText(cases[a][o].getText() + ".");
+														cases[a][o].setBackground(Color.decode("#633a25"));
 													}
 												}
 											}
@@ -173,12 +174,13 @@ public class Interface extends JFrame {
 					cases[r][c].setIcon(p.getCase(r, c).getP().getIcon());
 					System.out.println(p.getCase(r,c).getP().getIcon());
 					cases[r][c].setText("");
-
+					cases[r][c].setBackground(Color.decode("#704a37"));
 				} else {
 					//If square is empty, clear text
 					cases[r][c].setText("");
 					cases[r][c].setIcon(null);
 					cases[r][c].setForeground(Color.BLACK);
+					cases[r][c].setBackground(Color.decode("#704a37"));
 				}
 			}
 		}
