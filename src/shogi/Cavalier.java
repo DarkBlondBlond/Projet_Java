@@ -1,7 +1,7 @@
 package shogi;
 
 /**
- * Caractéristiques de la pièce "Cavalier"
+ * Caractï¿½ristiques de la piï¿½ce "Cavalier"
  */
 
 public class Cavalier extends Piece {
@@ -15,31 +15,64 @@ public class Cavalier extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
 
-        // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
+        if(promu){
+            if ((Math.abs(posDepart.getX() - posArrivee.getX()) <= 1)
+                    && (Math.abs(posDepart.getY() - posArrivee.getY()) <= 1)) {
+                if (joueur == 1) {
+                    // Vï¿½rifie que le dï¿½placement arriï¿½re ne soit pas une diagonale
+                    if (posDepart.getX() - posArrivee.getX() == 1) {
+                        if (posDepart.getY() != posArrivee.getY()) {
+                            return false;
+                        }
+                    }
+                }
+
+                else if (joueur == 2) {
+                    // Vï¿½rifie que le dï¿½placement arriï¿½re ne soit pas une diagonale
+                    if (posDepart.getX() - posArrivee.getX() == -1) {
+                        if (posDepart.getY() != posArrivee.getY()) {
+                            return false;
+                        }
+                    }
+                }
+                
+            // vï¿½rifier la prï¿½sence ou non d'une piï¿½ce sur la case oï¿½ veut se dï¿½placer
+                if (posArrivee.getP() != null) {
+                    // vï¿½rifie que la piï¿½ce sur laquelle on veut se dï¿½placer ne nous appartient pas, sinon retourne faux :
+                    if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            return false;
+        }
+
+        // vï¿½rifier la prï¿½sence ou non d'une piï¿½ce sur la case oï¿½ veut se dï¿½placer
         if (posArrivee.getP() != null) {
-            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux :
+            // vï¿½rifie que la piï¿½ce sur laquelle on veut se dï¿½placer ne nous appartient pas, sinon retourne faux :
             if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) { 
                 return false;
             }
         }
 
-        // Déplacement joueur 1
+        // Dï¿½placement joueur 1
         if(joueur == 1) {
-            // Vérifie que le cavalier ne se déplace bien que de 2 cases en avant et qu'il ne se déplace bien que d'une case latéralement 
+            // Vï¿½rifie que le cavalier ne se dï¿½place bien que de 2 cases en avant et qu'il ne se dï¿½place bien que d'une case latï¿½ralement 
             if(posDepart.getX() - posArrivee.getX() != -2 || Math.abs(posDepart.getY() - posArrivee.getY()) != 1 ) {
                 return false;
             }
         }
 
-        // Déplacement joueur 2
+        // Dï¿½placement joueur 2
         else if (joueur == 2) {
-            // Vérifie que le cavalier ne se déplace bien que de 2 cases en avant et qu'il ne se déplace bien que d'une case latéralement
+            // Vï¿½rifie que le cavalier ne se dï¿½place bien que de 2 cases en avant et qu'il ne se dï¿½place bien que d'une case latï¿½ralement
             if (posDepart.getX() - posArrivee.getX() != 2 || Math.abs(posDepart.getY() - posArrivee.getY()) != 1) {
                 return false;
             }
         }
 
-        // Déplacement possible si les conditions dessu ne sont pas vérifiées
+        // Dï¿½placement possible si les conditions dessu ne sont pas vï¿½rifiï¿½es
         return true;
     }
 }

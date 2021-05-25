@@ -15,7 +15,12 @@ public class Fou extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau plateau) {
 
-
+        if(promu){
+            // v�rifie que le d�placement ne sera que d'une case maximum, en ordonn�e et en abscisse
+            if ((Math.abs(posDepart.getY() - posArrivee.getY()) <= 1) && (Math.abs(posDepart.getX() - posArrivee.getX()) <= 1)) {
+                return true;
+            }
+        }
 
         // V�rifier que les coordonn�es X et Y sont �gales et le restent tout le d�placement
         if(Math.abs(posDepart.getX() - posArrivee.getX()) == Math.abs(posDepart.getY() - posArrivee.getY())) {

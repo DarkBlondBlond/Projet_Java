@@ -1,7 +1,7 @@
 package shogi;
 
 /**
- * Caractéristiques de la pièce "Pion"
+ * Caractï¿½ristiques de la piï¿½ce "Pion"
  */
 
 public class Pion extends Piece {
@@ -15,9 +15,42 @@ public class Pion extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
 
-        // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
+        if(promu){
+            if ((Math.abs(posDepart.getX() - posArrivee.getX()) <= 1)
+                    && (Math.abs(posDepart.getY() - posArrivee.getY()) <= 1)) {
+                if (joueur == 1) {
+                    // Vï¿½rifie que le dï¿½placement arriï¿½re ne soit pas une diagonale
+                    if (posDepart.getX() - posArrivee.getX() == 1) {
+                        if (posDepart.getY() != posArrivee.getY()) {
+                            return false;
+                        }
+                    }
+                }
+
+                else if (joueur == 2) {
+                    // Vï¿½rifie que le dï¿½placement arriï¿½re ne soit pas une diagonale
+                    if (posDepart.getX() - posArrivee.getX() == -1) {
+                        if (posDepart.getY() != posArrivee.getY()) {
+                            return false;
+                        }
+                    }
+                }
+                
+            // vï¿½rifier la prï¿½sence ou non d'une piï¿½ce sur la case oï¿½ veut se dï¿½placer
+                if (posArrivee.getP() != null) {
+                    // vï¿½rifie que la piï¿½ce sur laquelle on veut se dï¿½placer ne nous appartient pas, sinon retourne faux :
+                    if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            return false;
+        }
+
+        // vï¿½rifier la prï¿½sence ou non d'une piï¿½ce sur la case oï¿½ veut se dï¿½placer
         if (posArrivee.getP() != null) {
-            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux :
+            // vï¿½rifie que la piï¿½ce sur laquelle on veut se dï¿½placer ne nous appartient pas, sinon retourne faux :
             if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) { 
                 return false;
             }
@@ -26,13 +59,13 @@ public class Pion extends Piece {
         // Joueur 1 descend le plateau tandis que joueur 2 le remonte (le pion ne peut avancer que d'une case en avant (1 ou -1))
         if (joueur == 1 && posDepart.getX() - posArrivee.getX() == -1 
             || joueur == 2 && posDepart.getX() - posArrivee.getX() == 1) {
-                // Le pion doit rester sur la même ligne (ne peut se déplacer que d'une seule case en avant)
+                // Le pion doit rester sur la mï¿½me ligne (ne peut se dï¿½placer que d'une seule case en avant)
                 if (posDepart.getY() == posArrivee.getY()) {
                     return true;
                 }
         }
 
-        // si les conditions précédentes ne sont pas réalisées, le pion ne peut pas se déplacer
+        // si les conditions prï¿½cï¿½dentes ne sont pas rï¿½alisï¿½es, le pion ne peut pas se dï¿½placer
         return false;
     }
 }

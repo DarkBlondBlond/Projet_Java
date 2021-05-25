@@ -3,104 +3,104 @@ package shogi;
 import javax.swing.JOptionPane;
 
 /**
- *  Classe Plateau pour créer un plateau de jeu
+ *  Classe Plateau pour crï¿½er un plateau de jeu
  */
 
 public class Plateau {
-    // [][] : représente les coordonnées x et y pour chaque case
-    // "new Case [9][9]" : va créer un plateau de 100 cases (via new) : 10 cases (0-9) en abscisse, et 10 en ordonnée
+    // [][] : reprï¿½sente les coordonnï¿½es x et y pour chaque case
+    // "new Case [9][9]" : va crï¿½er un plateau de 100 cases (via new) : 10 cases (0-9) en abscisse, et 10 en ordonnï¿½e
     private Case[][] plateau = new Case[9][9];
     private Reserve[] reserveJoueur = {null, new Reserve(1), new Reserve(2)};
     
     // Constructeur :
     public Plateau() {
-        /* initialisation du plateau (via boucles : 1 première pour les lignes
-         puis une seconde pour les colonnes (qui se déclenche pour chaque i)) */
+        /* initialisation du plateau (via boucles : 1 premiï¿½re pour les lignes
+         puis une seconde pour les colonnes (qui se dï¿½clenche pour chaque i)) */
         for(int i = 0; i < plateau.length; i++) {
             for(int j = 0; j < plateau[i].length; j++) {
-                plateau[i][j] = new Case(i, j); // créé un objet plateau à partir de Case
+                plateau[i][j] = new Case(i, j); // crï¿½ï¿½ un objet plateau ï¿½ partir de Case
             }
         }
 
-        // positionnement des pièces sur le plateau :
+        // positionnement des piï¿½ces sur le plateau :
         // positionnement des pions sur le plateau
         for(int i = 0; i < 9; i++) {
-            // [i] car i va parcourir toutes les colonnes de la ligne 2 et comme "i" s'incrémente de 0 à 9
+            // [i] car i va parcourir toutes les colonnes de la ligne 2 et comme "i" s'incrï¿½mente de 0 ï¿½ 9
             plateau[2][i].setP(new Pion(1)); 
             plateau[6][i].setP(new Pion(2));
         }
-        // positionnement des pièces Roi et Général de Jade :
+        // positionnement des piï¿½ces Roi et Gï¿½nï¿½ral de Jade :
         plateau[0][4].setP(new Roi(1));
         plateau[8][4].setP(new Roi(2));
 
-        // positionnement des pièces Général d'Or :
+        // positionnement des piï¿½ces Gï¿½nï¿½ral d'Or :
         plateau[0][3].setP(new GeneralOr(1));
         plateau[0][5].setP(new GeneralOr(1));
         plateau[8][3].setP(new GeneralOr(2));
         plateau[8][5].setP(new GeneralOr(2));
 
-        // positionnement des pièces Général d'Argent :
+        // positionnement des piï¿½ces Gï¿½nï¿½ral d'Argent :
         plateau[0][2].setP(new GeneralArgent(1));
         plateau[0][6].setP(new GeneralArgent(1));
         plateau[8][2].setP(new GeneralArgent(2));
         plateau[8][6].setP(new GeneralArgent(2));
 
-        // positionnement des pièces Cavalier :
+        // positionnement des piï¿½ces Cavalier :
         plateau[0][1].setP(new Cavalier(1));
         plateau[0][7].setP(new Cavalier(1));
         plateau[8][1].setP(new Cavalier(2));
         plateau[8][7].setP(new Cavalier(2));
 
-        // positionnement des pièces Lancier :
+        // positionnement des piï¿½ces Lancier :
         plateau[0][0].setP(new Lancier(1));
         plateau[0][8].setP(new Lancier(1));
         plateau[8][0].setP(new Lancier(2));
         plateau[8][8].setP(new Lancier(2));
 
-        // positionnement des pièces Fou :
+        // positionnement des piï¿½ces Fou :
         plateau[1][7].setP(new Fou(1));
         plateau[7][1].setP(new Fou(2));
 
-        // positionnement des pièces Tour :
+        // positionnement des piï¿½ces Tour :
         plateau[1][1].setP(new Tour(1));
         plateau[7][7].setP(new Tour(2));
     }
 
-    // déterminer une case du plateau (sélectionnée) :
+    // dï¿½terminer une case du plateau (sï¿½lectionnï¿½e) :
     public Case getCase(int x, int y) {
         return plateau[x][y];
     }
 
-    // Retourne la réserve du joueur 1 ou du joueur 2
+    // Retourne la rï¿½serve du joueur 1 ou du joueur 2
     public Reserve getReserve(int i) {
         return reserveJoueur[i];
     }
 
     public void deplacementPiece(Case posDepart, Case posArrivee, int tour) throws Exception {
         Piece pieceDepart = posDepart.getP();
-        // Vérifie que le joueur ne va déplacer que ses propres pièces durant son tour (et qu'il effectue bien un déplacement)
+        // Vï¿½rifie que le joueur ne va dï¿½placer que ses propres piï¿½ces durant son tour (et qu'il effectue bien un dï¿½placement)
         if (pieceDepart.getJoueur() == tour && (posDepart.getY() != posArrivee.getY() || posDepart.getX() != posArrivee.getX())) {
             if (pieceDepart.peutSeDeplacer(posDepart, posArrivee, this)) {
                 try {
-                    // Vérifie si le joueur 1 déplace une de ses pièces dans sa zone de promotion (cases 6, 7, 8)
+                    // Vï¿½rifie si le joueur 1 dï¿½place une de ses piï¿½ces dans sa zone de promotion (cases 6, 7, 8)
                     if (posArrivee.getX() >= 6 && posDepart.getP().getJoueur() == 1) {
-                        posDepart.getP().estPromue(posDepart, plateau);
+                        posDepart.getP().estPromue();
                     }
 
-                    // Vérifie si le joueur 2 déplace une de ses pièces dans sa zone de promotion (cases 0, 1, 2)
+                    // Vï¿½rifie si le joueur 2 dï¿½place une de ses piï¿½ces dans sa zone de promotion (cases 0, 1, 2)
                     if (posArrivee.getX() <= 2 && posDepart.getP().getJoueur() == 2) {
-                        posDepart.getP().estPromue(posDepart, plateau);
+                        posDepart.getP().estPromue();
                     }
                 } catch(Exception e) {}
 
-                /* Vérifie si la case sur laquelle va se déplacer le joueur contient une pièce, et, le cas échéant, l'ajoute dans la 
-                réserve du joueur */
+                /* Vï¿½rifie si la case sur laquelle va se dï¿½placer le joueur contient une piï¿½ce, et, le cas ï¿½chï¿½ant, l'ajoute dans la 
+                rï¿½serve du joueur */
                 if (posArrivee.getP() != null) {
                     if (posDepart.getP().getJoueur() != posArrivee.getP().getJoueur()) {
                         reserveJoueur[posDepart.getP().getJoueur()].ajouterPiece(posArrivee.getP()); 
                     }
 
-                    // Vérifie si la case sur laquelle va se déplacer le joueur contient le roi adverse
+                    // Vï¿½rifie si la case sur laquelle va se dï¿½placer le joueur contient le roi adverse
                     if (posArrivee.getP().getNom().equals("Roi")) {
                         JOptionPane.showMessageDialog(null, "Joueur" + posDepart.getP().getJoueur() + "gagne !", "Fin de partie", 
                         JOptionPane.INFORMATION_MESSAGE);
@@ -108,20 +108,20 @@ public class Plateau {
                     }
                 }
 
-            // Vide les cases de départ et d'arrivée, avant de placer la pièce déplacée sur la case d'arrivée
+            // Vide les cases de dï¿½part et d'arrivï¿½e, avant de placer la piï¿½ce dï¿½placï¿½e sur la case d'arrivï¿½e
             posDepart.setP(null);
             posArrivee.setP(null);
             posArrivee.setP(pieceDepart);
             }
 
-            else if (posDepart.getY() == 100 && posDepart.getX() == 100) {   // A VOIR ! => changer le 100 pour 9 ?
+            else if (posDepart.getY() == 100 && posDepart.getX() == 100) {
 
-                // Vérifie que la case sur laquelle va être parachutée la pièce est vide
+                // Vï¿½rifie que la case sur laquelle va ï¿½tre parachutï¿½e la piï¿½ce est vide
                 if (posArrivee.getP() == null) {
 
-                    // Vérifie que, si la pièce à parachuter est un pion, il n'y ait pas d'autre pion du même joueur dans la colonne de parachutage
+                    // Vï¿½rifie que, si la piï¿½ce ï¿½ parachuter est un pion, il n'y ait pas d'autre pion du mï¿½me joueur dans la colonne de parachutage
                     if (posDepart.getP().getNom().equals("Pion")) {
-                        for (int i = 0; i < 9; i ++) {   // Boucle pour parcourir la colonne et vérifier la présence d'un autre pion du joueur dedans 
+                        for (int i = 0; i < 9; i ++) {   // Boucle pour parcourir la colonne et vï¿½rifier la prï¿½sence d'un autre pion du joueur dedans 
                             if (plateau[i][posArrivee.getY()].getP() != null) {   // Si la colonne contient un pion
                                 if (plateau[i][posArrivee.getY()].getP().getNom().equals("Pion") && plateau[i][posArrivee.getY()].getP().getJoueur() == posDepart.getP().getJoueur()) {
                                     Piece p = posDepart.getP();
@@ -138,35 +138,35 @@ public class Plateau {
                             }
                         }
                     }
-                    // Parachutage d'une pièce sur une case vide :
+                    // Parachutage d'une piï¿½ce sur une case vide :
                     posDepart.setP(null);
                     posArrivee.setP(null);
-                    // Si la pièce parachutée était un fou promu
+                    // Si la piï¿½ce parachutï¿½e ï¿½tait un fou promu
                     if (pieceDepart.getNom().equals("FouPromu")) {
                         posArrivee.setP(new Fou(pieceDepart.getJoueur()));
                     }
-                    // Si la pièce parachutée était une tour promue
+                    // Si la piï¿½ce parachutï¿½e ï¿½tait une tour promue
                     if (pieceDepart.getNom().equals("TourPromue")) {
                         posArrivee.setP(new Tour(pieceDepart.getJoueur()));
                     }
-                    // Si la pièce parachutée était un pion promu
+                    // Si la piï¿½ce parachutï¿½e ï¿½tait un pion promu
                     if (pieceDepart.getNom().equals("PionPromu")) {
                         posArrivee.setP(new Pion(pieceDepart.getJoueur()));
                     }
-                    // Si la pièce parachutée était un Général d'Argent promu
+                    // Si la piï¿½ce parachutï¿½e ï¿½tait un Gï¿½nï¿½ral d'Argent promu
                     if (pieceDepart.getNom().equals("GeneralArgentPromu")) {
                         posArrivee.setP(new GeneralArgent(pieceDepart.getJoueur()));
                     }
-                    // Si la pièce parachutée était un Cavalier promu
+                    // Si la piï¿½ce parachutï¿½e ï¿½tait un Cavalier promu
                     if (pieceDepart.getNom().equals("CavalierPromu")) {
                         posArrivee.setP(new Cavalier(pieceDepart.getJoueur()));
                     }
-                    // Si la pièce parachutée était un Lancier promu
+                    // Si la piï¿½ce parachutï¿½e ï¿½tait un Lancier promu
                     if (pieceDepart.getNom().equals("LancierPromu")) {
                         posArrivee.setP(new Lancier(pieceDepart.getJoueur()));
                     }
                     
-                    // Parachutage sur une case occupée (mouvement non valide, renvoie la pièce qui va être parachutée dans la réserve)
+                    // Parachutage sur une case occupï¿½e (mouvement non valide, renvoie la piï¿½ce qui va ï¿½tre parachutï¿½e dans la rï¿½serve)
                     else {
                         Piece p = posDepart.getP();
                         int j = p.getJoueur();
@@ -194,7 +194,7 @@ public class Plateau {
         } 
     }
     
-    // Méthode pour connaitre l'occupation du plateau
+    // Mï¿½thode pour connaitre l'occupation du plateau
     public String toString() {
         String chaine = "";
         for (int x = 0; x < plateau.length; x ++) {

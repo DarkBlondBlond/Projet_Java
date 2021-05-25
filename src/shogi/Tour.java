@@ -1,7 +1,7 @@
 package shogi;
 
 /**
- * Caractéristiques de la pièce "Tour (aussi appelée "chariot")"
+ * Caractï¿½ristiques de la piï¿½ce "Tour (aussi appelï¿½e "chariot")"
  */
 
 public class Tour extends Piece {
@@ -14,75 +14,80 @@ public class Tour extends Piece {
     }
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau plateau) {
+        if(promu){
+            if ((Math.abs(posDepart.getY() - posArrivee.getY()) <= 1) && (Math.abs(posDepart.getX() - posArrivee.getX()) <= 1)) {
+                return true;
+            }
+        }
 
-        // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
+        // vï¿½rifier la prï¿½sence ou non d'une piï¿½ce sur la case oï¿½ veut se dï¿½placer
         if (posArrivee.getP() != null) {
-            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux :
+            // vï¿½rifie que la piï¿½ce sur laquelle on veut se dï¿½placer ne nous appartient pas, sinon retourne faux :
             if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) { 
                 return false;
             }
         }
 
-        // vérifie que le déplacement se fait bien en ligne (X) ou en colonne (Y) uniquement, et pas en diagonale
+        // vï¿½rifie que le dï¿½placement se fait bien en ligne (X) ou en colonne (Y) uniquement, et pas en diagonale
         if((posDepart.getY() != posArrivee.getY()) && (posDepart.getX() != posArrivee.getX())) {
             return false;
         }
 
-        // Déplacement vers le haut du plateau
+        // Dï¿½placement vers le haut du plateau
         if(posDepart.getX() - posArrivee.getX() > 0 ) {
 
-            // parcours de la colonne pour vérifier qu'il n'y ait pas de pièces avant la case d'arrivée
+            // parcours de la colonne pour vï¿½rifier qu'il n'y ait pas de piï¿½ces avant la case d'arrivï¿½e
             for(int i = posDepart.getX() - 1; i > posArrivee.getX(); i--) {
 
-                // vérifie que la case parcourue est libre
+                // vï¿½rifie que la case parcourue est libre
                 if(plateau.getCase(i, posDepart.getY()).getP() != null) {
                     return false;
                 }
             }
         }
 
-        // Déplacement vers la gauche du plateau
+        // Dï¿½placement vers la gauche du plateau
         if(posDepart.getY() - posArrivee.getY() > 0 ) {
 
-            // parcours de la colonne pour vérifier qu'il n'y ait pas de pièces avant la case d'arrivée
+            // parcours de la colonne pour vï¿½rifier qu'il n'y ait pas de piï¿½ces avant la case d'arrivï¿½e
             for(int i = posDepart.getY() - 1; i > posArrivee.getY(); i--) {
 
-                // vérifie que la case parcourue est libre
-                if(plateau.getCase(i, posDepart.getX()).getP() != null) {
+                // vï¿½rifie que la case parcourue est libre
+                if(plateau.getCase(posDepart.getX(), i).getP() != null) {
                     return false;
                 }
             }
         }
 
-        // Déplacement vers le bas du plateau
+        // Dï¿½placement vers le bas du plateau
         if(posDepart.getX() - posArrivee.getX() < 0 ) {
 
-            // parcours de la colonne pour vérifier qu'il n'y ait pas de pièces avant la case d'arrivée
+            // parcours de la colonne pour vï¿½rifier qu'il n'y ait pas de piï¿½ces avant la case d'arrivï¿½e
             for(int i = posDepart.getX() + 1; i < posArrivee.getX(); i++) {
 
-                // vérifie que la case parcourue est libre
+                // vï¿½rifie que la case parcourue est libre
                 if(plateau.getCase(i, posDepart.getY()).getP() != null) {
                     return false;
                 }
             }
         }
 
-        // Déplacement vers la droite du plateau
+        // Dï¿½placement vers la droite du plateau
         if (posDepart.getY() - posArrivee.getY() < 0) {
 
-            // parcours de la colonne pour vérifier qu'il n'y ait pas de pièces avant la case d'arrivée
+            // parcours de la colonne pour vï¿½rifier qu'il n'y ait pas de piï¿½ces avant la case d'arrivï¿½e
             for (int i = posDepart.getY() + 1; i < posArrivee.getY(); i++) {
 
-                // vérifie que la case parcourue est libre
-                if (plateau.getCase(i, posDepart.getX()).getP() != null) {
+                // vï¿½rifie que la case parcourue est libre
+                if (plateau.getCase(posDepart.getX(), i).getP() != null) {
                     return false;
                 }
             }
         }
 
         /**
-         * retourne true car les 6 conditions précédentes interdisent le déplacement dela Tour, 
-         * donc si on ne se trouve pas dans l'un de ces cas, la Tour peut se déplacer
+         * retourne true car les 6 conditions prï¿½cï¿½dentes interdisent le dï¿½placement dela Tour, 
+         * donc si on ne se trouve pas dans l'un de ces cas, la Tour peut se dï¿½placer
          */
         return true;
     }

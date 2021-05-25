@@ -1,9 +1,9 @@
 package shogi;
 
 /** 
- * Classe PiecePromue regroupant les caractéristiques des pièces Pion, Général d'Argent,
- * Cavalier et Lancier lorsqu'elles sont promues (après promotion, toutes ces pièces 
- * possèdent les mêmes caractéristiques de déplacement que le Général d'Or)
+ * Classe PiecePromue regroupant les caractï¿½ristiques des piï¿½ces Pion, Gï¿½nï¿½ral d'Argent,
+ * Cavalier et Lancier lorsqu'elles sont promues (aprï¿½s promotion, toutes ces piï¿½ces 
+ * possï¿½dent les mï¿½mes caractï¿½ristiques de dï¿½placement que le Gï¿½nï¿½ral d'Or)
  */
 
 public class PiecePromue extends Piece {
@@ -28,19 +28,11 @@ public class PiecePromue extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
 
-        // vérifier la présence ou non d'une pièce sur la case où veut se déplacer
-        if (posArrivee.getP() != null) {
-            // vérifie que la pièce sur laquelle on veut se déplacer ne nous appartient pas, sinon retourne faux :
-            if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {
-                return false;
-            }
-        }
-
-        // Dépacement limité à une seule case
+        // Dï¿½pacement limitï¿½ ï¿½ une seule case
         if ((Math.abs(posDepart.getX() - posArrivee.getX()) <= 1)
                 && (Math.abs(posDepart.getY() - posArrivee.getY()) <= 1)) {
             if (joueur == 1) {
-                // Vérifie que le déplacement arrière ne soit pas une diagonale
+                // Vï¿½rifie que le dï¿½placement arriï¿½re ne soit pas une diagonale
                 if (posDepart.getX() - posArrivee.getX() == 1) {
                     if (posDepart.getY() != posArrivee.getY()) {
                         return false;
@@ -49,17 +41,24 @@ public class PiecePromue extends Piece {
             }
 
             else if (joueur == 2) {
-                // Vérifie que le déplacement arrière ne soit pas une diagonale
+                // Vï¿½rifie que le dï¿½placement arriï¿½re ne soit pas une diagonale
                 if (posDepart.getX() - posArrivee.getX() == -1) {
                     if (posDepart.getY() != posArrivee.getY()) {
                         return false;
                     }
                 }
             }
+            
+        // vï¿½rifier la prï¿½sence ou non d'une piï¿½ce sur la case oï¿½ veut se dï¿½placer
+            if (posArrivee.getP() != null) {
+                // vï¿½rifie que la piï¿½ce sur laquelle on veut se dï¿½placer ne nous appartient pas, sinon retourne faux :
+                if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {
+                    return false;
+                }
+            }
+            return true;
         }
-
-        // Déplacement possible si les conditions du déplacement limité à 1 case sont remplies
-        return true;
+        return false;
     }
 
 }

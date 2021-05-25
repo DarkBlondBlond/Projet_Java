@@ -3,13 +3,8 @@ package shogi;
 import javax.swing.ImageIcon;
 
 /**
-<<<<<<< HEAD
  * Classe principale Piece, avec les caractï¿½ristiques de bases communes ï¿½ chaque piï¿½ce
- * A extends ï¿½ chaque piï¿½ce.
-=======
- * Classe principale Piece, avec les caractéristiques de bases communes à chaque pièce
- * à étendre à chaque pièce.
->>>>>>> refs/remotes/origin/master
+ * ï¿½ ï¿½tendre ï¿½ chaque piï¿½ce.
  */
 
 public class Piece {
@@ -17,7 +12,10 @@ public class Piece {
     private String nom = "";
     // Dï¿½termine l'appartenance d'une piï¿½ce au joueur 1 ou 2 :
     protected int joueur;
+    
     ImageIcon icon;
+
+    protected boolean promu = false;
 
     // Constructeur :
     public Piece(int j) {
@@ -60,23 +58,7 @@ public class Piece {
          * la piï¿½ce n'ayant pas encore de nom pour le moment */
     }
 
-    public void estPromue(Case c, Case[][] plateau) {
-        String n = this.getNom();
-        int x = c.getX();
-        int y = c.getY();
-        int j = this.getJoueur();
-        // p = null;
-
-        if(n.equals("Tour")){
-            plateau[x][y].setP(new TourPromue(j));
-        }
-        if(n.equals("Fou")){
-            plateau[x][y].setP(new FouPromu(j));
-        }
-        
-        else {
-            plateau[x][y].setP(new PiecePromue(j, n));
-        }
+    public void estPromue(){
+        promu = true;
     }
-
 }
