@@ -52,9 +52,11 @@ public class Piece {
     public void setIcon() {
         String nom = this.getNom();
         String j = String.valueOf(this.getJoueur());
-        i = new ImageIcon("drops/"+ nom + j +".png", nom);
+        //this.icon = new ImageIcon("drops/"+ nom + j +".svg", nom);
+        //System.out.println("drops/"+ nom + j +".svg");
+        i = new ImageIcon("drops/"+ nom + j +".png");
         Image image = i.getImage();
-        Image newimg = image.getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
+        Image newimg = image.getScaledInstance(56, 60, java.awt.Image.SCALE_SMOOTH);
         this.icon = new ImageIcon(newimg);
     }
 

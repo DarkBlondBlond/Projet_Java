@@ -169,17 +169,14 @@ public class Interface extends JFrame {
 			for(int c=0;c<9;c++) {
 				if(p.getCase(r, c).getP() != null) {
 					//Set the piece text based on the piece symbol
+					//cases[r][c].setText(p.getCase(r, c).getP().getNom());
 					cases[r][c].setIcon(p.getCase(r, c).getP().getIcon());
 					System.out.println(p.getCase(r,c).getP().getIcon());
-					if(p.getCase(r, c).getP().getJoueur() == 1) {
-						//Set piece color for player one
-						cases[r][c].setForeground(Color.BLACK);
-					} else {
-						//Set piece color for player two
-						cases[r][c].setForeground(Color.WHITE);
-					}
+					cases[r][c].setText("");
+
 				} else {
 					//If square is empty, clear text
+					cases[r][c].setText("");
 					cases[r][c].setIcon(null);
 					cases[r][c].setForeground(Color.BLACK);
 				}
