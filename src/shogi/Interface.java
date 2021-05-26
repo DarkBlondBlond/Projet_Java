@@ -54,7 +54,7 @@ public class Interface extends JFrame {
 		/* Cree une fenetre (objet de type JFrame) a qui l'on attribue une taille (".setSize") et un titre (".setTitre").
 		 * Ajoute egalement le plateau, que l'on centre au milieu du Layout. La taille de la fenetre contenant le jeu est fixe
 		 * et non modifiable par les joueurs (".setResizable"). La derniere ligne definit le comportement adoptee par l'interface
-		 * graphique lorsque l'on clique sur la croix de fermeture. */
+		 * graphique lorsque l'on clique sur la croix de fermeture */
 		
 		// Creation des reserves pour les 2 joueurs
 		fenetre.add(UIreserve[1], BorderLayout.PAGE_START);
@@ -196,7 +196,7 @@ public class Interface extends JFrame {
 					 * La 2e ligne affiche l'icone recuperee dans la console.
 					 * la 3e ligne est necessaire pour que les points indiquant les deplacements possibles ne
 					 * restent pas affiches sur la piece deplacee.
-					 * La 4e ligne definit la couleur de l'arriere-plan de la case. */
+					 * La 4e ligne definit la couleur de l'arriere-plan de la case */
 					
 				} else {
 					
@@ -209,7 +209,7 @@ public class Interface extends JFrame {
 					/* La 1ere ligne est necessaire pour que les points indiquant les deplacements possibles ne
 					 * restent pas affiches sur les cases vides.
 					 * La 2e ligne permet de pas afficher d'icone sur cette case.
-					 * les 3e et 4e lignes definissent les couleurs d'avant et d'arriere-plan pour la case. */
+					 * les 3e et 4e lignes definissent les couleurs d'avant et d'arriere-plan pour la case */
 					
 				}
 			}
