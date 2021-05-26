@@ -68,8 +68,8 @@ public class Interface extends JFrame {
 		UIreserve[1].setSize(1080, 54);
 		UIreserve[2].setSize(1080, 54);
 		
-		// Ajout de boutons pour les pieces presentes dans chaque reserve
-		for(int joueur = 1; joueur <= 2; joueur ++) {
+		// Ajoute des JButtons pour les pieces presentes dans les reserves
+		for(int joueur = 1; joueur <= 2; joueur++) {
 			for(int i = 0; i < 38; i ++) {
 				boutonReserve[joueur][i] = new JButton("");   
 				boutonReserve[joueur][i].setOpaque(true);
@@ -77,6 +77,13 @@ public class Interface extends JFrame {
 				boutonReserve[joueur][i].setBorder(new LineBorder(Color.white));   // Bordures des boutons en blanc
 				boutonReserve[joueur][i].setBackground(Color.white);   // Arriere-plan du plateau en blanc
 				final int finalJoueur = joueur;
+				
+				/* Definit les caracteristiques de chaque JButton composant la reserve :
+				 * 		- 38 JButtons a instancier, car chaque joueur peut avoir (au maximum) toutes les pieces dans sa reserve,
+				 * 		- sa visibilite,
+				 * 		- sa taille,
+				 * 		- ses couleurs de delimitation et d'arriere-plan */
+				
 				boutonReserve[joueur][i].addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 						for(int n = 0; n < 38; n ++) {
