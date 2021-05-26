@@ -24,7 +24,7 @@ public class Interface extends JFrame {
 	public static JButton[] boutonReserve[] = {null, new JButton[38], new JButton[38]};
 	static Plateau p = new Plateau();
 	static Case caseSelectionnee = null;
-	public static int tour = 2;
+	public static int tour = 1;
 	
 	/**
 	 * Definit les attributs de la classe "Interface" :
