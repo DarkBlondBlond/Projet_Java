@@ -113,56 +113,60 @@ public class Plateau {
     public void deplacementPiece(Case posDepart, Case posArrivee, int tour) throws Exception {
         Piece pieceDepart = posDepart.getP();
         
+        // Deplacement d'une piece presente sur le plateau de jeu :
+        
         // Verifie que la piece a deplacer appartient bien au joueur actif et qu'un deplacement a bien lieu
-        if (pieceDepart.getJoueur() == tour && (posDepart.getY() != posArrivee.getY() || posDepart.getX() != posArrivee.getX())) {
-            if (pieceDepart.peutSeDeplacer(posDepart, posArrivee, this)) {
+        if(pieceDepart.getJoueur() == tour && (posDepart.getY() != posArrivee.getY() || posDepart.getX() != posArrivee.getX())) {
+            if(pieceDepart.peutSeDeplacer(posDepart, posArrivee, this)) {
                 try {
                 	
                     // Verifie si le joueur 1 deplace une de ses pieces dans sa zone de promotion (cases 6, 7, 8)
-                    if (posArrivee.getX() >= 6 && posDepart.getP().getJoueur() == 1) {
+                    if(posArrivee.getX() >= 6 && posDepart.getP().getJoueur() == 1) {
                         posDepart.getP().estPromue();
                     }
 
                     // Verifie si le joueur 2 deplace une de ses pieces dans sa zone de promotion (cases 0, 1, 2)
-                    if (posArrivee.getX() <= 2 && posDepart.getP().getJoueur() == 2) {
+                    if(posArrivee.getX() <= 2 && posDepart.getP().getJoueur() == 2) {
                         posDepart.getP().estPromue();
                     }
                 } catch(Exception e) {}
 
                 // Verifie, si la case d'arrivee n'est pas vide, que la piece sur cette case n'appartient pas au joueur actif
                 // et l'ajoute ensuite a sa reserve
-                if (posArrivee.getP() != null) {
-                    if (posDepart.getP().getJoueur() != posArrivee.getP().getJoueur()) {
+                if(posArrivee.getP() != null) {
+                    if(posDepart.getP().getJoueur() != posArrivee.getP().getJoueur()) {
                         reserveJoueur[posDepart.getP().getJoueur()].ajouterPiece(posArrivee.getP()); 
                     }
 
                     // Verifie si la case sur laquelle va se deplacer le joueur contient le roi adverse
-                    if (posArrivee.getP().getNom().equals("Roi")) {
+                    if(posArrivee.getP().getNom().equals("Roi")) {
                         JOptionPane.showMessageDialog(null, "Le joueur " + posDepart.getP().getJoueur() + " gagne !", "Fin de partie", 
                         JOptionPane.INFORMATION_MESSAGE);
                         System.exit(0);
                     }
                 }
 
-            // Vide les cases de depart et d'arrivee, avant de placer la piece deplacee sur la case d'arrivee
+            // Reinitialise les cases de depart et d'arrivee, avant de placer la piece deplacee sur la case d'arrivee
             posDepart.setP(null);
             posArrivee.setP(null);
             posArrivee.setP(pieceDepart);
             }
 
-            else if (posDepart.getY() == 100 && posDepart.getX() == 100) {
+            // Parachutage d'une piece depuis la reserve du joueur actif
+            else if(posDepart.getY() == 100 && posDepart.getX() == 100) {
 
                 // Verifie que la case sur laquelle va etre parachutee la piece est vide
-                if (posArrivee.getP() == null) {
+                if(posArrivee.getP() == null) {
 
                     // Verifie que, si la piece a parachuter est un pion, il n'y ait pas d'autre pion du meme joueur dans la colonne de parachutage
-                    if (posDepart.getP().getNom().equals("Pion")) {
-                        for (int i = 0; i < 9; i ++) {   // Boucle pour parcourir la colonne et verifier la presence d'un autre pion du joueur dedans 
-                            if (plateau[i][posArrivee.getY()].getP() != null) {   // Si la colonne contient un pion
-                                if (plateau[i][posArrivee.getY()].getP().getNom().equals("Pion") && plateau[i][posArrivee.getY()].getP().getJoueur() == posDepart.getP().getJoueur()) {
+                    if(posDepart.getP().getNom().equals("Pion")) {
+                        for(int i = 0; i < 9; i++) { 
+                            if(plateau[i][posArrivee.getY()].getP() != null) {   
+                                if(plateau[i][posArrivee.getY()].getP().getNom().equals("Pion") 
+                                		&& plateau[i][posArrivee.getY()].getP().getJoueur() == posDepart.getP().getJoueur()) {
                                     Piece p = posDepart.getP();
                                     int j = p.getJoueur();
-                                    if (pieceDepart.getJoueur() == 1) {
+                                    if(pieceDepart.getJoueur() == 1) {
                                         p.setJoueur(2);
                                     }
                                     else {
@@ -170,21 +174,36 @@ public class Plateau {
                                     }
                                     reserveJoueur[j].ajouterPiece(p);
                                     throw new Exception();
+                                    
+                                    /* Verifie la presence d'une autre piece "Pion" dans la colonne de la case d'arrivee :
+                                     * 	- "if(posDepart.getP().getNom().equals("Pion"))" : verifie si la piece a parachuter est un "Pion", auquel cas =>
+                                     * 	- "for(int i = 0; i < 9; i++)" : parcourt la colonne 
+                                     *  - "if(plateau[i][posArrivee.getY()].getP() != null)" : et verifie si elle contient d'autres pieces, auquel cas =>
+                                     *  - "if(plateau[i][posArrivee.getY()] ... == posDepart.getP().getJoueur())" : si un pion du joueur actif est 
+                                     *  		present dans la colonne de la case d'arrivee
+                                     *  - renvoie la piece a deplacer dans la reserve du joueur actif ET lui change son appartenance (pour eviter que les
+                                     *  		pieces du joueur adverse capturees par le joueur actif ne soient renvoyees dans la reserve du joueur 
+                                     *  		adverse)
+                                     *  - lance une exception pour empecher le deplacement */
                                 }
                             }
                         }
                     }
-                    // Parachutage d'une piece sur une case vide :
                     pieceDepart.retrograde();
                     posDepart.setP(null);
                     posArrivee.setP(null);
                     posArrivee.setP(pieceDepart);
                     
-                    // Parachutage sur une case occupee (mouvement non valide, renvoie la piece qui va etre parachutee dans la reserve)
+                    /* Verifie dans un premier temps que la case d'arrivee est bien vide. Si c'est le cas, la piece issue de la reserve
+                     * ("pieceDepart") est retrogradee par securite (une piece promue peut etre presente dans la reserve, mais ne peut
+                     * pas etre parachutee promue sur le plateau). La case de la reserve et la case d'arrivee sont ensuite videes, 
+                     * puis la piece parachutee est affectee a la case d'arrivee */
+                    
+                    // Parachutage sur une case occupee
                 } else {
                         Piece p = posDepart.getP();
                         int j = p.getJoueur();
-                        if (pieceDepart.getJoueur() == 1) {
+                        if(pieceDepart.getJoueur() == 1) {
                             p.setJoueur(2);
                         }
                         else {
@@ -192,33 +211,40 @@ public class Plateau {
                         }
                         reserveJoueur[j].ajouterPiece(p);
                         throw new Exception();
+                        
+                        /* Interdit le parachutage d'une piece de la reserve sur une case deja occupee. 
+                         * Renvoie la piece a deplacer dans la reserve du joueur actif ET lui change son appartenance (pour eviter que les 
+                         * pieces du joueur adverse capturees par le joueur actif ne soient renvoyees dans la reserve du joueur adverse).
+                         * Lance une exception pour empecher le deplacement */
                 }
             }
-            // Si le parachutage n'est pas possible :
+            
+            // Declenchement d'une exception si le parachutage n'est pas possible
             else {
                 throw new Exception();
             }
         }
-        // Si le joueur joue en dehors de son tour :
+        
+        // Declenchement d'une exception si le joueur veut deplacer une piece adverse
         else {
             throw new Exception();
         } 
     }
-    
-    // Methode pour connaitre l'occupation du plateau
-    public String toString() {
-        String chaine = "";
-        for (int x = 0; x < plateau.length; x ++) {
-            for (int y = 0; y < plateau[x].length; y ++) {
-                if (plateau[x][y].getP() == null) {
-                    chaine += " + ";
-                }
-                else {
-                    chaine += " " + plateau[x][y].getP().getNom() + " ";
-                }
-            }
-            chaine += "\n";
-        }
-        return chaine;
-    }
 }
+
+/* Methode pour connaitre l'occupation du plateau
+public String toString() {
+    String chaine = "";
+    for(int x = 0; x < plateau.length; x++) {
+        for(int y = 0; y < plateau[x].length; y++) {
+            if(plateau[x][y].getP() == null) {
+                chaine += " + ";
+            }
+            else {
+                chaine += " " + plateau[x][y].getP().getNom() + " ";
+            }
+        }
+        chaine += "\n";
+    }
+    return chaine;
+} */

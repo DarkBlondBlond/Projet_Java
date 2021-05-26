@@ -116,12 +116,12 @@ public class Interface extends JFrame {
 			}
 		}
 		
-		// Ajouter un bouton pour chaque case du plateau :
+		// Ajoute un bouton pour chaque case du plateau :
 		
-		// Ajouter un bouton dans chaque ligne du plateau
+		// Ajoute un bouton dans chaque ligne du plateau
 		for(int x = 0; x < 9; x++) {
 			
-			// Ajouter un bouton pour chaque colonne de cette ligne
+			// Ajoute un bouton pour chaque colonne de cette ligne
 			for(int y = 0; y < 9; y++) {
 				cases[x][y] = new JButton();
 				cases[x][y].setOpaque(true);
@@ -147,8 +147,8 @@ public class Interface extends JFrame {
 											
 											// Indique les deplacements possibles pour la piece selectionnee avec un "." et un changement 
 											// de couleur de la case
-											for(int a = 0 ; a < 9; a ++) {
-												for(int o = 0; o < 9; o ++) {
+											for(int a = 0 ; a < 9; a++) {
+												for(int o = 0; o < 9; o++) {
 													if(p.getCase(x, y).getP().peutSeDeplacer(p.getCase(x, y), p.getCase(a, o), p)) {
 														cases[a][o].setText(cases[a][o].getText() + ".");
 														cases[a][o].setBackground(Color.decode("#633a25"));
@@ -183,7 +183,7 @@ public class Interface extends JFrame {
 					}
 				});
 				
-				// Ajouter chaque case obtenue a UIplateau
+				// Ajoute chaque case obtenue a UIplateau
 				UIplateau.add(cases[x][y]);
 			}
 		}
@@ -215,7 +215,6 @@ public class Interface extends JFrame {
 					 * La 4e ligne definit la couleur de l'arriere-plan de la case */
 					
 				} else {
-					
 					// Actualisation de la case s'il n'y a pas de piece presente dessus
 					cases[x][y].setText("");
 					cases[x][y].setIcon(null);
@@ -238,8 +237,8 @@ public class Interface extends JFrame {
 				if(p.getReserve(j).getPiece(i) != null) {
 					boutonReserve[j][i].setText(p.getReserve(j).getPiece(i).getNom());
 					boutonReserve[j][i].setVisible(true);
+					
 				} else {
-
 					// Actualisation de la case s'il n'y a pas de piece presente dessus
 					boutonReserve[j][i].setVisible(false);
 					
