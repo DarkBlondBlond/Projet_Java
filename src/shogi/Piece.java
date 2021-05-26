@@ -1,87 +1,104 @@
 package shogi;
 
 import java.awt.Image;
-
 import javax.swing.ImageIcon;
 
 /**
- * Classe principale Piece, avec les caractï¿½ristiques de bases communes ï¿½ chaque piï¿½ce
- * ï¿½ ï¿½tendre ï¿½ chaque piï¿½ce.
+ * Classe principale Piece. Definit les caracteristiques de base communes à tout type de piece,
+ * et dont toutes les pieces heriteront par la suite.
  */
 
 public class Piece {
-    // Attribue un nom ï¿½ la piï¿½ce :
-    private String nom = "";
-    // Dï¿½termine l'appartenance d'une piï¿½ce au joueur 1 ou 2 :
-    protected int joueur;
     
+    private String nom = "";
+    protected int joueur;
     ImageIcon i;
-
     ImageIcon icon;
-
     protected boolean promu = false;
+    
+    /**
+     * Definit les attributs de la classe "Piece" :
+	 *  
+	 * @param nom attribue une chaine de carateres comme nom de la piece
+	 * @param joueur determine si la piece appartient au joueur 1 ou 2
+	 * @param i associe une icone à la piece
+	 * @param icon
+	 * @param promu attribut booleen indiquant si la piece est promue ou non
+     */
 
-    // Constructeur :
+    // Constructeur
     public Piece(int j) {
         this.joueur = j;
     }
 
-    // Mise en place des getters :
+    // Getters
     public String getNom() {
-        return nom;  // pour rï¿½cupï¿½rer la variable "nom" depuis les attributs de la classe Piece
+        return nom;  
     }
 
     public int getJoueur() {
-        return joueur;  // pour rï¿½cupï¿½rer la variable "nom" depuis les attributs de la classe Piece
+        return joueur;  
     }
     
-    //
     public ImageIcon getIcon() {
     	return this.icon;
     }
 
-    // Mise en place des setters :
+    // Setters
     public void setNom (String n) {
-        this.nom = n;  // permet de modifier la variable "nom"
+        this.nom = n;  
     }
 
     public void setJoueur (int j) {
-        this.joueur = j;  // permet de modifier la variable "joueur"
+        this.joueur = j;  
     }
     
     public void setIcon() {
         String nom = this.getNom();
         String j = String.valueOf(this.getJoueur());
-        //this.icon = new ImageIcon("drops/"+ nom + j +".svg", nom);
-        //System.out.println("drops/"+ nom + j +".svg");
         i = new ImageIcon("drops/"+ nom + j +".png");
         Image image = i.getImage();
-        Image newimg = image.getScaledInstance(56, 60, java.awt.Image.SCALE_SMOOTH);
-        this.icon = new ImageIcon(newimg);
+        Image nvelleimage = image.getScaledInstance(56, 60, java.awt.Image.SCALE_SMOOTH);
+        this.icon = new ImageIcon(nvelleimage);
+        
+        /* Recupere le fichier png comportant le nom de la piece + 1 ou 2 (pour le joueur 1 ou
+         * le joueur 2) et en fait un objet ImageIcon que l'on pourra associer par la suite avec
+         * chaque piece */
     }
 
     public void setIcon(String nomPiece){
         String j = String.valueOf(this.getJoueur());
         i = new ImageIcon("drops/" + nomPiece + "Promu" + j + ".png");
         Image image = i.getImage();
-        Image newimg = image.getScaledInstance(56, 60, java.awt.Image.SCALE_SMOOTH);
-        this.icon = new ImageIcon(newimg);
+        Image nvelleimage = image.getScaledInstance(56, 60, java.awt.Image.SCALE_SMOOTH);
+        this.icon = new ImageIcon(nvelleimage);
+        
+        /* Surcharge la methode precedente pour l'appliquer aux pieces promues */
     }
 
-    // Mise en place de la mï¿½thode peutSeDeplacer :
+    // Methode pour verifier si un deplacement est possible
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau plateau) {
         return false;  
-        /* va retourner "false" de base car le mouvement est considï¿½rï¿½ comme impossible de base, 
-         * la piï¿½ce n'ayant pas encore de nom pour le moment */
+        
+        /* Retourne "false" par defaut, la piece et la case d'arrivee n'ayant pas ete selectionnees.
+         * Est redefinie dans les differentes classes de pieces, avec des conditions specifiques aux
+         * differents mouvement de chaque piece */
     }
 
+    // Methode pour promouvoir une piece
     public void estPromue(){
         promu = true;
         setIcon(this.getNom());
+        
+        /* Passe le booleen a "true" (piece promue maintenant) et lui affecte egalement une 
+         * nouvelle icone */
     }
     
     public void retrograde(){
         promu = false;
         setIcon();
+        
+        /* Passe le booleen a "false" (piece retrogradee maintenant) et lui reaffecte son 
+         * icone de base */
     }
 }
