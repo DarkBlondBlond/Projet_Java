@@ -145,8 +145,8 @@ public class Interface extends JFrame {
 										if(p.getCase(x, y).getP() != null) {
 											caseSelectionnee = p.getCase(x, y);
 											
-											/* Indique les deplacements possibles pour la piece selectionnee avec un "." et un changement 
-											de couleur de la case */
+											// Indique les deplacements possibles pour la piece selectionnee avec un "." et un changement 
+											// de couleur de la case
 											for(int a = 0 ; a < 9; a ++) {
 												for(int o = 0; o < 9; o ++) {
 													if(p.getCase(x, y).getP().peutSeDeplacer(p.getCase(x, y), p.getCase(a, o), p)) {
