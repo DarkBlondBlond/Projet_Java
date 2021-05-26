@@ -12,8 +12,8 @@ public class Case {
     /**
      * Definit les attributs de la classe "Case" :
      * 
-     * @param x abscisse
-     * @param y ordonnee
+     * @param x abscisse de l'objet
+     * @param y ordonnee de l'objet
      * @param p objet de type "Piece" qui va etre affecte a cette case
      */
 

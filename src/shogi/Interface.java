@@ -1,7 +1,7 @@
 package shogi;
 
 /**
- * Interface graphique pour le jeu de shogi
+ * Interface graphique pour un jeu de shogi
  */
 
 import java.awt.BorderLayout;
@@ -9,7 +9,6 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -18,35 +17,33 @@ import javax.swing.border.LineBorder;
 public class Interface extends JFrame {
 
 	private static final long serialVersionUID = 1L;
-	
-	// Cr�ation de la fen�tre qui va contenir le jeu
-	static JFrame fenetre = new JFrame ();
-	
-	// Cr�ation d'un panneau comprenant le plateau
-	static JPanel UIplateau = new JPanel (new GridLayout(9,9));
-	
-	// Cr�ation de panneaux comprenant les r�serves des 2 joueurs
+	static JFrame fenetre = new JFrame();
+	static JPanel UIplateau = new JPanel(new GridLayout(9,9));
 	static JPanel[] UIreserve = {null, new JPanel(), new JPanel()};
-	
-	// Cr�ation d'un bouton pour chaque case du plateau
 	static JButton[][] cases = new JButton[9][9];
-	
-	// Cr�ation de boutons pour les r�serves des joueurs
 	public static JButton[] boutonReserve[] = {null, new JButton[38], new JButton[38]};
-	
-	// Cr�ation du plateau
 	static Plateau p = new Plateau();
-	
-	// Cr�ation d'une variable pour stocker la case s�lectionn�e par le joueur pour le d�placement
 	static Case caseSelectionnee = null;
-	
-	// Cr�ation d'une variable pour stocker le num�ro du tour de jeu
 	public static int tour = 2;
+	
+	/**
+	 * Definit les attributs de la classe "Interface" :
+	 *  
+	 * @param fenetre interface graphique (ojet de type JFrame) qui va contenir le jeu (plateau, reserves des 2 joueurs, pieces...)
+	 * @param UIplateau interface graphique contenant le plateau de jeu
+	 * @param UIreserve interfaces graphiques contenant les reserves des joueurs
+	 * @param cases JButtons associes a chaque case du plateau
+	 * @param boutonReserve JButtons associes aux reserves des 2 joueurs
+	 * @param p objet de type "Plateau"
+	 * @param caseSelectionnee objet de type "Case" permettant de stocker temporairement la case d'arrivee selectionnee par le joueur actif 
+	 * @param tour variable contenant le numero de tour de jeu
+	 */
+	
 	
 	// Constructeur
 	public Interface() {
 		
-		// Cr�ation de la fen�tre du jeu
+		// Creation de la fenetre du jeu
 		fenetre.setLayout(new BorderLayout());
 		fenetre.setSize(1080, 972);
 		fenetre.setTitle("Jeu de shogi");
@@ -54,52 +51,60 @@ public class Interface extends JFrame {
 		fenetre.setResizable(false);
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		// Ajouter les r�serves des 2 joueurs
+		/* Cree une fenetre (objet de type JFrame) a qui l'on attribue une taille (".setSize") et un titre (".setTitre").
+		 * Ajoute egalement le plateau, que l'on centre au milieu du Layout. La taille de la fenetre contenant le jeu est fixe
+		 * et non modifiable par les joueurs (".setResizable"). La derniere ligne definit le comportement adoptee par l'interface
+		 * graphique lorsque l'on clique sur la croix de fermeture. */
+		
+		// Creation des reserves pour les 2 joueurs
 		fenetre.add(UIreserve[1], BorderLayout.PAGE_START);
 		fenetre.add(UIreserve[2], BorderLayout.PAGE_END);
 		
-		// Taille des diff�rents �l�ments de la fen�tre
+		/* Ajoute 2 nouveaux Layouts dans la fenetre de jeu, 1 pour le joueur 1 en haut de la fenetre et 1 pour le joueur 2 
+		 * en bas de la fenetre */
+		
+		// Taille des differents elements de la fenetre de jeu
 		UIplateau.setSize(972, 972);
 		UIreserve[1].setSize(1080, 54);
 		UIreserve[2].setSize(1080, 54);
 		
-		// Ajout de boutons pour les pi�ces pr�sentes dans chaque r�serve
-		for (int joueur = 1; joueur <= 2; joueur ++) {
-			for (int i = 0; i < 38; i ++) {
+		// Ajout de boutons pour les pieces presentes dans chaque reserve
+		for(int joueur = 1; joueur <= 2; joueur ++) {
+			for(int i = 0; i < 38; i ++) {
 				boutonReserve[joueur][i] = new JButton("");   
 				boutonReserve[joueur][i].setOpaque(true);
 				boutonReserve[joueur][i].setSize(108, 108);
 				boutonReserve[joueur][i].setBorder(new LineBorder(Color.white));   // Bordures des boutons en blanc
-				boutonReserve[joueur][i].setBackground(Color.white);   // Arri�re-plan du plateau en blanc
+				boutonReserve[joueur][i].setBackground(Color.white);   // Arriere-plan du plateau en blanc
 				final int finalJoueur = joueur;
 				boutonReserve[joueur][i].addActionListener(new ActionListener() {
-					public void actionPerformed (ActionEvent e) {
-						for (int n = 0; n < 38; n ++) {
-							if (e.getSource() == boutonReserve[finalJoueur][n]) {
-								if (p.getReserve(finalJoueur).getPiece(n).getJoueur() != tour) {
-									// Cr�ation d'une case temporaire pour stocker les pi�ces en d�placement
-									Case c = new Case (100, 100);
+					public void actionPerformed(ActionEvent e) {
+						for(int n = 0; n < 38; n ++) {
+							if(e.getSource() == boutonReserve[finalJoueur][n]) {
+								if(p.getReserve(finalJoueur).getPiece(n).getJoueur() != tour) {
+									// Creation d'une case temporaire pour stocker les pieces en deplacement
+									Case c = new Case(100, 100);
 									Piece pi = p.getReserve(finalJoueur).getPiece(n);
 									pi.setJoueur(p.getReserve(finalJoueur).getJoueur());
 									c.setP(pi);
-									caseSelectionnee = c;   // Ajout de la case s�lectionn�e dans la case "c" temporaire
-									boutonReserve[finalJoueur][n].setVisible(false);   // Rend l'ic�ne de la pi�ce invisible
-									p.getReserve(finalJoueur).setPiece(n, null);   // d�r�f�rencie la pi�ce de la r�serve
+									caseSelectionnee = c;   // Ajout de la case selectionnee dans la case "c" temporaire
+									boutonReserve[finalJoueur][n].setVisible(false);   // Rend l'icene de la piece invisible
+									p.getReserve(finalJoueur).setPiece(n, null);   // dereferencie la piece de la reserve
 								}
 							}
 						}
 					}
 				});
-				UIreserve[joueur].add(boutonReserve[joueur][i]);   // Ajouter chacun des boutons cr��s aux panneaux des r�serves
+				UIreserve[joueur].add(boutonReserve[joueur][i]);   // Ajouter chacun des boutons crees aux panneaux des reserves
 			}
 		}
 		
 		// Ajouter un bouton pour chaque case du plateau
 		// Ajouter un bouton dans chaque ligne du plateau
-		for (int x = 0; x < 9; x ++) {
+		for(int x = 0; x < 9; x ++) {
 			
 			// Ajouter un bouton pour chaque colonne de cette ligne
-			for (int y = 0; y < 9; y ++) {
+			for(int y = 0; y < 9; y ++) {
 				cases[x][y] = new JButton();
 				cases[x][y].setOpaque(true);
 				cases[x][y].setSize(108, 108);
@@ -107,25 +112,25 @@ public class Interface extends JFrame {
 				cases[x][y].setBackground(Color.decode("#704a37"));
 				cases[x][y].addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						for (int x = 0; x < 9; x ++) {
-							for (int y = 0; y < 9; y ++) {
-								if (e.getSource() == cases[x][y]) {
+						for(int x = 0; x < 9; x ++) {
+							for(int y = 0; y < 9; y ++) {
+								if(e.getSource() == cases[x][y]) {
 									int k = 0;
 									
-									// V�rifie si la case contient une pi�ce 
+									// Verifie si la case contient une piece 
 									try {
 										k = p.getCase(x, y).getP().getJoueur();
-									} catch (Exception e1) {}   // e1 car ActionEvent = e
+									} catch(Exception e1) {}   // e1 car ActionEvent = e
 									
-									// V�rifie si la pi�ce � d�placer appartient bien au joueur qui joue et si la case temporaire est vide
-									if (caseSelectionnee == null && k == tour) {
-										if (p.getCase(x, y).getP() != null) {
+									// Verifie si la piece a deplacer appartient bien au joueur qui joue et si la case temporaire est vide
+									if(caseSelectionnee == null && k == tour) {
+										if(p.getCase(x, y).getP() != null) {
 											caseSelectionnee = p.getCase(x, y);
 											
-											// Indique les d�placements possibles pour la pi�ce s�lectionn�e avec un "."
-											for (int a = 0 ; a < 9; a ++) {
-												for (int o = 0; o < 9; o ++) {
-													if (p.getCase(x, y).getP().peutSeDeplacer(p.getCase(x, y), p.getCase(a, o), p)) {
+											// Indique les deplacements possibles pour la piece selectionnee avec un "."
+											for(int a = 0 ; a < 9; a ++) {
+												for(int o = 0; o < 9; o ++) {
+													if(p.getCase(x, y).getP().peutSeDeplacer(p.getCase(x, y), p.getCase(a, o), p)) {
 														cases[a][o].setText(cases[a][o].getText() + ".");
 														cases[a][o].setBackground(Color.decode("#633a25"));
 													}
@@ -134,18 +139,18 @@ public class Interface extends JFrame {
 										}
 									} else {
 										try {
-											// Teste si le d�placement est possible
+											// Teste si le deplacement est possible
 											p.deplacementPiece(caseSelectionnee, p.getCase(x, y), tour);
 											cases[x][y].setForeground(Color.black);
 											caseSelectionnee = null;
-											if (tour == 1) {
+											if(tour == 1) {
 												tour = 2;
 											} else {
 												tour = 1;
 											}
 											miseAJourPlateau();
-										} catch (Exception e2) {
-											// D�placement impossible
+										} catch(Exception e2) {
+											// Deplacement impossible
 											e2.printStackTrace(System.out);
 											System.out.println("Mouvement invalide");
 											caseSelectionnee = null;
@@ -157,7 +162,7 @@ public class Interface extends JFrame {
 						}
 					}
 				});
-				// Ajouter chaque case obtenue � UIplateau
+				// Ajouter chaque case obtenue a UIplateau
 				UIplateau.add(cases[x][y]);
 			}
 		}
@@ -217,7 +222,7 @@ public class Interface extends JFrame {
 					boutonReserve[j][i].setVisible(false);
 					
 					/* Meme principe que pour l'actualisation du plateau ci-dessus, sauf que l'on n'affiche pas
-					 * les icones des pieces (gain de place) mais juste leur nom */
+					 * les icones des pieces(gain de place) mais juste leur nom */
 				}
 			}
 		}
