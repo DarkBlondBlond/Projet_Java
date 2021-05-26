@@ -17,7 +17,7 @@ public class Case {
      * @param p objet de type "Piece" qui va etre affecte a cette case
      */
 
-    // Constructeur :
+    // Constructeur
     public Case(int x, int y) {
         this.x = x;
         this.y = y;
@@ -39,7 +39,7 @@ public class Case {
     /* Ces getters permettent de recuperer les differents attributs de la classe "Case", pour
      * pouvoir les utiliser en dehors de cette classe (et notamment dans la classe "Plateau") */
 
-    // Setter :
+    // Setter
     public void setP(Piece p) {
         this.p = p;  
         

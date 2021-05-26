@@ -22,7 +22,7 @@ public class Tour extends Piece {
             }
         }
 
-        // Deplacement interdit si l'une des conditions ci-dessous est remplie
+        // Deplacement interdit si l'une des conditions ci-dessous est remplie :
         
         // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif
         if(posArrivee.getP() != null) {

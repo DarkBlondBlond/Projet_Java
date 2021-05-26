@@ -70,12 +70,12 @@ public class Interface extends JFrame {
 		
 		// Ajoute des JButtons pour les pieces presentes dans les reserves
 		for(int joueur = 1; joueur <= 2; joueur++) {
-			for(int i = 0; i < 38; i ++) {
+			for(int i = 0; i < 38; i++) {
 				boutonReserve[joueur][i] = new JButton("");   
 				boutonReserve[joueur][i].setOpaque(true);
 				boutonReserve[joueur][i].setSize(108, 108);
-				boutonReserve[joueur][i].setBorder(new LineBorder(Color.white));   // Bordures des boutons en blanc
-				boutonReserve[joueur][i].setBackground(Color.white);   // Arriere-plan du plateau en blanc
+				boutonReserve[joueur][i].setBorder(new LineBorder(Color.white));
+				boutonReserve[joueur][i].setBackground(Color.white); 
 				final int finalJoueur = joueur;
 				
 				/* Definit les caracteristiques de chaque JButton composant la reserve :
@@ -84,34 +84,45 @@ public class Interface extends JFrame {
 				 * 		- sa taille,
 				 * 		- ses couleurs de delimitation et d'arriere-plan */
 				
+				// Parachutage d'une piece sur le plateau depuis la reserve du joueur actif
 				boutonReserve[joueur][i].addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						for(int n = 0; n < 38; n ++) {
+						for(int n = 0; n < 38; n++) {
 							if(e.getSource() == boutonReserve[finalJoueur][n]) {
 								if(p.getReserve(finalJoueur).getPiece(n).getJoueur() != tour) {
-									// Creation d'une case temporaire pour stocker les pieces en deplacement
 									Case c = new Case(100, 100);
 									Piece pi = p.getReserve(finalJoueur).getPiece(n);
 									pi.setJoueur(p.getReserve(finalJoueur).getJoueur());
 									c.setP(pi);
-									caseSelectionnee = c;   // Ajout de la case selectionnee dans la case "c" temporaire
-									boutonReserve[finalJoueur][n].setVisible(false);   // Rend l'icene de la piece invisible
-									p.getReserve(finalJoueur).setPiece(n, null);   // dereferencie la piece de la reserve
+									caseSelectionnee = c;
+									boutonReserve[finalJoueur][n].setVisible(false);
+									p.getReserve(finalJoueur).setPiece(n, null);
+									
+									/* Cree un ActionListener pour proceder au parachutage. La piece deplacee est temporairement 
+									 * stockee dans une case transitoire et invisible sur le plateau (100, 100) le temps de son 
+									 * deplacement, avant d'etre associee a un objet Case du plateau de jeu ("c.setP()").
+									 * Si le numero de la piece parachutee est different du numero de tour (donc du joueur actif),
+									 * lui attribue egalement le numero du joueur actif ("pi.setJoueur()").
+									 * Vide ensuite la case (JButton) de la reserve ou etait stockee la piece avant son 
+									 * parachutage */
 								}
 							}
 						}
 					}
 				});
-				UIreserve[joueur].add(boutonReserve[joueur][i]);   // Ajouter chacun des boutons crees aux panneaux des reserves
+				
+				// Ajoute chacun des boutons crees aux panneaux des differentes reserves
+				UIreserve[joueur].add(boutonReserve[joueur][i]);   
 			}
 		}
 		
-		// Ajouter un bouton pour chaque case du plateau
+		// Ajouter un bouton pour chaque case du plateau :
+		
 		// Ajouter un bouton dans chaque ligne du plateau
-		for(int x = 0; x < 9; x ++) {
+		for(int x = 0; x < 9; x++) {
 			
 			// Ajouter un bouton pour chaque colonne de cette ligne
-			for(int y = 0; y < 9; y ++) {
+			for(int y = 0; y < 9; y++) {
 				cases[x][y] = new JButton();
 				cases[x][y].setOpaque(true);
 				cases[x][y].setSize(108, 108);
@@ -119,8 +130,8 @@ public class Interface extends JFrame {
 				cases[x][y].setBackground(Color.decode("#704a37"));
 				cases[x][y].addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						for(int x = 0; x < 9; x ++) {
-							for(int y = 0; y < 9; y ++) {
+						for(int x = 0; x < 9; x++) {
+							for(int y = 0; y < 9; y++) {
 								if(e.getSource() == cases[x][y]) {
 									int k = 0;
 									
@@ -129,12 +140,13 @@ public class Interface extends JFrame {
 										k = p.getCase(x, y).getP().getJoueur();
 									} catch(Exception e1) {}   // e1 car ActionEvent = e
 									
-									// Verifie si la piece a deplacer appartient bien au joueur qui joue et si la case temporaire est vide
+									// Verifie si la piece a deplacer appartient bien au joueur actif et si la case temporaire est vide
 									if(caseSelectionnee == null && k == tour) {
 										if(p.getCase(x, y).getP() != null) {
 											caseSelectionnee = p.getCase(x, y);
 											
-											// Indique les deplacements possibles pour la piece selectionnee avec un "."
+											/* Indique les deplacements possibles pour la piece selectionnee avec un "." et un changement 
+											de couleur de la case */
 											for(int a = 0 ; a < 9; a ++) {
 												for(int o = 0; o < 9; o ++) {
 													if(p.getCase(x, y).getP().peutSeDeplacer(p.getCase(x, y), p.getCase(a, o), p)) {
@@ -146,7 +158,7 @@ public class Interface extends JFrame {
 										}
 									} else {
 										try {
-											// Teste si le deplacement est possible
+											// Effectue le deplacement et incremente le compteur de tours
 											p.deplacementPiece(caseSelectionnee, p.getCase(x, y), tour);
 											cases[x][y].setForeground(Color.black);
 											caseSelectionnee = null;
@@ -157,6 +169,7 @@ public class Interface extends JFrame {
 											}
 											miseAJourPlateau();
 										} catch(Exception e2) {
+											
 											// Deplacement impossible
 											e2.printStackTrace(System.out);
 											System.out.println("Mouvement invalide");
@@ -169,10 +182,13 @@ public class Interface extends JFrame {
 						}
 					}
 				});
+				
 				// Ajouter chaque case obtenue a UIplateau
 				UIplateau.add(cases[x][y]);
 			}
 		}
+		
+		// Affiche la fenetre de jeu et le plateau mis a jour
 		fenetre.setVisible(true);
 		miseAJourPlateau();
 	}
@@ -209,8 +225,7 @@ public class Interface extends JFrame {
 					/* La 1ere ligne est necessaire pour que les points indiquant les deplacements possibles ne
 					 * restent pas affiches sur les cases vides.
 					 * La 2e ligne permet de pas afficher d'icone sur cette case.
-					 * les 3e et 4e lignes definissent les couleurs d'avant et d'arriere-plan pour la case */
-					
+					 * les 3e et 4e lignes definissent les couleurs d'avant et d'arriere-plan pour la case */	
 				}
 			}
 		}
