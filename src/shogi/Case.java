@@ -1,16 +1,21 @@
 package shogi;
 
 /**
- * Classe Case, objets indépendants avec leurs propres coordonnées, qui seront ensuite associés dans la classe Plateau
+ * Classe Case, objets indépendants avec des coordonnées x et y, qui sont ensuite associés dans la classe Plateau
  */
 
 public class Case {
-    // Attribue une abscisse à la case :
     private int x;
-    // Attribue une ordonnée à la case :
     private int y;
-    // Appel de la pièce à poser sur la case :
     private Piece p;
+
+    /**
+     * Definit les attributs de la classe "Case" :
+     * 
+     * @param x abscisse
+     * @param y ordonnee
+     * @param p objet de type "Piece" qui va etre affecte a cette case
+     */
 
     // Constructeur :
     public Case(int x, int y) {
@@ -18,25 +23,28 @@ public class Case {
         this.y = y;
     }
 
-    // Mise en place des getters :
+    // Getters
     public int getX() {
-        return x;  // pour récupérer la variable "x" depuis les attributs de la classe Case
+        return x; 
     }
 
     public int getY() {
-        return y;  // pour récupérer la variable "y" depuis les attributs de la classe Case
+        return y;
     }
 
     public Piece getP() {
-        return p;  // pour récupérer un objet "p" de type Piece présent sur une case
+        return p;
     }
+    
+    /* Ces getters permettent de recuperer les differents attributs de la classe "Case", pour
+     * pouvoir les utiliser en dehors de cette classe (et notamment dans la classe "Plateau") */
 
-    // Mise en place du setter :
+    // Setter :
     public void setP(Piece p) {
         this.p = p;  
-    /** les cases ne sont pas modifiables, donc pas de setters pour l'abscisse et l'ordonnée 
-     * => seul l'objet (la pièce qui va être associée à la case) l'est, c'est à lui que l'on va
-     * associer des coordonnées
-     */
+        
+    /* Les coordonnees des objets cases (x, y) ne sont pas modifiables : on ne fait donc pas de setters
+     * pour ces attributs.
+     * Les coordonnees sont propres à chaque objet case cree. */
     }
 }

@@ -164,10 +164,71 @@ public class Interface extends JFrame {
 		fenetre.setVisible(true);
 		miseAJourPlateau();
 	}
+	
 	public static void miseAJourPlateau() {
+
+		// Actualisation du plateau apres chaque deplacement de piece
+		for(int x = 0; x < 9; x++) {
+			for(int y = 0; y < 9; y++) {
+				
+				// Actualisation de la case si une piece est presente dessus
+				if(p.getCase(x, y).getP() != null) {
+					cases[x][y].setIcon(p.getCase(x, y).getP().getIcon());
+					System.out.println(p.getCase(x, y).getP().getIcon());
+					cases[x][y].setText("");
+					cases[x][y].setBackground(Color.decode("#704a37"));
+					
+					/* La 1ere ligne permet de recuperer l'icone associee à la piece presente sur la case :
+					 * 		- "p.getCase(x, y).getP().getIcon()" => receupere l'icone de la piece sur la case
+					 * 		- "cases[x][y].setIcon" => associe cette icone a la case.
+					 * La 2e ligne affiche l'icone recuperee dans la console.
+					 * la 3e ligne est necessaire pour que les points indiquant les deplacements possibles ne
+					 * restent pas affiches sur la piece deplacee.
+					 * La 4e ligne definit la couleur de l'arriere-plan de la case. */
+					
+				} else {
+					
+					// Actualisation de la case s'il n'y a pas de piece presente dessus
+					cases[x][y].setText("");
+					cases[x][y].setIcon(null);
+					cases[x][y].setForeground(Color.black);
+					cases[x][y].setBackground(Color.decode("#704a37"));
+					
+					/* La 1ere ligne est necessaire pour que les points indiquant les deplacements possibles ne
+					 * restent pas affiches sur les cases vides.
+					 * La 2e ligne permet de pas afficher d'icone sur cette case.
+					 * les 3e et 4e lignes definissent les couleurs d'avant et d'arriere-plan pour la case. */
+					
+				}
+			}
+		}
+
+		// Actualisation des reserves des joueurs
+		for(int j = 1; j <= 2; j++) {
+			for(int i = 0; i < 8; i++) {
+				
+				// Actualisation de la case si une piece est presente dessus
+				if(p.getReserve(j).getPiece(i) != null) {
+					boutonReserve[j][i].setText(p.getReserve(j).getPiece(i).getNom());
+					boutonReserve[j][i].setVisible(true);
+				} else {
+
+					// Actualisation de la case s'il n'y a pas de piece presente dessus
+					boutonReserve[j][i].setVisible(false);
+					
+					/* Meme principe que pour l'actualisation du plateau ci-dessus, sauf que l'on n'affiche pas
+					 * les icones des pieces (gain de place) mais juste leur nom */
+				}
+			}
+		}
+	}
+}
+
+/* ORIGINAUX :
+		public static void miseAJourPlateau() {
 		//For pieces in the 9x9 board
-		for(int r=0;r<9;r++) {
-			for(int c=0;c<9;c++) {
+		for(int r = 0; r < 9; r++) {
+			for(int c = 0; c < 9; c++) {
 				if(p.getCase(r, c).getP() != null) {
 					//Set the piece text based on the piece symbol
 					//cases[r][c].setText(p.getCase(r, c).getP().getNom());
@@ -185,7 +246,7 @@ public class Interface extends JFrame {
 			}
 		}
 		//For pieces in the players' hands
-		for(int j=1;j<=2;j++) {
+		for(int j = 1; j <= 2; j++) {
 			for(int i=0;i<38;i++) {
 				if(p.getReserve(j).getPiece(i) != null) {
 					//Set the square text to the piece symbol
@@ -198,5 +259,4 @@ public class Interface extends JFrame {
 				}
 			}
 		}
-	}
-}
+*/
