@@ -6,7 +6,7 @@ package shogi;
 
 public class Roi extends Piece {
 
-    // constructeur 
+    // Constructeur 
     public Roi(int joueur) {
         super(joueur);
         setNom("Roi");
