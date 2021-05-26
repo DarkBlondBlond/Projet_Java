@@ -1,7 +1,7 @@
 package shogi;
 
 /**
- * Caracteristiques de la piece "Roi (Regnant)"
+ * Caracteristiques de la piece "Roi (aussi appelee "Regnant")"
  */
 
 public class Roi extends Piece {
