@@ -40,11 +40,6 @@ public class GeneralOr extends Piece {
             if(posArrivee.getP() != null) {
                 if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {
                     return false;
-                    
-                    /* La 1ere condition verifie s'il y a deja une piece presente sur la case ou le joueur veut deplacer
-                     * sa piece ("!= null").
-                     * La 2nde condition verifie si la piece sur cette case appartient au joueur actif (".getP().getJoueur()"), 
-                     * ce qui interdit son deplacement (ne peut pas manger ses propres pieces) */
                 }
             }
             

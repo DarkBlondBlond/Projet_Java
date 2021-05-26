@@ -22,28 +22,18 @@ public class Tour extends Piece {
             }
         }
 
-        // Deplacement interdit si l'une des conditions ci-dessous est verifiee :
+        // Deplacement interdit si l'une des conditions ci-dessous est remplie :
         
         // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif
         if(posArrivee.getP() != null) {
             if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) { 
                 return false;
-                
-                /* La 1ere condition verifie s'il y a deja une piece presente sur la case ou le joueur veut deplacer
-                 * sa piece ("!= null").
-                 * La 2nde condition verifie si la piece sur cette case appartient au joueur actif (".getP().getJoueur()"), 
-                 * ce qui interdit son deplacement (ne peut pas manger ses propres pieces) */
             }
         }
 
         // Interdit le deplacement en diagonale
         if((posDepart.getY() != posArrivee.getY()) && (posDepart.getX() != posArrivee.getX())) {
             return false;
-        	
-        	/* Verifie que le deplacement se fait bien en ligne (X) ou en colonne (Y) uniquement, et pas en 
-        	 * diagonale (si les coordonnees x ou y de la position de depart sont différentes des coordonnees 
-        	 * x ou y de la case d'arrivee, c'est que le deplacement ne s'est pas effectue sur la meme ligne/
-        	 * la meme colonne */
         }
 
         // Deplacement vers le haut du plateau
@@ -51,9 +41,6 @@ public class Tour extends Piece {
             for(int i = posDepart.getX() - 1; i > posArrivee.getX(); i--) {
             	if(plateau.getCase(i, posDepart.getY()).getP() != null) {
                     return false;
-                    
-                	/* Verifie que toutes les cases avant la position d'arrivee sont vides et que la tour ne "saute pas" 
-                	 * par-dessus d'autres pieces avant d'atteindre sa case d'arrivee */
                 }
             }
         }
@@ -63,8 +50,6 @@ public class Tour extends Piece {
         	for(int i = posDepart.getY() - 1; i > posArrivee.getY(); i--) {
         		if(plateau.getCase(posDepart.getX(), i).getP() != null) {
                     return false;
-                    
-                    /* Effectue la meme verification que pour le deplacement vers le haut du plateau */
                 }
             }
         }
@@ -74,8 +59,6 @@ public class Tour extends Piece {
             for(int i = posDepart.getX() + 1; i < posArrivee.getX(); i++) {
                 if(plateau.getCase(i, posDepart.getY()).getP() != null) {
                     return false;
-                    
-                    /* Effectue la meme verification que pour le deplacement vers le haut du plateau */
                 }
             }
         }
@@ -85,8 +68,6 @@ public class Tour extends Piece {
             for(int i = posDepart.getY() + 1; i < posArrivee.getY(); i++) {
                 if(plateau.getCase(posDepart.getX(), i).getP() != null) {
                     return false;
-                    
-                    /* Effectue la meme verification que pour le deplacement vers le haut du plateau */
                 }
             }
         }

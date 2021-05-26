@@ -23,10 +23,6 @@ public class Reserve {
         this.joueur = j;
         for (int i = 0; i < 38; i++) {
             pieces.add(null);  
-            
-            /*  Initialise une ArrayList nommee "pieces" pour chaque joueur
-             * avec 38 cases vides (chaque joueur peut avoir au maximum 38
-             * pieces dans sa reserve) */
         }
     }
 
@@ -36,16 +32,12 @@ public class Reserve {
     }
     
     public Piece getPiece (int i) {
-        return pieces.get(i);   
-        
-        /* Retourne la piece stockee a l'indice "i" dans l'ArrayList */
+        return pieces.get(i); 
     }
 
     // Setter 
     public void setPiece (int i, Piece p) {
-        pieces.set(i, p);  
-        
-        /* Permet de stocker une piece "p" a l'indice "i" dans la reserve */
+        pieces.set(i, p); 
     }
 
     // Methode pour ajouter une piece dans la reserve 
@@ -54,9 +46,6 @@ public class Reserve {
             if (pieces.get(i) == null) {
                 pieces.set(i, p);
                 break;
-                
-                /* Parcourt l'ArrayList "pieces" pour y trouver un emplacement vide afin d'y
-                 * stocker la piece "p" */
             }
         }
     }
@@ -68,9 +57,6 @@ public class Reserve {
             if (pieces.get(i).getNom().equals(p.getNom())) {   
                 pieces.set(i, null); 
                 break;
-                
-                /* Parcourt l'ArrayList "pieces" pour y trouver une piece ayant le même nom que la 
-                 * piece "p" placee en parametre de la methode. Une fois trouvee, dereferencie l'objet */
             }
         }
     }

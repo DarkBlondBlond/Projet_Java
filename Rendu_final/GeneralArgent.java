@@ -59,9 +59,6 @@ public class GeneralArgent extends Piece {
                 if(posDepart.getX() - posArrivee.getX() == 1) {
                     if(posDepart.getY() == posArrivee.getY()) {
                         return false;
-                        
-                        /* Verifie que l'abscisse de la case d'arrivee est differente de celle de la case de depart et que le
-                         * General d'Argent ne se deplace pas en arriere sur la meme colonne */
                     }
                 }
             }
@@ -69,8 +66,6 @@ public class GeneralArgent extends Piece {
                 if(posDepart.getX() - posArrivee.getX() == -1) {
                     if(posDepart.getY() == posArrivee.getY()) {
                         return false;
-                        
-                        /* Meme principe que pour le joueur 1 */
                     }
                 }
             }
@@ -85,12 +80,7 @@ public class GeneralArgent extends Piece {
                 || joueur == 2 && posDepart.getX() - posArrivee.getX() == 1) {
                     if(posDepart.getY() == posArrivee.getY()) {
                         return true;
-                        
-                        /* Le pion ne peut se deplacer que d'une seule case maximum, et toujours en avant (l'ordonnee (Y)
-                         * ne doit pas changer pendant le deplacement et l'abscisse (X) ne doit depasser 1.
-                         * On verifie egalement que le joueur 1 descend le plateau (la différence entre l'abscisse de la
-                         * case de depart et l'abscisse de la case d'arrivee vaut -1) et que le joueur 2 remonte le plateau */
-                }
+                    }
             }
             
             // Deplacement possible si les conditions ci-dessus ne sont pas verifiees

@@ -15,7 +15,7 @@ public class Roi extends Piece {
 
     public boolean peutSeDeplacer(Case posDepart, Case posArrivee, Plateau p) {
 
-    	// Deplacement possible si les conditions ci-dessous sont remplies :
+    	// Deplacement possible si les conditions ci-dessous sont verifiees :
     	
     	// Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif
         if(posArrivee.getP() != null) {  
@@ -34,7 +34,7 @@ public class Roi extends Piece {
             return true;
         }
 
-        // Deplacement interdit si les conditions ci-dessus ne sont pas remplies
+        // Deplacement interdit si les conditions ci-dessus ne sont pas verifiees
         return false;
     }
 }

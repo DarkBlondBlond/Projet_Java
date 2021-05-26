@@ -58,11 +58,6 @@ public class Cavalier extends Piece {
             || joueur == 2 && posDepart.getX() - posArrivee.getX() == 1) {
                 if(posDepart.getY() == posArrivee.getY()) {
                     return true;
-                    
-                    /* Le pion ne peut se deplacer que d'une seule case maximum, et toujours en avant (l'ordonnee (Y)
-                     * ne doit pas changer pendant le deplacement et l'abscisse (X) ne doit depasser 1.
-                     * On verifie egalement que le joueur 1 descend le plateau (la différence entre l'abscisse de la
-                     * case de depart et l'abscisse de la case d'arrivee vaut -1) et que le joueur 2 remonte le plateau */
             }
         }
 
@@ -70,8 +65,6 @@ public class Cavalier extends Piece {
         if(joueur == 1) {
             if(posDepart.getX() - posArrivee.getX() != -2 || Math.abs(posDepart.getY() - posArrivee.getY()) != 1 ) {
                 return false;
-                
-                /* Verifie que le deplacement est bien limite a 2 cases en avant et 1 case lateralement */
             }
         }
 
@@ -79,8 +72,6 @@ public class Cavalier extends Piece {
         else if (joueur == 2) {
             if (posDepart.getX() - posArrivee.getX() != 2 || Math.abs(posDepart.getY() - posArrivee.getY()) != 1) {
                 return false;
-                
-                /* Meme principe que pour le joueur 1 */
             }
         }
 

@@ -63,19 +63,11 @@ public class Lancier extends Piece {
                     for(int i = posDepart.getX() + 1; i < posArrivee.getX(); i++) {
                         if(plateau.getCase(i, posDepart.getY()).getP() != null) {
                             return false;
-                            
-                            /* Verifie que le joueur 1 descend bien le plateau (le Lancier ne peut se deplacer que
-                             * vers l'avant) puis parcourt les cases de la colonne entre la position de depart et 
-                             * la case d'arrivee pour verifier qu'elles soient vides.
-                             * Si ce n'est pas le cas, le deplacement est interdit */
                         }
                     }
                 }
                 else {
                     return false;
-                    
-                    /* Si la difference entre "posDepart.getX() - posArrivee.getX()" est superieure a 0, c'est que
-                     * le joueur 1 remonte le plateau */
                 }
             }
 
@@ -90,10 +82,6 @@ public class Lancier extends Piece {
                 }
                 else {
                     return false;
-                    
-                    /* Meme principe que pour le joueur 1 : verifie que le joueur 2 remonte le plateau (difference entre
-                     * l'abscisse de depart et l'abscisse d'arrivee est positive, sinon c'est que le joueur 2 descend le
-                     * plateau), puis qu'il ne saute pas une piece */
                 }
             }
             
@@ -101,11 +89,6 @@ public class Lancier extends Piece {
             if(posArrivee.getP() != null) {
                 if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {
                     return false;
-                    
-                    /* La 1ere condition verifie s'il y a deja une piece presente sur la case ou le joueur veut deplacer
-                     * sa piece ("!= null").
-                     * La 2nde condition verifie si la piece sur cette case appartient au joueur actif (".getP().getJoueur()"), 
-                     * ce qui interdit son deplacement (ne peut pas manger ses propres pieces) */
                 }
             }
 
