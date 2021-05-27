@@ -56,7 +56,7 @@ public class Piece {
     public void setIcon() {
         String nom = this.getNom();
         String j = String.valueOf(this.getJoueur());
-        i = new ImageIcon("drops/"+ nom + j +".png");
+        i = new ImageIcon("drops/" + nom + j +".png");
         Image image = i.getImage();
         Image nvelleimage = image.getScaledInstance(56, 60, java.awt.Image.SCALE_SMOOTH);
         this.icon = new ImageIcon(nvelleimage);
