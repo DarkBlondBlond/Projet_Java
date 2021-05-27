@@ -1,6 +1,6 @@
 Marché : 
  - compte une cinquantaine d'appli sur le Google Play Store qui le proposent, dont beaucoup en japonais (peu user friendly pour les européens)
- - sites de jeu en ligne, sul ou contre d'autres joueurs
+ - sites de jeu en ligne, seul ou contre d'autres joueurs
 
 Offres :
 Shogi Free - Japanese Chess (app mobile) :
@@ -35,7 +35,20 @@ Questions :
  - Comment vivre avec GitHub ?
  - 
 
+Reponses :
+ - Développement classes Case -> Plateau -> Reserve
+ - Développement classe Piece
+ - Classes qui héritent de Piece : Pion, Cavalier, Fou, Lancier, Tour, Roi, Généraux d'or et d'argent
+ - Interface graphiques
+
+
 Sources de données :
  - https://www.shogi.or.jp/
  - http://ffshogi.e-monsite.com/pages/le-shogi/jouer-en-ligne.html
  - https://play.google.com/store/apps/collection/cluster?clp=ggEHCgVzaG9naQ%3D%3D:S:ANO1ljIB9xM&gsr=CgqCAQcKBXNob2dp:S:ANO1ljKsopw&hl=fr_FR
+
+Limites des sources : 
+ - Les kanjis, connard de tes morts
+
+Modélisation :
+ - Développement 
