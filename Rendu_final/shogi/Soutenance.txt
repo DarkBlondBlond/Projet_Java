@@ -1,0 +1,36 @@
+Marché : 
+ - compte une cinquantaine d'appli sur le Google Play Store qui le proposent, dont beaucoup en japonais (peu user friendly pour les européens)
+ - sites de jeu en ligne, sul ou contre d'autres joueurs
+
+Offres :
+Shogi Free - Japanese Chess (app mobile) :
+ - le plus populaire (plus gd nbre de telechargements)
+ - le plus beginner friendly : bien pour apprendre à maitriser le jeu, les déplacements, les pièces et le plateau
+ - fonctionnalités off et online
+ - ranking en mode online (donne son niveau par rapport aux autres joueurs)
+ - entrainements disponibles : problemes à résoudre (effectuer des déplacements en un certain nombre de coups)
+ - sauvegarde des logs de ses parties, pour pouvoir les étudier par la suite
+ - plusieurs niveaux de difficulté (IA) en offline
+
+81 Dojo (app + site en ligne) :
+ - application de la reference du shogi en ligne (site web conseillé par la Fédération Française de Shogi), sous la supervision de la Japan Shogi Association
+ - moins beginner friendly : niveau des joueurs présents plus élevé
+ - possibilité d'analyser en détail ses parties, afin de s'améliorer : possibilité de faire des déplacements alternatifs afin d'étudier d'autres options de jeu, possiblité d'annoter la partie
+ - plusieurs variantes (graphiques) du jeu disponibles
+ - possibilité de mettre des handicaps 
+ - possibilité de joueur sans se créer un compte
+
+Questions :
+ - Quel marché viser ? Plutot les vieux, plutot les jeunes ?
+ - Quels investisseurs démarcher pour la levée de fonds ?
+ - Financement participatif ? KS ?
+ - 
+ - Comment coder le jeu ?
+ - Codage de l'application :
+	- Plateau
+	- Déplacements des pièces
+ - Interface graphique :
+	- Associer les pièces à des images
+	- Fenetre de jeu
+ - Comment vivre avec GitHub ?
+ - 
