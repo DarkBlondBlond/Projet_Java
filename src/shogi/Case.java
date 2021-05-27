@@ -45,6 +45,6 @@ public class Case {
         
     /* Les coordonnees des objets cases (x, y) ne sont pas modifiables : on ne fait donc pas de setters
      * pour ces attributs.
-     * Les coordonnees sont propres à chaque objet case cree */
+     * Les coordonnees sont propres a chaque objet case cree */
     }
 }
