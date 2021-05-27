@@ -52,6 +52,13 @@ public class Fou extends Piece {
                 }
             }
             
+            // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif
+            if(posArrivee.getP() != null) {
+                if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {
+                    return false;
+                }
+            }
+            
             // Deplacement possible si les conditions ci-dessus ne sont pas verifiees
             return true;
         }

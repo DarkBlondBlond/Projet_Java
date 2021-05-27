@@ -80,16 +80,10 @@ public class GeneralArgent extends Piece {
                 return false;
             }
             
-            // Limite le deplacement a 1 case maximum en abscisse, avec la meme ordonnee
-            if(joueur == 1 && posDepart.getX() - posArrivee.getX() == -1 
-                || joueur == 2 && posDepart.getX() - posArrivee.getX() == 1) {
-                    if(posDepart.getY() == posArrivee.getY()) {
-                        return true;
-                        
-                        /* Le pion ne peut se deplacer que d'une seule case maximum, et toujours en avant (l'ordonnee (Y)
-                         * ne doit pas changer pendant le deplacement et l'abscisse (X) ne doit depasser 1.
-                         * On verifie egalement que le joueur 1 descend le plateau (la différence entre l'abscisse de la
-                         * case de depart et l'abscisse de la case d'arrivee vaut -1) et que le joueur 2 remonte le plateau */
+            // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif
+            if(posArrivee.getP() != null) {
+                if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {
+                    return false;
                 }
             }
             

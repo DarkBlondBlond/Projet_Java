@@ -75,12 +75,11 @@ public class GeneralArgent extends Piece {
                 return false;
             }
             
-            // Limite le deplacement a 1 case maximum en abscisse, avec la meme ordonnee
-            if(joueur == 1 && posDepart.getX() - posArrivee.getX() == -1 
-                || joueur == 2 && posDepart.getX() - posArrivee.getX() == 1) {
-                    if(posDepart.getY() == posArrivee.getY()) {
-                        return true;
-                    }
+            // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif
+            if (posArrivee.getP() != null) {
+                if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {
+                    return false;
+                }
             }
             
             // Deplacement possible si les conditions ci-dessus ne sont pas verifiees
