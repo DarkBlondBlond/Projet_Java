@@ -4,7 +4,7 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 
 /**
- * Classe principale Piece. Definit les caracteristiques de base communes à tout type de piece,
+ * Classe principale Piece. Definit les caracteristiques de base communes ï¿½ tout type de piece,
  * et dont toutes les pieces heriteront par la suite.
  */
 
@@ -21,8 +21,8 @@ public class Piece {
 	 *  
 	 * @param nom attribue une chaine de carateres comme nom de la piece
 	 * @param joueur determine si la piece appartient au joueur 1 ou 2
-	 * @param i associe une icone à la piece
-	 * @param icon
+	 * @param i associe une icone a la piece (attribut temporaire permettant la conversion vers Image)
+	 * @param icon associe une icone a la piece
 	 * @param promu attribut booleen indiquant si la piece est promue ou non
      */
 
