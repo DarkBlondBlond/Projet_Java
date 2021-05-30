@@ -1,0 +1,1697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_lVRjYMFnEeumirn8pNdxEw" name="Projet_Java">
+    <eAnnotations xmi:id="_lofaUMFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_lofaUcFnEeumirn8pNdxEw" source="codegen">
+        <details xmi:id="_lofaUsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+        <details xmi:id="_qlzo4MFnEeumirn8pNdxEw" key="AssociatedSourceCode" value="/Projet_Java/Rendu_final/shogi/Case.java;1458760025/1;/Projet_Java/Rendu_final/shogi/Cavalier.java;4221848916/1;/Projet_Java/Rendu_final/shogi/Fou.java;330802068/1;/Projet_Java/Rendu_final/shogi/GeneralArgent.java;3947490855/1;/Projet_Java/Rendu_final/shogi/GeneralOr.java;2152669903/1;/Projet_Java/Rendu_final/shogi/LancementJeu.java;3709672941/1;/Projet_Java/Rendu_final/shogi/Lancier.java;525408402/1;/Projet_Java/Rendu_final/shogi/Piece.java;2650115100/1;/Projet_Java/Rendu_final/shogi/Pion.java;1696572704/1;/Projet_Java/Rendu_final/shogi/Plateau.java;1414947396/1;/Projet_Java/Rendu_final/shogi/Reserve.java;2762679257/1;/Projet_Java/Rendu_final/shogi/Roi.java;2781976691/1;/Projet_Java/Rendu_final/shogi/Tour.java;384482819/1;/Projet_Java/src/shogi/Case.java;3222007348/1;/Projet_Java/src/shogi/Cavalier.java;4154406433/1;/Projet_Java/src/shogi/Fou.java;1674463338/1;/Projet_Java/src/shogi/GeneralArgent.java;4032121006/1;/Projet_Java/src/shogi/GeneralOr.java;1331578091/1;/Projet_Java/src/shogi/LancementJeu.java;1960081361/1;/Projet_Java/src/shogi/Lancier.java;3951715395/1;/Projet_Java/src/shogi/Piece.java;2532815838/1;/Projet_Java/src/shogi/Pion.java;2082896921/1;/Projet_Java/src/shogi/Plateau.java;1675397510/1;/Projet_Java/src/shogi/Reserve.java;3405448019/1;/Projet_Java/src/shogi/Roi.java;1256380251/1;/Projet_Java/src/shogi/Tour.java;3146560568/1;/Projet_Java/Rendu_final/shogi/Interface.java;265070084/0;/Projet_Java/src/shogi/Interface.java;4214821314/0;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_l-m0QMFnEeumirn8pNdxEw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_l-nbUMFnEeumirn8pNdxEw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_l-nbUcFnEeumirn8pNdxEw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_l-nbUsFnEeumirn8pNdxEw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_l-nbU8FnEeumirn8pNdxEw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_l-nbVMFnEeumirn8pNdxEw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_l-oCYMFnEeumirn8pNdxEw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_l-oCYcFnEeumirn8pNdxEw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_l-opcMFnEeumirn8pNdxEw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_l-v-MMFnEeumirn8pNdxEw" name="shogi">
+      <packagedElement xmi:type="uml:Class" xmi:id="_mAFa8MFnEeumirn8pNdxEw" name="Case">
+        <eAnnotations xmi:id="_mAH3MMFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_mAH3McFnEeumirn8pNdxEw" source="codegen">
+            <details xmi:id="_mAH3MsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_mDvy8MFnEeumirn8pNdxEw">
+          <body>Classe Case, objets independants avec des coordonnees x et y, qui sont ensuite associes dans la classe Plateau</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_mDEdgMFnEeumirn8pNdxEw" name="x" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mDFEkMFnEeumirn8pNdxEw" name="y" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mDFEkcFnEeumirn8pNdxEw" name="p" type="_mAr34MFnEeumirn8pNdxEw" association="_mDsvoMFnEeumirn8pNdxEw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDabwMFnEeumirn8pNdxEw" name="Case" specification="_mANWwMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDabwcFnEeumirn8pNdxEw" name="x">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDabwsFnEeumirn8pNdxEw" name="y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDabw8FnEeumirn8pNdxEw" type="_mAFa8MFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.x = x;
+     this.y = y;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_mANWwMFnEeumirn8pNdxEw" name="Case" method="_mDabwMFnEeumirn8pNdxEw">
+          <eAnnotations xmi:id="_mAPL8MFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_mAPL8cFnEeumirn8pNdxEw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_mANWwcFnEeumirn8pNdxEw" name="x">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mAN90MFnEeumirn8pNdxEw" name="y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mAPL8sFnEeumirn8pNdxEw" type="_mAFa8MFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mARoMMFnEeumirn8pNdxEw" name="Cavalier">
+        <eAnnotations xmi:id="_mASPQMFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_mASPQcFnEeumirn8pNdxEw" source="codegen">
+            <details xmi:id="_mASPQsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_mDvy8cFnEeumirn8pNdxEw">
+          <body>Caracteristiques de la piece &quot;Cavalier&quot;</body>
+        </ownedComment>
+        <generalization xmi:id="_mCOwAMFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDeGIMFnEeumirn8pNdxEw" name="Cavalier" specification="_mAS2UMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDeGIcFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDeGIsFnEeumirn8pNdxEw" type="_mARoMMFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>super(joueur);&#xD;
+     setNom(&quot;Cavalier&quot;);&#xD;
+     setIcon();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDeGI8FnEeumirn8pNdxEw" name="peutSeDeplacer" specification="_mCNh4MFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDeGJMFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDeGJcFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDeGJsFnEeumirn8pNdxEw" name="p" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDeGJ8FnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// Deplacement de &quot;Cavalier&quot; apres sa promotion&#xD;
+     if(promu){&#xD;
+         if ((Math.abs(posDepart.getX() - posArrivee.getX()) &lt;= 1)&#xD;
+                 &amp;&amp; (Math.abs(posDepart.getY() - posArrivee.getY()) &lt;= 1)) {&#xD;
+         	&#xD;
+         	// Verifie que le joueur 1 n'effectue pas un deplacement arriere en diagonale&#xD;
+             if (joueur == 1) {&#xD;
+                 if (posDepart.getX() - posArrivee.getX() == 1) {&#xD;
+                     if (posDepart.getY() != posArrivee.getY()) {&#xD;
+                         return false;&#xD;
+                     }&#xD;
+                 }&#xD;
+             }&#xD;
+&#xD;
+             // Verifie que le joueur 2 n'effectue pas un deplacement arriere en diagonale&#xD;
+             else if (joueur == 2) {&#xD;
+                 if (posDepart.getX() - posArrivee.getX() == -1) {&#xD;
+                     if (posDepart.getY() != posArrivee.getY()) {&#xD;
+                         return false;&#xD;
+                     }&#xD;
+                 }&#xD;
+             }&#xD;
+             &#xD;
+             // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif&#xD;
+             if(posArrivee.getP() != null) {&#xD;
+                 if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {&#xD;
+                     return false;&#xD;
+                 }&#xD;
+             }&#xD;
+             &#xD;
+             // Deplacement possible pour un cavalier promu si les conditions ci-dessus ne sont pas verifiees&#xD;
+             return true;&#xD;
+         }&#xD;
+         &#xD;
+         // Deplacement impossible si l'une des conditions ci-dessus est verifiee&#xD;
+         return false;&#xD;
+     }&#xD;
+&#xD;
+     // Deplacement joueur 1&#xD;
+     if(joueur == 1) {&#xD;
+         if(posDepart.getX() - posArrivee.getX() != -2 || Math.abs(posDepart.getY() - posArrivee.getY()) != 1 ) {&#xD;
+             return false;&#xD;
+             &#xD;
+             /* Verifie que le deplacement est bien limite a 2 cases en avant et 1 case lateralement */&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     // Deplacement joueur 2&#xD;
+     else if (joueur == 2) {&#xD;
+         if (posDepart.getX() - posArrivee.getX() != 2 || Math.abs(posDepart.getY() - posArrivee.getY()) != 1) {&#xD;
+             return false;&#xD;
+             &#xD;
+             /* Meme principe que pour le joueur 1 */&#xD;
+         }&#xD;
+     }&#xD;
+     &#xD;
+ 	// Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif&#xD;
+     if(posArrivee.getP() != null) {&#xD;
+         if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {&#xD;
+             return false;&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     // Deplacement possible si les conditions ci-dessus ne sont pas verifiees&#xD;
+     return true;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_mAS2UMFnEeumirn8pNdxEw" name="Cavalier" method="_mDeGIMFnEeumirn8pNdxEw">
+          <eAnnotations xmi:id="_mATdYMFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_mATdYcFnEeumirn8pNdxEw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_mAS2UcFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mATdYsFnEeumirn8pNdxEw" type="_mARoMMFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mCNh4MFnEeumirn8pNdxEw" name="peutSeDeplacer" method="_mDeGI8FnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mCNh4cFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCNh4sFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCOI8MFnEeumirn8pNdxEw" name="p" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCOI8cFnEeumirn8pNdxEw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mAWgsMFnEeumirn8pNdxEw" name="Fou">
+        <eAnnotations xmi:id="_mAXHwMFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_mAXHwcFnEeumirn8pNdxEw" source="codegen">
+            <details xmi:id="_mAXHwsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_mDwaAMFnEeumirn8pNdxEw">
+          <body>Caracteristiques de la piece &quot;Fou&quot;</body>
+        </ownedComment>
+        <generalization xmi:id="_mCP-IMFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDetMMFnEeumirn8pNdxEw" name="Fou" specification="_mAXu0MFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDetMcFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDetMsFnEeumirn8pNdxEw" type="_mAWgsMFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>super(joueur);&#xD;
+     setNom(&quot;Fou&quot;);&#xD;
+     setIcon();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDetM8FnEeumirn8pNdxEw" name="peutSeDeplacer" specification="_mCOwAcFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDetNMFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDetNcFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDetNsFnEeumirn8pNdxEw" name="plateau" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDetN8FnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// Deplacement de &quot;Fou&quot; apres sa promotion&#xD;
+     if(promu){ &#xD;
+         if((Math.abs(posDepart.getY() - posArrivee.getY()) &lt;= 1) &amp;&amp; (Math.abs(posDepart.getX() - posArrivee.getX()) &lt;= 1)) {&#xD;
+             return true;&#xD;
+             &#xD;
+             /* Deplacement possible s'il est limite a 1 seule case */&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     // Verifie que le deplacement soit bien une diagonale et que le joueur ne saute pas par-dessus une piece&#xD;
+     if(Math.abs(posDepart.getX() - posArrivee.getX()) == Math.abs(posDepart.getY() - posArrivee.getY())) {&#xD;
+         int trajectoireX = posArrivee.getX() > posDepart.getX() ? 1 : -1;&#xD;
+         int trajectoireY = posArrivee.getY() > posDepart.getY() ? 1 : -1;&#xD;
+         for(int i = 1; i &lt; Math.abs(posArrivee.getY() - posDepart.getY()); i++) {&#xD;
+             if(plateau.getCase(posDepart.getX() + i * trajectoireX, posDepart.getY() + i * trajectoireY).getP() != null) {&#xD;
+                 return false;&#xD;
+                 &#xD;
+                 /* Verifie que les coordonnees X et Y restent egales tout au long du deplacement. Si ce n'est pas le cas,&#xD;
+                  * c'est que le deplacement n'est pas une diagonale.&#xD;
+                  * Parcourt ensuite toutes les cases de la diagonales pour verifier qu'elles soient bien vides. Si ce &#xD;
+                  * n'est pas le cas, c'est que le joueur a saute au-dessus d'une piece qu cours de son deplacement */&#xD;
+             }&#xD;
+         }&#xD;
+&#xD;
+         // Limite le deplacement a 1 case maximum en abscisse, avec la meme ordonnee&#xD;
+         if(joueur == 1 &amp;&amp; posDepart.getX() - posArrivee.getX() == -1 &#xD;
+             || joueur == 2 &amp;&amp; posDepart.getX() - posArrivee.getX() == 1) {&#xD;
+                 if(posDepart.getY() == posArrivee.getY()) {&#xD;
+                     return true;&#xD;
+                     &#xD;
+                     /* Le pion ne peut se deplacer que d'une seule case maximum, et toujours en avant (l'ordonnee (Y)&#xD;
+                      * ne doit pas changer pendant le deplacement et l'abscisse (X) ne doit depasser 1.&#xD;
+                      * On verifie egalement que le joueur 1 descend le plateau (la différence entre l'abscisse de la&#xD;
+                      * case de depart et l'abscisse de la case d'arrivee vaut -1) et que le joueur 2 remonte le plateau */&#xD;
+             }&#xD;
+         }&#xD;
+         &#xD;
+         // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif&#xD;
+         if(posArrivee.getP() != null) {&#xD;
+             if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {&#xD;
+                 return false;&#xD;
+             }&#xD;
+         }&#xD;
+         &#xD;
+         // Deplacement possible si les conditions ci-dessus ne sont pas verifiees&#xD;
+         return true;&#xD;
+     }&#xD;
+     &#xD;
+     // Deplacement interdit si la condition ci-dessus n'est pas verifiee&#xD;
+     return false;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_mAXu0MFnEeumirn8pNdxEw" name="Fou" method="_mDetMMFnEeumirn8pNdxEw">
+          <eAnnotations xmi:id="_mAXu0sFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_mAXu08FnEeumirn8pNdxEw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_mAXu0cFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mAXu1MFnEeumirn8pNdxEw" type="_mAWgsMFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mCOwAcFnEeumirn8pNdxEw" name="peutSeDeplacer" method="_mDetM8FnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mCPXEMFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCPXEcFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCPXEsFnEeumirn8pNdxEw" name="plateau" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCPXE8FnEeumirn8pNdxEw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mAayIMFnEeumirn8pNdxEw" name="GeneralArgent">
+        <eAnnotations xmi:id="_mAcAQMFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_mAcAQcFnEeumirn8pNdxEw" source="codegen">
+            <details xmi:id="_mAcAQsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_mDwaAcFnEeumirn8pNdxEw">
+          <body>Caracteristiques de la piece &quot;General d'argent (aussi appelee &quot;argent&quot;)&quot;</body>
+        </ownedComment>
+        <generalization xmi:id="_mCRMQMFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDfUQMFnEeumirn8pNdxEw" name="GeneralArgent" specification="_mAcnUMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDfUQcFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDfUQsFnEeumirn8pNdxEw" type="_mAayIMFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>super(joueur);&#xD;
+     setNom(&quot;GeneralArgent&quot;);&#xD;
+     setIcon();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDfUQ8FnEeumirn8pNdxEw" name="peutSeDeplacer" specification="_mCP-IcFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDfURMFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDfURcFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDfURsFnEeumirn8pNdxEw" name="p" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDfUR8FnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// Deplacement de &quot;GeneralArgent&quot; apres sa promotion&#xD;
+     if(promu){&#xD;
+         if ((Math.abs(posDepart.getX() - posArrivee.getX()) &lt;= 1)&#xD;
+                 &amp;&amp; (Math.abs(posDepart.getY() - posArrivee.getY()) &lt;= 1)) {&#xD;
+         	&#xD;
+         	// Verifie que le joueur 1 n'effectue pas un deplacement arriere en diagonale&#xD;
+             if (joueur == 1) {&#xD;
+                 if (posDepart.getX() - posArrivee.getX() == 1) {&#xD;
+                     if (posDepart.getY() != posArrivee.getY()) {&#xD;
+                         return false;&#xD;
+                     }&#xD;
+                 }&#xD;
+             }&#xD;
+&#xD;
+             // Verifie que le joueur 2 n'effectue pas un deplacement arriere en diagonale&#xD;
+             else if (joueur == 2) {&#xD;
+                 if (posDepart.getX() - posArrivee.getX() == -1) {&#xD;
+                     if (posDepart.getY() != posArrivee.getY()) {&#xD;
+                         return false;&#xD;
+                     }&#xD;
+                 }&#xD;
+             }&#xD;
+             &#xD;
+             // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif&#xD;
+             if(posArrivee.getP() != null) {&#xD;
+                 if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {&#xD;
+                     return false;&#xD;
+                 }&#xD;
+             }&#xD;
+             &#xD;
+             // Deplacement possible pour un General d'Argent promu si les conditions ci-dessus ne sont pas verifiees&#xD;
+             return true;&#xD;
+         }&#xD;
+         &#xD;
+         // Deplacement impossible si l'une des conditions ci-dessus est verifiee&#xD;
+         return false;&#xD;
+     }&#xD;
+&#xD;
+     // Limite le deplacement a une seule case &#xD;
+     if((Math.abs(posDepart.getX() - posArrivee.getX()) &lt;= 1) &amp;&amp; (Math.abs(posDepart.getY() - posArrivee.getY()) &lt;= 1)) {&#xD;
+         if(joueur == 1) {&#xD;
+             if(posDepart.getX() - posArrivee.getX() == 1) {&#xD;
+                 if(posDepart.getY() == posArrivee.getY()) {&#xD;
+                     return false;&#xD;
+                     &#xD;
+                     /* Verifie que l'abscisse de la case d'arrivee est differente de celle de la case de depart et que le&#xD;
+                      * General d'Argent ne se deplace pas en arriere sur la meme colonne */&#xD;
+                 }&#xD;
+             }&#xD;
+         }&#xD;
+         else if(joueur == 2) {&#xD;
+             if(posDepart.getX() - posArrivee.getX() == -1) {&#xD;
+                 if(posDepart.getY() == posArrivee.getY()) {&#xD;
+                     return false;&#xD;
+                     &#xD;
+                     /* Meme principe que pour le joueur 1 */&#xD;
+                 }&#xD;
+             }&#xD;
+         }&#xD;
+&#xD;
+         // Verifie que le deplacement n'est pas lateral&#xD;
+         if(posDepart.getX() == posArrivee.getX()) {&#xD;
+             return false;&#xD;
+         }&#xD;
+         &#xD;
+         // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif&#xD;
+         if(posArrivee.getP() != null) {&#xD;
+             if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {&#xD;
+                 return false;&#xD;
+             }&#xD;
+         }&#xD;
+         &#xD;
+         // Deplacement possible si les conditions ci-dessus ne sont pas verifiees&#xD;
+         return true;&#xD;
+     }&#xD;
+     &#xD;
+     // Deplacement interdit si la condition ci-dessus n'est pas verifiee&#xD;
+     return false;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_mAcnUMFnEeumirn8pNdxEw" name="GeneralArgent" method="_mDfUQMFnEeumirn8pNdxEw">
+          <eAnnotations xmi:id="_mAdOYMFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_mAdOYcFnEeumirn8pNdxEw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_mAcnUcFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mAdOYsFnEeumirn8pNdxEw" type="_mAayIMFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mCP-IcFnEeumirn8pNdxEw" name="peutSeDeplacer" method="_mDfUQ8FnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mCP-IsFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCQlMMFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCQlMcFnEeumirn8pNdxEw" name="p" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCQlMsFnEeumirn8pNdxEw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mAg4wMFnEeumirn8pNdxEw" name="GeneralOr">
+        <eAnnotations xmi:id="_mAhf0MFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_mAhf0cFnEeumirn8pNdxEw" source="codegen">
+            <details xmi:id="_mAhf0sFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_mDwaAsFnEeumirn8pNdxEw">
+          <body>Caracteristiques de la piece &quot;General d'or (aussi appelee &quot;or&quot;)&quot;</body>
+        </ownedComment>
+        <generalization xmi:id="_mCRzUsFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDf7UMFnEeumirn8pNdxEw" name="GeneralOr" specification="_mAiG4MFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDf7UcFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDf7UsFnEeumirn8pNdxEw" type="_mAg4wMFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>super(joueur);&#xD;
+     setNom(&quot;GeneralOr&quot;);&#xD;
+     setIcon();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDf7U8FnEeumirn8pNdxEw" name="peutSeDeplacer" specification="_mCRMQcFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDf7VMFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDf7VcFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDf7VsFnEeumirn8pNdxEw" name="p" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDf7V8FnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// Limite le deplacement a une seule case &#xD;
+     if((Math.abs(posDepart.getX() - posArrivee.getX()) &lt;= 1) &amp;&amp; (Math.abs(posDepart.getY() - posArrivee.getY()) &lt;= 1)) {&#xD;
+         if(joueur == 1) { &#xD;
+         	&#xD;
+         	// Verifie que le joueur 1 n'effectue pas un deplacement arriere en diagonale&#xD;
+             if(posDepart.getX() - posArrivee.getX() == 1) {&#xD;
+                 if(posDepart.getY() != posArrivee.getY()) {&#xD;
+                     return false;&#xD;
+                 }&#xD;
+             }&#xD;
+         }&#xD;
+&#xD;
+         // Verifie que le joueur 2 n'effectue pas un deplacement arriere en diagonale&#xD;
+         else if(joueur == 2) { &#xD;
+             if(posDepart.getX() - posArrivee.getX() == -1) {&#xD;
+                 if(posDepart.getY() != posArrivee.getY()) {&#xD;
+                     return false;&#xD;
+                 }&#xD;
+             } &#xD;
+         }&#xD;
+         &#xD;
+         // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif&#xD;
+         if(posArrivee.getP() != null) {&#xD;
+             if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {&#xD;
+                 return false;&#xD;
+                 &#xD;
+                 /* La 1ere condition verifie s'il y a deja une piece presente sur la case ou le joueur veut deplacer&#xD;
+                  * sa piece (&quot;!= null&quot;).&#xD;
+                  * La 2nde condition verifie si la piece sur cette case appartient au joueur actif (&quot;.getP().getJoueur()&quot;), &#xD;
+                  * ce qui interdit son deplacement (ne peut pas manger ses propres pieces) */&#xD;
+             }&#xD;
+         }&#xD;
+         &#xD;
+         // Deplacement possible si les conditions ci-dessus ne sont pas verifiees&#xD;
+         return true;&#xD;
+     }&#xD;
+     &#xD;
+     // Deplacement interdit si la condition ci-dessus n'est pas verifiee&#xD;
+     return false;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_mAiG4MFnEeumirn8pNdxEw" name="GeneralOr" method="_mDf7UMFnEeumirn8pNdxEw">
+          <eAnnotations xmi:id="_mAit8MFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_mAit8cFnEeumirn8pNdxEw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_mAiG4cFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mAit8sFnEeumirn8pNdxEw" type="_mAg4wMFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mCRMQcFnEeumirn8pNdxEw" name="peutSeDeplacer" method="_mDf7U8FnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mCRMQsFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCRMQ8FnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCRzUMFnEeumirn8pNdxEw" name="p" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCRzUcFnEeumirn8pNdxEw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mAlKMMFnEeumirn8pNdxEw" name="LancementJeu">
+        <eAnnotations xmi:id="_mAlxQMFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_mAlxQcFnEeumirn8pNdxEw" source="codegen">
+            <details xmi:id="_mAlxQsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+          </contents>
+        </eAnnotations>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDgiYMFnEeumirn8pNdxEw" name="main" specification="_mAmYUMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDgiYcFnEeumirn8pNdxEw" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mDgiYsFnEeumirn8pNdxEw" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>creationFenetre();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDgiY8FnEeumirn8pNdxEw" name="creationFenetre" specification="_mAm_YcFnEeumirn8pNdxEw">
+          <language>java</language>
+          <body>final JFrame fenetreLancement = new JFrame();&#xD;
+     JPanel contenu = new JPanel();&#xD;
+     JButton nouvellePartie = new JButton(&quot;Nouvelle partie&quot;);&#xD;
+     fenetreLancement.setSize(486, 300);&#xD;
+     fenetreLancement.setTitle(&quot;Jeu de shogi&quot;);&#xD;
+     contenu.setLayout(new BorderLayout());&#xD;
+     contenu.add(nouvellePartie);&#xD;
+     fenetreLancement.add(contenu);&#xD;
+     fenetreLancement.setVisible(true);&#xD;
+     nouvellePartie.addActionListener(new ActionListener() {&#xD;
+         public void actionPerformed(ActionEvent e) {&#xD;
+             new Interface();&#xD;
+             fenetreLancement.dispose();&#xD;
+             &#xD;
+             /* Cree une nouvelle fenetre (JFrame), constituee d'un panneau (JPanel) et &#xD;
+              * d'un bouton (JButton) pour lancer une nouvelle partie.&#xD;
+              * Definit les differrentes caracteristiques de la fenetre de lancement &#xD;
+              * (taille, titre, contenu) ainsi que l'action a effectuer lorsque l'on &#xD;
+              * clique sur le JButton */&#xD;
+         }&#xD;
+     });&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_mAmYUMFnEeumirn8pNdxEw" name="main" isStatic="true" method="_mDgiYMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mAmYUcFnEeumirn8pNdxEw" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mAm_YMFnEeumirn8pNdxEw" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mAm_YcFnEeumirn8pNdxEw" name="creationFenetre" isStatic="true" method="_mDgiY8FnEeumirn8pNdxEw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mAnmcMFnEeumirn8pNdxEw" name="Lancier">
+        <eAnnotations xmi:id="_mAoNgMFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_mAoNgcFnEeumirn8pNdxEw" source="codegen">
+            <details xmi:id="_mAoNgsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_mDwaA8FnEeumirn8pNdxEw">
+          <body>Caracteristiques de la piece &quot;Lancier&quot;</body>
+        </ownedComment>
+        <generalization xmi:id="_mCbkUcFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDhJcMFnEeumirn8pNdxEw" name="Lancier" specification="_mAoNg8FnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDhJccFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDhJcsFnEeumirn8pNdxEw" type="_mAnmcMFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>super(joueur);&#xD;
+     setNom(&quot;Lancier&quot;);&#xD;
+     setIcon();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDhJc8FnEeumirn8pNdxEw" name="peutSeDeplacer" specification="_mCa9QMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDhJdMFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDhJdcFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDhJdsFnEeumirn8pNdxEw" name="plateau" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDhJd8FnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// Deplacement de &quot;Lancier&quot; apres sa promotion&#xD;
+     if(promu){&#xD;
+         if ((Math.abs(posDepart.getX() - posArrivee.getX()) &lt;= 1)&#xD;
+                 &amp;&amp; (Math.abs(posDepart.getY() - posArrivee.getY()) &lt;= 1)) {&#xD;
+         	&#xD;
+         	// Verifie que le joueur 1 n'effectue pas un deplacement arriere en diagonale&#xD;
+             if (joueur == 1) {&#xD;
+                 if (posDepart.getX() - posArrivee.getX() == 1) {&#xD;
+                     if (posDepart.getY() != posArrivee.getY()) {&#xD;
+                         return false;&#xD;
+                     }&#xD;
+                 }&#xD;
+             }&#xD;
+&#xD;
+             // Verifie que le joueur 2 n'effectue pas un deplacement arriere en diagonale&#xD;
+             else if (joueur == 2) {&#xD;
+                 if (posDepart.getX() - posArrivee.getX() == -1) {&#xD;
+                     if (posDepart.getY() != posArrivee.getY()) {&#xD;
+                         return false;&#xD;
+                     }&#xD;
+                 }&#xD;
+             }&#xD;
+             &#xD;
+             // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif&#xD;
+             if (posArrivee.getP() != null) {&#xD;
+                 if (posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {&#xD;
+                     return false;&#xD;
+                 }&#xD;
+             }&#xD;
+             &#xD;
+             // Deplacement possible pour un lancier promu si les conditions ci-dessus ne sont pas verifiees&#xD;
+             return true;&#xD;
+         }&#xD;
+         &#xD;
+         // Deplacement impossible si l'une des conditions ci-dessus est verifiee&#xD;
+         return false;&#xD;
+     }&#xD;
+ &#xD;
+&#xD;
+     // Verifie que la case d'arrivee est bien dans la meme colonne que la case de depart&#xD;
+     if(posDepart.getY() == posArrivee.getY()) {&#xD;
+     	&#xD;
+         // Verifie que le joueur 1 ne saute pas au-dessus d'une piece&#xD;
+         if(joueur == 1) {&#xD;
+             if(posDepart.getX() - posArrivee.getX() &lt; 0) {&#xD;
+                 for(int i = posDepart.getX() + 1; i &lt; posArrivee.getX(); i++) {&#xD;
+                     if(plateau.getCase(i, posDepart.getY()).getP() != null) {&#xD;
+                         return false;&#xD;
+                         &#xD;
+                         /* Verifie que le joueur 1 descend bien le plateau (le Lancier ne peut se deplacer que&#xD;
+                          * vers l'avant) puis parcourt les cases de la colonne entre la position de depart et &#xD;
+                          * la case d'arrivee pour verifier qu'elles soient vides.&#xD;
+                          * Si ce n'est pas le cas, le deplacement est interdit */&#xD;
+                     }&#xD;
+                 }&#xD;
+             }&#xD;
+             else {&#xD;
+                 return false;&#xD;
+                 &#xD;
+                 /* Si la difference entre &quot;posDepart.getX() - posArrivee.getX()&quot; est superieure a 0, c'est que&#xD;
+                  * le joueur 1 remonte le plateau */&#xD;
+             }&#xD;
+         }&#xD;
+&#xD;
+         // Verifie que le joueur 2 ne saute pas au-dessus d'une piece&#xD;
+         if(joueur == 2) {&#xD;
+             if(posDepart.getX() - posArrivee.getX() > 0) {&#xD;
+                 for(int i = posDepart.getX() - 1; i > posArrivee.getX(); i--) {&#xD;
+                     if(plateau.getCase(i, posDepart.getY()).getP() != null) {&#xD;
+                         return false;&#xD;
+                     }&#xD;
+                 }&#xD;
+             }&#xD;
+             else {&#xD;
+                 return false;&#xD;
+                 &#xD;
+                 /* Meme principe que pour le joueur 1 : verifie que le joueur 2 remonte le plateau (difference entre&#xD;
+                  * l'abscisse de depart et l'abscisse d'arrivee est positive, sinon c'est que le joueur 2 descend le&#xD;
+                  * plateau), puis qu'il ne saute pas une piece */&#xD;
+             }&#xD;
+         }&#xD;
+         &#xD;
+         // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif&#xD;
+         if(posArrivee.getP() != null) {&#xD;
+             if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {&#xD;
+                 return false;&#xD;
+                 &#xD;
+                 /* La 1ere condition verifie s'il y a deja une piece presente sur la case ou le joueur veut deplacer&#xD;
+                  * sa piece (&quot;!= null&quot;).&#xD;
+                  * La 2nde condition verifie si la piece sur cette case appartient au joueur actif (&quot;.getP().getJoueur()&quot;), &#xD;
+                  * ce qui interdit son deplacement (ne peut pas manger ses propres pieces) */&#xD;
+             }&#xD;
+         }&#xD;
+&#xD;
+         // Deplacement possible si les conditions ci-dessus ne sont pas verifiees &#xD;
+         return true;&#xD;
+     }&#xD;
+     &#xD;
+     // Deplacement interdit si la condition ci-dessus n'est pas verifiee&#xD;
+     return false;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_mAoNg8FnEeumirn8pNdxEw" name="Lancier" method="_mDhJcMFnEeumirn8pNdxEw">
+          <eAnnotations xmi:id="_mAo0kcFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_mAo0ksFnEeumirn8pNdxEw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_mAo0kMFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mAo0k8FnEeumirn8pNdxEw" type="_mAnmcMFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mCa9QMFnEeumirn8pNdxEw" name="peutSeDeplacer" method="_mDhJc8FnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mCa9QcFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCa9QsFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCa9Q8FnEeumirn8pNdxEw" name="plateau" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCbkUMFnEeumirn8pNdxEw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mAr34MFnEeumirn8pNdxEw" name="Piece">
+        <eAnnotations xmi:id="_mAse8MFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_mAse8cFnEeumirn8pNdxEw" source="codegen">
+            <details xmi:id="_mAse8sFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_mDxBEMFnEeumirn8pNdxEw">
+          <body>Classe principale Piece. Definit les caracteristiques de base communes ï¿½ tout type de piece,&#xD;
+et dont toutes les pieces heriteront par la suite.</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_mDGSsMFnEeumirn8pNdxEw" name="nom">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_mDGSscFnEeumirn8pNdxEw" value="&quot;&quot;"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mDGSssFnEeumirn8pNdxEw" name="joueur" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mDHg0MFnEeumirn8pNdxEw" name="i" visibility="package" type="_mCcyccFnEeumirn8pNdxEw" association="_mD6LAMFnEeumirn8pNdxEw"/>
+        <ownedAttribute xmi:id="_mDIH4MFnEeumirn8pNdxEw" name="icon" visibility="package" type="_mCcyccFnEeumirn8pNdxEw" association="_mD7ZIcFnEeumirn8pNdxEw"/>
+        <ownedAttribute xmi:id="_mDIu8MFnEeumirn8pNdxEw" name="promu" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_mDIu8cFnEeumirn8pNdxEw" value="false"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDhwgMFnEeumirn8pNdxEw" name="Piece" specification="_mAttEMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDhwgcFnEeumirn8pNdxEw" name="j">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDhwgsFnEeumirn8pNdxEw" type="_mAr34MFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.joueur = j;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDhwg8FnEeumirn8pNdxEw" name="getJoueur" specification="_mAuUIMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDhwhMFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return joueur;  &#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDhwhcFnEeumirn8pNdxEw" name="getIcon" specification="_mAuUIsFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDhwhsFnEeumirn8pNdxEw" type="_mCcyccFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.icon;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDiXkMFnEeumirn8pNdxEw" name="setJoueur" specification="_mAviQMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDiXkcFnEeumirn8pNdxEw" name="j">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.joueur = j;  &#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDiXksFnEeumirn8pNdxEw" name="setIcon" specification="_mAviQsFnEeumirn8pNdxEw">
+          <language>java</language>
+          <body>String nom = this.getNom();&#xD;
+     String j = String.valueOf(this.getJoueur());&#xD;
+     i = new ImageIcon(&quot;drops/&quot; + nom + j +&quot;.png&quot;);&#xD;
+     Image image = i.getImage();&#xD;
+     Image nvelleimage = image.getScaledInstance(56, 60, java.awt.Image.SCALE_SMOOTH);&#xD;
+     this.icon = new ImageIcon(nvelleimage);&#xD;
+     &#xD;
+     /* Recupere le fichier png comportant le nom de la piece + 1 ou 2 (pour le joueur 1 ou&#xD;
+      * le joueur 2) et en fait un objet ImageIcon que l'on pourra associer par la suite avec&#xD;
+      * chaque piece */&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDiXk8FnEeumirn8pNdxEw" name="setIcon" specification="_mAwJUMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDiXlMFnEeumirn8pNdxEw" name="nomPiece">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String j = String.valueOf(this.getJoueur());&#xD;
+     i = new ImageIcon(&quot;drops/&quot; + nomPiece + &quot;Promu&quot; + j + &quot;.png&quot;);&#xD;
+     Image image = i.getImage();&#xD;
+     Image nvelleimage = image.getScaledInstance(56, 60, java.awt.Image.SCALE_SMOOTH);&#xD;
+     this.icon = new ImageIcon(nvelleimage);&#xD;
+     &#xD;
+     /* Surcharge la methode precedente pour l'appliquer aux pieces promues */&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDiXlcFnEeumirn8pNdxEw" name="peutSeDeplacer" specification="_mCenoMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDiXlsFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDiXl8FnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDiXmMFnEeumirn8pNdxEw" name="plateau" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDiXmcFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return false;  &#xD;
+     &#xD;
+     /* Retourne &quot;false&quot; par defaut, la piece et la case d'arrivee n'ayant pas ete selectionnees.&#xD;
+      * Est redefinie dans les differentes classes de pieces, avec des conditions specifiques aux&#xD;
+      * differents mouvement de chaque piece */&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDi-oMFnEeumirn8pNdxEw" name="estPromue" specification="_mAxXcMFnEeumirn8pNdxEw">
+          <language>java</language>
+          <body>promu = true;&#xD;
+     setIcon(this.getNom());&#xD;
+     &#xD;
+     /* Passe le booleen a &quot;true&quot; (piece promue maintenant) et lui affecte egalement une &#xD;
+      * nouvelle icone */&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDi-ocFnEeumirn8pNdxEw" name="retrograde" specification="_mAxXccFnEeumirn8pNdxEw">
+          <language>java</language>
+          <body>promu = false;&#xD;
+     setIcon();&#xD;
+     &#xD;
+     /* Passe le booleen a &quot;false&quot; (piece retrogradee maintenant) et lui reaffecte son &#xD;
+      * icone de base */&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_mAttEMFnEeumirn8pNdxEw" name="Piece" method="_mDhwgMFnEeumirn8pNdxEw">
+          <eAnnotations xmi:id="_mAttEsFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_mAttE8FnEeumirn8pNdxEw" key="create"/>
+          </eAnnotations>
+          <ownedComment xmi:id="_mDxBEcFnEeumirn8pNdxEw">
+            <body>Definit les attributs de la classe &quot;Piece&quot; :&#xD;
+	 *  &#xD;
+	 * @param nom attribue une chaine de carateres comme nom de la piece&#xD;
+	 * @param joueur determine si la piece appartient au joueur 1 ou 2&#xD;
+	 * @param i associe une icone a la piece (attribut temporaire permettant la conversion vers Image)&#xD;
+	 * @param icon associe une icone a la piece&#xD;
+	 * @param promu attribut booleen indiquant si la piece est promue ou non</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_mAttEcFnEeumirn8pNdxEw" name="j">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mAttFMFnEeumirn8pNdxEw" type="_mAr34MFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mAuUIMFnEeumirn8pNdxEw" name="getJoueur" method="_mDhwg8FnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mAuUIcFnEeumirn8pNdxEw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mAuUIsFnEeumirn8pNdxEw" name="getIcon" method="_mDhwhcFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mC7TkMFnEeumirn8pNdxEw" type="_mCcyccFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mAviQMFnEeumirn8pNdxEw" name="setJoueur" method="_mDiXkMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mAviQcFnEeumirn8pNdxEw" name="j">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mAviQsFnEeumirn8pNdxEw" name="setIcon" method="_mDiXksFnEeumirn8pNdxEw"/>
+        <ownedOperation xmi:id="_mAwJUMFnEeumirn8pNdxEw" name="setIcon" method="_mDiXk8FnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mAwJUcFnEeumirn8pNdxEw" name="nomPiece">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mAxXcMFnEeumirn8pNdxEw" name="estPromue" method="_mDi-oMFnEeumirn8pNdxEw"/>
+        <ownedOperation xmi:id="_mAxXccFnEeumirn8pNdxEw" name="retrograde" method="_mDi-ocFnEeumirn8pNdxEw"/>
+        <ownedOperation xmi:id="_mCenoMFnEeumirn8pNdxEw" name="peutSeDeplacer" method="_mDiXlcFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mCenocFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCfOsMFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCfOscFnEeumirn8pNdxEw" name="plateau" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCfOssFnEeumirn8pNdxEw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mA1B0MFnEeumirn8pNdxEw" name="Pion">
+        <eAnnotations xmi:id="_mA1o4MFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_mA1o4cFnEeumirn8pNdxEw" source="codegen">
+            <details xmi:id="_mA1o4sFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_mDxBEsFnEeumirn8pNdxEw">
+          <body>Caracteristiques de la piece &quot;Pion&quot;</body>
+        </ownedComment>
+        <generalization xmi:id="_mCiSAMFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDi-osFnEeumirn8pNdxEw" name="Pion" specification="_mA2P8MFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDi-o8FnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDi-pMFnEeumirn8pNdxEw" type="_mA1B0MFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>super(joueur);&#xD;
+     setNom(&quot;Pion&quot;);&#xD;
+     setIcon();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDjlsMFnEeumirn8pNdxEw" name="peutSeDeplacer" specification="_mChD4MFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDjlscFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDjlssFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDjls8FnEeumirn8pNdxEw" name="p" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDjltMFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// Deplacement de &quot;Pion&quot; apres sa promotion&#xD;
+     if(promu){&#xD;
+         if((Math.abs(posDepart.getX() - posArrivee.getX()) &lt;= 1)&#xD;
+                 &amp;&amp; (Math.abs(posDepart.getY() - posArrivee.getY()) &lt;= 1)) {&#xD;
+         	&#xD;
+             // Verifie que le joueur 1 n'effectue pas un deplacement arriere en diagonale&#xD;
+             if(joueur == 1) {&#xD;
+                 if(posDepart.getX() - posArrivee.getX() == 1) {&#xD;
+                     if(posDepart.getY() != posArrivee.getY()) {&#xD;
+                         return false;&#xD;
+                     }&#xD;
+                 }&#xD;
+             }&#xD;
+&#xD;
+             // Verifie que le joueur 2 n'effectue pas un deplacement arriere en diagonale&#xD;
+             else if(joueur == 2) {&#xD;
+                 if(posDepart.getX() - posArrivee.getX() == -1) {&#xD;
+                     if(posDepart.getY() != posArrivee.getY()) {&#xD;
+                         return false;&#xD;
+                     }&#xD;
+                 }&#xD;
+             }&#xD;
+             &#xD;
+             // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif&#xD;
+             if(posArrivee.getP() != null) {&#xD;
+                 if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {&#xD;
+                     return false;&#xD;
+                 }&#xD;
+             }&#xD;
+             &#xD;
+             // Deplacement possible pour un pion promu si les conditions ci-dessus ne sont pas verifiees&#xD;
+             return true;&#xD;
+         }&#xD;
+         &#xD;
+         // Deplacement impossible si l'une des conditions ci-dessus est verifiee&#xD;
+         return false;&#xD;
+     }&#xD;
+&#xD;
+     // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif&#xD;
+     if(posArrivee.getP() != null) {&#xD;
+         if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {&#xD;
+             return false;&#xD;
+             &#xD;
+             /* La 1ere condition verifie s'il y a deja une piece presente sur la case ou le joueur veut deplacer&#xD;
+              * sa piece (&quot;!= null&quot;).&#xD;
+              * La 2nde condition verifie si la piece sur cette case appartient au joueur actif (&quot;.getP().getJoueur()&quot;), &#xD;
+              * ce qui interdit son deplacement (ne peut pas manger ses propres pieces) */&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     // Limite le deplacement a 1 case maximum en abscisse, avec la meme ordonnee&#xD;
+     if(joueur == 1 &amp;&amp; posDepart.getX() - posArrivee.getX() == -1 &#xD;
+         || joueur == 2 &amp;&amp; posDepart.getX() - posArrivee.getX() == 1) {&#xD;
+             if(posDepart.getY() == posArrivee.getY()) {&#xD;
+                 return true;&#xD;
+                 &#xD;
+                 /* Le pion ne peut se deplacer que d'une seule case maximum, et toujours en avant (l'ordonnee (Y)&#xD;
+                  * ne doit pas changer pendant le deplacement et l'abscisse (X) ne doit depasser 1.&#xD;
+                  * On verifie egalement que le joueur 1 descend le plateau (la différence entre l'abscisse de la&#xD;
+                  * case de depart et l'abscisse de la case d'arrivee vaut -1) et que le joueur 2 remonte le plateau */&#xD;
+             }&#xD;
+     }&#xD;
+&#xD;
+     // Deplacement interdit si la condition ci-dessus n'est pas verifiee&#xD;
+     return false;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_mA2P8MFnEeumirn8pNdxEw" name="Pion" method="_mDi-osFnEeumirn8pNdxEw">
+          <eAnnotations xmi:id="_mA2P8sFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_mA2P88FnEeumirn8pNdxEw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_mA2P8cFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mA23AMFnEeumirn8pNdxEw" type="_mA1B0MFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mChD4MFnEeumirn8pNdxEw" name="peutSeDeplacer" method="_mDjlsMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mChq8MFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mChq8cFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mChq8sFnEeumirn8pNdxEw" name="p" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mChq88FnEeumirn8pNdxEw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mA4sMMFnEeumirn8pNdxEw" name="Plateau">
+        <eAnnotations xmi:id="_mA5TQMFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_mA5TQcFnEeumirn8pNdxEw" source="codegen">
+            <details xmi:id="_mA56UMFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_mDxoIMFnEeumirn8pNdxEw">
+          <body> Classe Plateau pour creer un plateau de jeu</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_mDJWAMFnEeumirn8pNdxEw" name="plateau" visibility="private" type="_mAFa8MFnEeumirn8pNdxEw" association="_mD8nQMFnEeumirn8pNdxEw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mDJWAcFnEeumirn8pNdxEw" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_mDJ9EcFnEeumirn8pNdxEw" value="new Case[9][9]"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mDKkIcFnEeumirn8pNdxEw" name="reserveJoueur" visibility="private" type="_mBAA8MFnEeumirn8pNdxEw" association="_mD9OUcFnEeumirn8pNdxEw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mDKkIsFnEeumirn8pNdxEw" value="*"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_mDLLMMFnEeumirn8pNdxEw" value="{null, new Reserve(1), new Reserve(2)}"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDjltcFnEeumirn8pNdxEw" name="Plateau" specification="_mA6hYMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDjltsFnEeumirn8pNdxEw" type="_mA4sMMFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>for(int i = 0; i &lt; plateau.length; i++) {&#xD;
+         for(int j = 0; j &lt; plateau[i].length; j++) {&#xD;
+             plateau[i][j] = new Case(i, j);&#xD;
+             &#xD;
+             /* Initialisation de l'objet &quot;plateau&quot; avec des objets de type &quot;Case&quot; via une premiere boucle &#xD;
+              * qui cree les lignes du plateau et une seconde boucle qui cree des colonnes au sein de &#xD;
+              * chacune de ces lignes */&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     // Positionnement des differentes pieces sur le plateau :&#xD;
+     &#xD;
+     // Positionnement des pions sur le plateau&#xD;
+     for(int i = 0; i &lt; 9; i++) {&#xD;
+         plateau[2][i].setP(new Pion(1)); &#xD;
+         plateau[6][i].setP(new Pion(2));&#xD;
+         &#xD;
+         /* Position des pions joueur 1 : ligne 2&#xD;
+          * Position des pions joueur 2 : ligne 6 */&#xD;
+     }&#xD;
+     // Positionnement des pieces Roi et General de Jade&#xD;
+     plateau[0][4].setP(new Roi(1));&#xD;
+     plateau[8][4].setP(new Roi(2));&#xD;
+     &#xD;
+     /* Position du Roi joueur 1 : ligne 0, colonne 4&#xD;
+      * Position du General de Jade (equivalent Roi) joueur 2 : ligne 8, colonne 4 */&#xD;
+&#xD;
+     // Positionnement des pieces General d'Or&#xD;
+     plateau[0][3].setP(new GeneralOr(1));&#xD;
+     plateau[0][5].setP(new GeneralOr(1));&#xD;
+     plateau[8][3].setP(new GeneralOr(2));&#xD;
+     plateau[8][5].setP(new GeneralOr(2));&#xD;
+     &#xD;
+     /* Position des Generaux d'Or joueur 1 : ligne 0, colonne 3 et ligne 0, colonne 5&#xD;
+      * Position des Generaux d'Or joueur 2 : ligne 8, colonne 3 et ligne 8, colonne 5 */&#xD;
+&#xD;
+     // Positionnement des pieces General d'Argent&#xD;
+     plateau[0][2].setP(new GeneralArgent(1));&#xD;
+     plateau[0][6].setP(new GeneralArgent(1));&#xD;
+     plateau[8][2].setP(new GeneralArgent(2));&#xD;
+     plateau[8][6].setP(new GeneralArgent(2));&#xD;
+     &#xD;
+     /* Position des Generaux d'Argent joueur 1 : ligne 0, colonne 2 et ligne 0, colonne 6&#xD;
+      * Position des Generaux d'Argent 2 : ligne 8, colonne 2 et ligne 8, colonne 6 */&#xD;
+&#xD;
+     // Positionnement des pieces Cavalier&#xD;
+     plateau[0][1].setP(new Cavalier(1));&#xD;
+     plateau[0][7].setP(new Cavalier(1));&#xD;
+     plateau[8][1].setP(new Cavalier(2));&#xD;
+     plateau[8][7].setP(new Cavalier(2));&#xD;
+     &#xD;
+     /* Position des Cavaliers joueur 1 : ligne 0, colonne 1 et ligne 0, colonne 7&#xD;
+      * Position des Cavaliers joueur 2 : ligne 8, colonne 1 et ligne 8, colonne 7 */&#xD;
+&#xD;
+     // Positionnement des pieces Lancier&#xD;
+     plateau[0][0].setP(new Lancier(1));&#xD;
+     plateau[0][8].setP(new Lancier(1));&#xD;
+     plateau[8][0].setP(new Lancier(2));&#xD;
+     plateau[8][8].setP(new Lancier(2));&#xD;
+     &#xD;
+     /* Position des Lanciers joueur 1 : ligne 0, colonne 0 et ligne 0, colonne 8&#xD;
+      * Position des Lanciers joueur 2 : ligne 8, colonne 0 et ligne 8, colonne 8 */&#xD;
+&#xD;
+     // Positionnement des pieces Fou&#xD;
+     plateau[1][7].setP(new Fou(1));&#xD;
+     plateau[7][1].setP(new Fou(2));&#xD;
+     &#xD;
+     /* Position du Fou joueur 1 : ligne 1, colonne 7&#xD;
+      * Position du Fou joueur 2 : ligne 7, colonne 1 */&#xD;
+&#xD;
+     // Positionnement des pieces Tour&#xD;
+     plateau[1][1].setP(new Tour(1));&#xD;
+     plateau[7][7].setP(new Tour(2));&#xD;
+     &#xD;
+     /* Position de la Tour joueur 1 : ligne 1, colonne 1&#xD;
+      * Position de la Tour joueur 2 : ligne 7, colonne 7 */&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDkMwMFnEeumirn8pNdxEw" name="getCase" specification="_mA7IcMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDkMwcFnEeumirn8pNdxEw" name="x">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDkMwsFnEeumirn8pNdxEw" name="y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDkMw8FnEeumirn8pNdxEw" type="_mAFa8MFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return plateau[x][y];&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDkMxMFnEeumirn8pNdxEw" name="getReserve" specification="_mA8WkMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDkMxcFnEeumirn8pNdxEw" name="i">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDkMxsFnEeumirn8pNdxEw" type="_mBAA8MFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return reserveJoueur[i];&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDkMx8FnEeumirn8pNdxEw" name="deplacementPiece" specification="_mCkuQMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDkMyMFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDkMycFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDkMysFnEeumirn8pNdxEw" name="tour">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>Piece pieceDepart = posDepart.getP();&#xD;
+     &#xD;
+     // Deplacement d'une piece presente sur le plateau de jeu :&#xD;
+     &#xD;
+     // Verifie que la piece a deplacer appartient bien au joueur actif et qu'un deplacement a bien lieu&#xD;
+     if(pieceDepart.getJoueur() == tour &amp;&amp; (posDepart.getY() != posArrivee.getY() || posDepart.getX() != posArrivee.getX())) {&#xD;
+         if(pieceDepart.peutSeDeplacer(posDepart, posArrivee, this)) {&#xD;
+             try {&#xD;
+             	&#xD;
+                 // Verifie si le joueur 1 deplace une de ses pieces dans sa zone de promotion (cases 6, 7, 8)&#xD;
+                 if(posArrivee.getX() >= 6 &amp;&amp; posDepart.getP().getJoueur() == 1) {&#xD;
+                     posDepart.getP().estPromue();&#xD;
+                 }&#xD;
+&#xD;
+                 // Verifie si le joueur 2 deplace une de ses pieces dans sa zone de promotion (cases 0, 1, 2)&#xD;
+                 if(posArrivee.getX() &lt;= 2 &amp;&amp; posDepart.getP().getJoueur() == 2) {&#xD;
+                     posDepart.getP().estPromue();&#xD;
+                 }&#xD;
+             } catch(Exception e) {}&#xD;
+&#xD;
+             // Verifie, si la case d'arrivee n'est pas vide, que la piece sur cette case n'appartient pas au joueur actif&#xD;
+             // et l'ajoute ensuite a sa reserve&#xD;
+             if(posArrivee.getP() != null) {&#xD;
+                 if(posDepart.getP().getJoueur() != posArrivee.getP().getJoueur()) {&#xD;
+                     reserveJoueur[posDepart.getP().getJoueur()].ajouterPiece(posArrivee.getP()); &#xD;
+                 }&#xD;
+&#xD;
+                 // Verifie si la case sur laquelle va se deplacer le joueur contient le roi adverse&#xD;
+                 if(posArrivee.getP().getNom().equals(&quot;Roi&quot;)) {&#xD;
+                     JOptionPane.showMessageDialog(null, &quot;Le joueur &quot; + posDepart.getP().getJoueur() + &quot; gagne !&quot;, &quot;Fin de partie&quot;, &#xD;
+                     JOptionPane.INFORMATION_MESSAGE);&#xD;
+                     System.exit(0);&#xD;
+                 }&#xD;
+             }&#xD;
+&#xD;
+         // Reinitialise les cases de depart et d'arrivee, avant de placer la piece deplacee sur la case d'arrivee&#xD;
+         posDepart.setP(null);&#xD;
+         posArrivee.setP(null);&#xD;
+         posArrivee.setP(pieceDepart);&#xD;
+         }&#xD;
+&#xD;
+         // Parachutage d'une piece depuis la reserve du joueur actif&#xD;
+         else if(posDepart.getY() == 100 &amp;&amp; posDepart.getX() == 100) {&#xD;
+&#xD;
+             // Verifie que la case sur laquelle va etre parachutee la piece est vide&#xD;
+             if(posArrivee.getP() == null) {&#xD;
+&#xD;
+                 // Verifie que, si la piece a parachuter est un pion, il n'y ait pas d'autre pion du meme joueur dans la colonne de parachutage&#xD;
+                 if(posDepart.getP().getNom().equals(&quot;Pion&quot;)) {&#xD;
+                     for(int i = 0; i &lt; 9; i++) { &#xD;
+                         if(plateau[i][posArrivee.getY()].getP() != null) {   &#xD;
+                             if(plateau[i][posArrivee.getY()].getP().getNom().equals(&quot;Pion&quot;) &#xD;
+                             		&amp;&amp; plateau[i][posArrivee.getY()].getP().getJoueur() == posDepart.getP().getJoueur()) {&#xD;
+                                 Piece p = posDepart.getP();&#xD;
+                                 int j = p.getJoueur();&#xD;
+                                 if(pieceDepart.getJoueur() == 1) {&#xD;
+                                     p.setJoueur(2);&#xD;
+                                 }&#xD;
+                                 else {&#xD;
+                                     p.setJoueur(1);&#xD;
+                                 }&#xD;
+                                 reserveJoueur[j].ajouterPiece(p);&#xD;
+                                 throw new Exception();&#xD;
+                                 &#xD;
+                                 /* Verifie la presence d'une autre piece &quot;Pion&quot; dans la colonne de la case d'arrivee :&#xD;
+                                  * 	- &quot;if(posDepart.getP().getNom().equals(&quot;Pion&quot;))&quot; : verifie si la piece a parachuter est un &quot;Pion&quot;, auquel cas =>&#xD;
+                                  * 	- &quot;for(int i = 0; i &lt; 9; i++)&quot; : parcourt la colonne &#xD;
+                                  *  - &quot;if(plateau[i][posArrivee.getY()].getP() != null)&quot; : et verifie si elle contient d'autres pieces, auquel cas =>&#xD;
+                                  *  - &quot;if(plateau[i][posArrivee.getY()] ... == posDepart.getP().getJoueur())&quot; : si un pion du joueur actif est &#xD;
+                                  *  		present dans la colonne de la case d'arrivee&#xD;
+                                  *  - renvoie la piece a deplacer dans la reserve du joueur actif ET lui change son appartenance (pour eviter que les&#xD;
+                                  *  		pieces du joueur adverse capturees par le joueur actif ne soient renvoyees dans la reserve du joueur &#xD;
+                                  *  		adverse)&#xD;
+                                  *  - lance une exception pour empecher le deplacement */&#xD;
+                             }&#xD;
+                         }&#xD;
+                     }&#xD;
+                 }&#xD;
+                 pieceDepart.retrograde();&#xD;
+                 posDepart.setP(null);&#xD;
+                 posArrivee.setP(null);&#xD;
+                 posArrivee.setP(pieceDepart);&#xD;
+                 &#xD;
+                 /* Verifie dans un premier temps que la case d'arrivee est bien vide. Si c'est le cas, la piece issue de la reserve&#xD;
+                  * (&quot;pieceDepart&quot;) est retrogradee par securite (une piece promue peut etre presente dans la reserve, mais ne peut&#xD;
+                  * pas etre parachutee promue sur le plateau). La case de la reserve et la case d'arrivee sont ensuite videes, &#xD;
+                  * puis la piece parachutee est affectee a la case d'arrivee */&#xD;
+                 &#xD;
+                 // Parachutage sur une case occupee&#xD;
+             } else {&#xD;
+                     Piece p = posDepart.getP();&#xD;
+                     int j = p.getJoueur();&#xD;
+                     if(pieceDepart.getJoueur() == 1) {&#xD;
+                         p.setJoueur(2);&#xD;
+                     }&#xD;
+                     else {&#xD;
+                         p.setJoueur(1);&#xD;
+                     }&#xD;
+                     reserveJoueur[j].ajouterPiece(p);&#xD;
+                     throw new Exception();&#xD;
+                     &#xD;
+                     /* Interdit le parachutage d'une piece de la reserve sur une case deja occupee. &#xD;
+                      * Renvoie la piece a deplacer dans la reserve du joueur actif ET lui change son appartenance (pour eviter que les &#xD;
+                      * pieces du joueur adverse capturees par le joueur actif ne soient renvoyees dans la reserve du joueur adverse).&#xD;
+                      * Lance une exception pour empecher le deplacement */&#xD;
+             }&#xD;
+         }&#xD;
+         &#xD;
+         // Declenchement d'une exception si le parachutage n'est pas possible&#xD;
+         else {&#xD;
+             throw new Exception();&#xD;
+         }&#xD;
+     }&#xD;
+     &#xD;
+     // Declenchement d'une exception si le joueur veut deplacer une piece adverse&#xD;
+     else {&#xD;
+         throw new Exception();&#xD;
+     } &#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_mA6hYMFnEeumirn8pNdxEw" name="Plateau" method="_mDjltcFnEeumirn8pNdxEw">
+          <eAnnotations xmi:id="_mA6hYcFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_mA6hYsFnEeumirn8pNdxEw" key="create"/>
+          </eAnnotations>
+          <ownedComment xmi:id="_mDxoIcFnEeumirn8pNdxEw">
+            <body>Definit les attributs de la classe &quot;Plateau&quot; :&#xD;
+	 *  &#xD;
+	 * @param plateau plateau de jeu constitue comme un tableau a 2 dimensions de 9x9 objets de type &quot;Case&quot;&#xD;
+	 * 					(soit 100 cases : 10 cases (0-9) en abscisse, 10 cases en ordonnee)&#xD;
+	 * @param reserveJoueur objet de type &quot;Reserve&quot; qui constitue la reserve de chaque joueur</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_mA6hY8FnEeumirn8pNdxEw" type="_mA4sMMFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mA7IcMFnEeumirn8pNdxEw" name="getCase" method="_mDkMwMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mA7IccFnEeumirn8pNdxEw" name="x">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mA7vgMFnEeumirn8pNdxEw" name="y">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mCkHMMFnEeumirn8pNdxEw" type="_mAFa8MFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mA8WkMFnEeumirn8pNdxEw" name="getReserve" method="_mDkMxMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mA8WkcFnEeumirn8pNdxEw" name="i">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mCkHMcFnEeumirn8pNdxEw" type="_mBAA8MFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mCkuQMFnEeumirn8pNdxEw" name="deplacementPiece" method="_mDkMx8FnEeumirn8pNdxEw" raisedException="_mC8hsMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mCkuQcFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCkuQsFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCkuQ8FnEeumirn8pNdxEw" name="tour">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mBAA8MFnEeumirn8pNdxEw" name="Reserve">
+        <eAnnotations xmi:id="_mBAoAMFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_mBAoAcFnEeumirn8pNdxEw" source="codegen">
+            <details xmi:id="_mBAoAsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+          </contents>
+        </eAnnotations>
+        <ownedAttribute xmi:id="_mDLyQMFnEeumirn8pNdxEw" name="pieces" visibility="private" type="_mCl8YMFnEeumirn8pNdxEw" association="_mD91YcFnEeumirn8pNdxEw">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_mDMZUcFnEeumirn8pNdxEw" value="new ArrayList&lt;Piece>()"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_mDNAYcFnEeumirn8pNdxEw" name="joueur" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDkz0MFnEeumirn8pNdxEw" name="Reserve" specification="_mBBPEMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDkz0cFnEeumirn8pNdxEw" name="j">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDkz0sFnEeumirn8pNdxEw" type="_mBAA8MFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>this.joueur = j;
+     for (int i = 0; i &lt; 38; i++) {
+         pieces.add(null);  
+         
+         /*  Initialise une ArrayList nommee &quot;pieces&quot; pour chaque joueur
+          * avec 38 cases vides (chaque joueur peut avoir au maximum 38
+          * pieces dans sa reserve) */
+     }
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDkz08FnEeumirn8pNdxEw" name="getPiece" specification="_mBB2I8FnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDkz1MFnEeumirn8pNdxEw" name="i">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDkz1cFnEeumirn8pNdxEw" type="_mAr34MFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return pieces.get(i);   
+     
+     /* Retourne la piece stockee a l'indice &quot;i&quot; dans l'ArrayList */
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDla4MFnEeumirn8pNdxEw" name="setPiece" specification="_mCnxkcFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDla4cFnEeumirn8pNdxEw" name="i">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDla4sFnEeumirn8pNdxEw" name="p" type="_mAr34MFnEeumirn8pNdxEw"/>
+          <language>java</language>
+          <body>pieces.set(i, p);  
+     
+     /* Permet de stocker une piece &quot;p&quot; a l'indice &quot;i&quot; dans la reserve */
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDla48FnEeumirn8pNdxEw" name="ajouterPiece" specification="_mCoYoMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDla5MFnEeumirn8pNdxEw" name="p" type="_mAr34MFnEeumirn8pNdxEw"/>
+          <language>java</language>
+          <body>for (int i = 0; i &lt; pieces.size(); i++) {
+         if (pieces.get(i) == null) {
+             pieces.set(i, p);
+             break;
+             
+             /* Parcourt l'ArrayList &quot;pieces&quot; pour y trouver un emplacement vide afin d'y
+              * stocker la piece &quot;p&quot; */
+         }
+     }
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDla5cFnEeumirn8pNdxEw" name="retirerPiece" specification="_mCo_sMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDla5sFnEeumirn8pNdxEw" name="p" type="_mAr34MFnEeumirn8pNdxEw"/>
+          <language>java</language>
+          <body>for (int i = 0; i &lt; pieces.size(); i++) {
+         // Parcours du tableau pour y trouver 
+         if (pieces.get(i).getNom().equals(p.getNom())) {   
+             pieces.set(i, null); 
+             break;
+             
+             /* Parcourt l'ArrayList &quot;pieces&quot; pour y trouver une piece ayant le même nom que la 
+              * piece &quot;p&quot; placee en parametre de la methode. Une fois trouvee, dereferencie l'objet */
+         }
+     }
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_mBBPEMFnEeumirn8pNdxEw" name="Reserve" method="_mDkz0MFnEeumirn8pNdxEw">
+          <eAnnotations xmi:id="_mBB2IMFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_mBB2IcFnEeumirn8pNdxEw" key="create"/>
+          </eAnnotations>
+          <ownedComment xmi:id="_mDxoIsFnEeumirn8pNdxEw">
+            <body>Definit les attributs de la classe &quot;Reserve&quot; :
+	 *  
+	 * @param pieces cree une ArrayList pour stocker les pieces presentes dans la reserve de chaque joueur
+	 * @param joueur determine si la reserve appartient au joueur 1 ou 2</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_mBBPEcFnEeumirn8pNdxEw" name="j">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mBB2IsFnEeumirn8pNdxEw" type="_mBAA8MFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mBB2I8FnEeumirn8pNdxEw" name="getPiece" method="_mDkz08FnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mBCdMMFnEeumirn8pNdxEw" name="i">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mCnxkMFnEeumirn8pNdxEw" type="_mAr34MFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mCnxkcFnEeumirn8pNdxEw" name="setPiece" method="_mDla4MFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mCnxksFnEeumirn8pNdxEw" name="i">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mCnxk8FnEeumirn8pNdxEw" name="p" type="_mAr34MFnEeumirn8pNdxEw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mCoYoMFnEeumirn8pNdxEw" name="ajouterPiece" method="_mDla48FnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mCoYocFnEeumirn8pNdxEw" name="p" type="_mAr34MFnEeumirn8pNdxEw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mCo_sMFnEeumirn8pNdxEw" name="retirerPiece" method="_mDla5cFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mCo_scFnEeumirn8pNdxEw" name="p" type="_mAr34MFnEeumirn8pNdxEw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mBFggMFnEeumirn8pNdxEw" name="Roi">
+        <eAnnotations xmi:id="_mBGHkMFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_mBGHkcFnEeumirn8pNdxEw" source="codegen">
+            <details xmi:id="_mBGHksFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_mDxoI8FnEeumirn8pNdxEw">
+          <body>Caracteristiques de la piece &quot;Roi (aussi appelee &quot;Regnant&quot;)&quot;</body>
+        </ownedComment>
+        <generalization xmi:id="_mCq04MFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDmB8MFnEeumirn8pNdxEw" name="Roi" specification="_mBGuoMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDmB8cFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDmB8sFnEeumirn8pNdxEw" type="_mBFggMFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>super(joueur);
+     setNom(&quot;Roi&quot;);
+     setIcon();
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDmB88FnEeumirn8pNdxEw" name="peutSeDeplacer" specification="_mCqN0MFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDmB9MFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDmB9cFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDmB9sFnEeumirn8pNdxEw" name="p" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDmB98FnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// Deplacement possible si les conditions ci-dessous sont verifiees :
+ 	
+ 	// Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif
+     if(posArrivee.getP() != null) {  
+         if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) {  
+             return false;
+             
+             /* La 1ere condition verifie s'il y a deja une piece presente sur la case ou le joueur veut deplacer
+              * sa piece (&quot;!= null&quot;).
+              * La 2nde condition verifie si la piece sur cette case appartient au joueur actif (&quot;.getP().getJoueur()&quot;), 
+              * ce qui interdit son deplacement (ne peut pas manger ses propres pieces) */
+         }
+     }  
+
+     // Limite le deplacement a 1 case maximum en ordonnee et en abscisse
+     if((Math.abs(posDepart.getY() - posArrivee.getY()) &lt;= 1) &amp;&amp; (Math.abs(posDepart.getX() - posArrivee.getX()) &lt;= 1)) {
+         return true;
+     }
+
+     // Deplacement interdit si les conditions ci-dessus ne sont pas verifiees
+     return false;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_mBGuoMFnEeumirn8pNdxEw" name="Roi" method="_mDmB8MFnEeumirn8pNdxEw">
+          <eAnnotations xmi:id="_mBGuosFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_mBGuo8FnEeumirn8pNdxEw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_mBGuocFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mBGupMFnEeumirn8pNdxEw" type="_mBFggMFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mCqN0MFnEeumirn8pNdxEw" name="peutSeDeplacer" method="_mDmB88FnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mCqN0cFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCqN0sFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCqN08FnEeumirn8pNdxEw" name="p" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCqN1MFnEeumirn8pNdxEw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mBJK4MFnEeumirn8pNdxEw" name="Tour">
+        <eAnnotations xmi:id="_mBJx8MFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
+          <contents xmi:type="ecore:EAnnotation" xmi:id="_mBJx8cFnEeumirn8pNdxEw" source="codegen">
+            <details xmi:id="_mBJx8sFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
+          </contents>
+        </eAnnotations>
+        <ownedComment xmi:id="_mDyPMMFnEeumirn8pNdxEw">
+          <body>Caracteristiques de la piece &quot;Tour (aussi appelee &quot;Chariot&quot;)&quot;</body>
+        </ownedComment>
+        <generalization xmi:id="_mCsDAMFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDmpAMFnEeumirn8pNdxEw" name="Tour" specification="_mBKZAMFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDmpAcFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mDmpAsFnEeumirn8pNdxEw" type="_mBJK4MFnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>super(joueur);&#xD;
+     setNom(&quot;Tour&quot;);&#xD;
+     setIcon();&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_mDmpA8FnEeumirn8pNdxEw" name="peutSeDeplacer" specification="_mCrb8MFnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mDmpBMFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDmpBcFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDmpBsFnEeumirn8pNdxEw" name="plateau" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mDmpB8FnEeumirn8pNdxEw" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>// Deplacement de &quot;Tour&quot; apres sa promotion&#xD;
+     if(promu){&#xD;
+         if((Math.abs(posDepart.getY() - posArrivee.getY()) &lt;= 1) &amp;&amp; (Math.abs(posDepart.getX() - posArrivee.getX()) &lt;= 1)) {&#xD;
+             return true;&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     // Deplacement interdit si l'une des conditions ci-dessous est verifiee :&#xD;
+     &#xD;
+     // Deplacement interdit si la case d'arrivee est deja occupee par une piece appartenant au joueur actif&#xD;
+     if(posArrivee.getP() != null) {&#xD;
+         if(posDepart.getP().getJoueur() == posArrivee.getP().getJoueur()) { &#xD;
+             return false;&#xD;
+             &#xD;
+             /* La 1ere condition verifie s'il y a deja une piece presente sur la case ou le joueur veut deplacer&#xD;
+              * sa piece (&quot;!= null&quot;).&#xD;
+              * La 2nde condition verifie si la piece sur cette case appartient au joueur actif (&quot;.getP().getJoueur()&quot;), &#xD;
+              * ce qui interdit son deplacement (ne peut pas manger ses propres pieces) */&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     // Interdit le deplacement en diagonale&#xD;
+     if((posDepart.getY() != posArrivee.getY()) &amp;&amp; (posDepart.getX() != posArrivee.getX())) {&#xD;
+         return false;&#xD;
+     	&#xD;
+     	/* Verifie que le deplacement se fait bien en ligne (X) ou en colonne (Y) uniquement, et pas en &#xD;
+     	 * diagonale (si les coordonnees x ou y de la position de depart sont différentes des coordonnees &#xD;
+     	 * x ou y de la case d'arrivee, c'est que le deplacement ne s'est pas effectue sur la meme ligne/&#xD;
+     	 * la meme colonne */&#xD;
+     }&#xD;
+&#xD;
+     // Deplacement vers le haut du plateau&#xD;
+     if(posDepart.getX() - posArrivee.getX() > 0) {&#xD;
+         for(int i = posDepart.getX() - 1; i > posArrivee.getX(); i--) {&#xD;
+         	if(plateau.getCase(i, posDepart.getY()).getP() != null) {&#xD;
+                 return false;&#xD;
+                 &#xD;
+             	/* Verifie que toutes les cases avant la position d'arrivee sont vides et que la tour ne &quot;saute pas&quot; &#xD;
+             	 * par-dessus d'autres pieces avant d'atteindre sa case d'arrivee */&#xD;
+             }&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     // Deplacement vers la gauche du plateau&#xD;
+     if(posDepart.getY() - posArrivee.getY() > 0) {&#xD;
+     	for(int i = posDepart.getY() - 1; i > posArrivee.getY(); i--) {&#xD;
+     		if(plateau.getCase(posDepart.getX(), i).getP() != null) {&#xD;
+                 return false;&#xD;
+                 &#xD;
+                 /* Effectue la meme verification que pour le deplacement vers le haut du plateau */&#xD;
+             }&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     // Deplacement vers le bas du plateau&#xD;
+     if(posDepart.getX() - posArrivee.getX() &lt; 0) {&#xD;
+         for(int i = posDepart.getX() + 1; i &lt; posArrivee.getX(); i++) {&#xD;
+             if(plateau.getCase(i, posDepart.getY()).getP() != null) {&#xD;
+                 return false;&#xD;
+                 &#xD;
+                 /* Effectue la meme verification que pour le deplacement vers le haut du plateau */&#xD;
+             }&#xD;
+         }&#xD;
+     }&#xD;
+&#xD;
+     // Deplacement vers la droite du plateau&#xD;
+     if(posDepart.getY() - posArrivee.getY() &lt; 0) {&#xD;
+         for(int i = posDepart.getY() + 1; i &lt; posArrivee.getY(); i++) {&#xD;
+             if(plateau.getCase(posDepart.getX(), i).getP() != null) {&#xD;
+                 return false;&#xD;
+                 &#xD;
+                 /* Effectue la meme verification que pour le deplacement vers le haut du plateau */&#xD;
+             }&#xD;
+         }&#xD;
+     }&#xD;
+     &#xD;
+     // Deplacement possible si les conditions ci-dessus ne sont pas verifiees&#xD;
+     return true;&#xD;
+ </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_mBKZAMFnEeumirn8pNdxEw" name="Tour" method="_mDmpAMFnEeumirn8pNdxEw">
+          <eAnnotations xmi:id="_mBLAEMFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_mBLAEcFnEeumirn8pNdxEw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_mBKZAcFnEeumirn8pNdxEw" name="joueur">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_mBLAEsFnEeumirn8pNdxEw" type="_mBJK4MFnEeumirn8pNdxEw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_mCrb8MFnEeumirn8pNdxEw" name="peutSeDeplacer" method="_mDmpA8FnEeumirn8pNdxEw">
+          <ownedParameter xmi:id="_mCrb8cFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCrb8sFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCrb88FnEeumirn8pNdxEw" name="plateau" type="_mA4sMMFnEeumirn8pNdxEw"/>
+          <ownedParameter xmi:id="_mCrb9MFnEeumirn8pNdxEw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_mC8hsMFnEeumirn8pNdxEw" name="Exception"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mDsvoMFnEeumirn8pNdxEw" name="" memberEnd="_mDFEkcFnEeumirn8pNdxEw _mDsvocFnEeumirn8pNdxEw">
+        <ownedEnd xmi:id="_mDsvocFnEeumirn8pNdxEw" name="" type="_mAFa8MFnEeumirn8pNdxEw" association="_mDsvoMFnEeumirn8pNdxEw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mD6LAMFnEeumirn8pNdxEw" name="" memberEnd="_mD6LAcFnEeumirn8pNdxEw _mDHg0MFnEeumirn8pNdxEw">
+        <ownedEnd xmi:id="_mD6LAcFnEeumirn8pNdxEw" name="" type="_mAr34MFnEeumirn8pNdxEw" association="_mD6LAMFnEeumirn8pNdxEw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mD7ZIcFnEeumirn8pNdxEw" name="" memberEnd="_mD7ZIsFnEeumirn8pNdxEw _mDIH4MFnEeumirn8pNdxEw">
+        <ownedEnd xmi:id="_mD7ZIsFnEeumirn8pNdxEw" name="" type="_mAr34MFnEeumirn8pNdxEw" association="_mD7ZIcFnEeumirn8pNdxEw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mD8nQMFnEeumirn8pNdxEw" name="" memberEnd="_mD8nQcFnEeumirn8pNdxEw _mDJWAMFnEeumirn8pNdxEw">
+        <ownedEnd xmi:id="_mD8nQcFnEeumirn8pNdxEw" name="" type="_mA4sMMFnEeumirn8pNdxEw" association="_mD8nQMFnEeumirn8pNdxEw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mD9OUcFnEeumirn8pNdxEw" name="" memberEnd="_mD9OUsFnEeumirn8pNdxEw _mDKkIcFnEeumirn8pNdxEw">
+        <ownedEnd xmi:id="_mD9OUsFnEeumirn8pNdxEw" name="" type="_mA4sMMFnEeumirn8pNdxEw" association="_mD9OUcFnEeumirn8pNdxEw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mD91YcFnEeumirn8pNdxEw" name="" memberEnd="_mD91YsFnEeumirn8pNdxEw _mDLyQMFnEeumirn8pNdxEw">
+        <ownedEnd xmi:id="_mD91YsFnEeumirn8pNdxEw" name="" type="_mBAA8MFnEeumirn8pNdxEw" association="_mD91YcFnEeumirn8pNdxEw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_l--nsMFnEeumirn8pNdxEw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_l--nscFnEeumirn8pNdxEw" name="awt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_l-_OwMFnEeumirn8pNdxEw" name="event">
+          <packagedElement xmi:type="uml:Class" xmi:id="_mCUPkMFnEeumirn8pNdxEw" name="ActionEvent"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mCVdscFnEeumirn8pNdxEw" name="ActionListener"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mCSaYMFnEeumirn8pNdxEw" name="BorderLayout"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mCcLYMFnEeumirn8pNdxEw" name="Image"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_l_NRMMFnEeumirn8pNdxEw" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_mCl8YMFnEeumirn8pNdxEw" name="ArrayList"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_l-_OwcFnEeumirn8pNdxEw" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_l-_OwsFnEeumirn8pNdxEw" name="swing">
+        <packagedElement xmi:type="uml:Class" xmi:id="_mCWr0cFnEeumirn8pNdxEw" name="JButton"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mCX58cFnEeumirn8pNdxEw" name="JFrame"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mCZIEcFnEeumirn8pNdxEw" name="JPanel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mCcyccFnEeumirn8pNdxEw" name="ImageIcon"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mCiSAcFnEeumirn8pNdxEw" name="JOptionPane"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_lohPgMFnEeumirn8pNdxEw">
+      <eAnnotations xmi:id="_lolg8MFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_lorAgMFnEeumirn8pNdxEw" base_Package="_lVRjYMFnEeumirn8pNdxEw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_mCTogMFnEeumirn8pNdxEw" base_Element="_mCSaYMFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mCVdsMFnEeumirn8pNdxEw" base_Element="_mCUPkMFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mCWr0MFnEeumirn8pNdxEw" base_Element="_mCVdscFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mCX58MFnEeumirn8pNdxEw" base_Element="_mCWr0cFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mCZIEMFnEeumirn8pNdxEw" base_Element="_mCX58cFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mCaWMMFnEeumirn8pNdxEw" base_Element="_mCZIEcFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mCcycMFnEeumirn8pNdxEw" base_Element="_mCcLYMFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mCeAkMFnEeumirn8pNdxEw" base_Element="_mCcyccFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mCjgIMFnEeumirn8pNdxEw" base_Element="_mCiSAcFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mCnKgMFnEeumirn8pNdxEw" base_Element="_mCl8YMFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mC9IwMFnEeumirn8pNdxEw" base_Element="_mC8hsMFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_mDG5wMFnEeumirn8pNdxEw" base_Element="_mDGSssFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_mDHg0cFnEeumirn8pNdxEw" base_Element="_mDHg0MFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_mDIH4cFnEeumirn8pNdxEw" base_Element="_mDIH4MFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_mDIu8sFnEeumirn8pNdxEw" base_Element="_mDIu8MFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Array xmi:id="_mDJ9EMFnEeumirn8pNdxEw" dimensions="2" base_Element="_mDJWAMFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_mDKkIMFnEeumirn8pNdxEw" base_Element="_mDJWAMFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Array xmi:id="_mDKkI8FnEeumirn8pNdxEw" base_Element="_mDKkIcFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_mDLLMcFnEeumirn8pNdxEw" base_Element="_mDKkIcFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Generics xmi:id="_mDMZUMFnEeumirn8pNdxEw" genericsValue="Piece" base_Element="_mDLyQMFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_mDNAYMFnEeumirn8pNdxEw" base_Element="_mDLyQMFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mD7ZIMFnEeumirn8pNdxEw" base_Element="_mD6LAMFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mD8AMMFnEeumirn8pNdxEw" base_Element="_mD7ZIcFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mD9OUMFnEeumirn8pNdxEw" base_Element="_mD8nQMFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mD91YMFnEeumirn8pNdxEw" base_Element="_mD9OUcFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Reference xmi:id="_mD_DgMFnEeumirn8pNdxEw" base_Element="_mD91YcFnEeumirn8pNdxEw"/>
+  <UMLLabProfile:Patch xmi:id="_qlv-gMFnEeumirn8pNdxEw" base_Element="_mAFa8MFnEeumirn8pNdxEw" patchText="@@ -11,11 +11,9 @@&#xA; ogi;&#xA;-%0D%0A%0D&#xA;+%0A&#xA; %0A/**&#xA;" conflicting="false"/>
+  <UMLLabProfile:Patch xmi:id="_qlxzsMFnEeumirn8pNdxEw" base_Element="_mBAA8MFnEeumirn8pNdxEw" patchText="@@ -11,16 +11,13 @@&#xA; ogi;&#xA;-%0D%0A%0D&#xA;+%0A&#xA; %0A/**&#xA;-%0D&#xA; %0A * &#xA;@@ -113,14 +113,12 @@&#xA; aire&#xA;-%0D&#xA; %0A */&#xA;-%0D&#xA; %0A%0Aim&#xA;@@ -143,17 +143,16 @@&#xA; ayList;%0A&#xA;-%0D&#xA; %0Apublic &#xA;@@ -172,9 +172,8 @@&#xA;  %7B%0A%09&#xA;-%0D&#xA; %0A   &#xA;" conflicting="false"/>
+  <UMLLabProfile:Patch xmi:id="_qlyawMFnEeumirn8pNdxEw" base_Element="_mBFggMFnEeumirn8pNdxEw" patchText="@@ -11,11 +11,9 @@&#xA; ogi;&#xA;-%0D%0A%0D&#xA;+%0A&#xA; %0A/**&#xA;" conflicting="false"/>
+</xmi:XMI>
