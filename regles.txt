@@ -1,5 +1,5 @@
 Objectif : 
-	Prendre le Roi adverse; Si le roi ne peut pas fuir il est 'mat'
+	Prendre le Roi adverse : si le roi ne peut pas fuir il est 'mat'
 
 Joueurs : 
 	2 joueurs
@@ -7,7 +7,7 @@ Joueurs :
 
 Plateau : 
 	Le plateau fait 9x9 cases soit 81.
-	Les trois lignes les plus éloignées forment la zone de promotions
+	Les trois lignes les plus éloignées forment la zone de promotion
 
 Pièces : 
 	20 pièces par joueurs :
@@ -17,9 +17,9 @@ Pièces :
 		2 généraux d'or
 		2 généraux d'argent
 		2 cavaliers
-		2 lances
+		2 lanciers
 		9 pions
-		Les pièces font faces à leurs adversaires
+		Les pièces font face à leurs adversaires
 
 Déplacement :
 	Roi : Toutes directions / 1 case
@@ -47,7 +47,7 @@ Parachutage :
 	Un pion ne peut pas être parachuté sur une colonne où se trouve déjà un pion non promu du même camp.
 	Un pion ne peut pas être parachuté devant le roi pour faire échec et mat directement.
 
-disposition : 
+Disposition : 
 
 J = Jade = Roi opposant
 

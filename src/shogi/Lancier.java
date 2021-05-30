@@ -117,3 +117,4 @@ public class Lancier extends Piece {
         return false;
     }
 }
+

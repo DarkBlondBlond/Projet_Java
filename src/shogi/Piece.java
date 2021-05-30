@@ -8,7 +8,7 @@ import javax.swing.ImageIcon;
  * et dont toutes les pieces heriteront par la suite.
  */
 
-public class Piece {
+public abstract class Piece {
     
     private String nom = "";
     protected int joueur;

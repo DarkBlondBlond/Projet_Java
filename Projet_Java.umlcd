@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_lZWyIMFnEeumirn8pNdxEw">
   <modelElement href="Projet_Java.uml#_l-v-MMFnEeumirn8pNdxEw"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qmAdMMFnEeumirn8pNdxEw" targetItem="_qmJAF8FnEeumirn8pNdxEw" sourceItem="_ql_PEMFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qmAdMMFnEeumirn8pNdxEw" targetItem="_qmJAF8FnEeumirn8pNdxEw"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_qmIZAMFnEeumirn8pNdxEw" sourceAnchor="246.0,0.0" targetAnchor="202.0,58.0" target="_qmJAF8FnEeumirn8pNdxEw" source="_qoTjScFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mDsvoMFnEeumirn8pNdxEw"/>
     <bendpoints xmi:id="_q4xoM8FnEeumirn8pNdxEw" sourceY="-113" targetX="320"/>
@@ -10,7 +10,7 @@
     </nameVisual>
     <sourceRole xmi:id="_qmJAEcFnEeumirn8pNdxEw" aggregationKind="NONE" name="p" navigable="true">
       <modelElement href="Projet_Java.uml#_mDFEkcFnEeumirn8pNdxEw"/>
-      <visualProperties xmi:id="_q4zdYMFnEeumirn8pNdxEw" position="-21.325368477872757,-77.14486615701679"/>
+      <visualProperties xmi:id="_q4zdYMFnEeumirn8pNdxEw" position="-31.325368477872757,-76.14486615701679"/>
       <visibility xmi:id="_qmJAEsFnEeumirn8pNdxEw" label="+"/>
       <cardinality xmi:id="_qmJAE8FnEeumirn8pNdxEw" label="1" max="1" min="1"/>
     </sourceRole>
@@ -21,39 +21,39 @@
       <cardinality xmi:id="_qmJAFsFnEeumirn8pNdxEw" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qniuQcFnEeumirn8pNdxEw" targetItem="_qnsfQMFnEeumirn8pNdxEw" sourceItem="_qniuQMFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qniuQcFnEeumirn8pNdxEw" targetItem="_qnsfQMFnEeumirn8pNdxEw"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_qnj8YMFnEeumirn8pNdxEw" sourceAnchor="0.0,36.0" targetAnchor="493.0,252.0" superClass="_qoTjScFnEeumirn8pNdxEw" subClass="_qnsfQMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mCOwAMFnEeumirn8pNdxEw"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qnlxkcFnEeumirn8pNdxEw" targetItem="_qoTjScFnEeumirn8pNdxEw" sourceItem="_qnlxkMFnEeumirn8pNdxEw"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qnm_scFnEeumirn8pNdxEw" targetItem="_qoTjZMFnEeumirn8pNdxEw" sourceItem="_qnm_sMFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qnlxkcFnEeumirn8pNdxEw" targetItem="_qoTjScFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qnm_scFnEeumirn8pNdxEw" targetItem="_qoTjZMFnEeumirn8pNdxEw"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_qnx-0MFnEeumirn8pNdxEw" sourceAnchor="246.0,0.0" targetAnchor="246.0,308.0" superClass="_qoTjScFnEeumirn8pNdxEw" subClass="_qn0bEMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mCP-IMFnEeumirn8pNdxEw"/>
     <bendpoints xmi:id="_q4waEMFnEeumirn8pNdxEw" sourceY="-30" targetX="562" targetY="282"/>
     <bendpoints xmi:id="_q4xBIMFnEeumirn8pNdxEw" sourceX="-562" sourceY="-30" targetY="282"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qnyl4cFnEeumirn8pNdxEw" targetItem="_qn0bEMFnEeumirn8pNdxEw" sourceItem="_qnyl4MFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qnyl4cFnEeumirn8pNdxEw" targetItem="_qn0bEMFnEeumirn8pNdxEw"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_qn5TkMFnEeumirn8pNdxEw" sourceAnchor="461.0,49.0" targetAnchor="246.0,308.0" superClass="_qoTjScFnEeumirn8pNdxEw" subClass="_qn7v0MFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mCRMQMFnEeumirn8pNdxEw"/>
     <bendpoints xmi:id="_q4xBIcFnEeumirn8pNdxEw" sourceX="143" targetX="936" targetY="516"/>
     <bendpoints xmi:id="_q4xBIsFnEeumirn8pNdxEw" sourceX="143" sourceY="-234" targetX="936" targetY="282"/>
     <bendpoints xmi:id="_q4xBI8FnEeumirn8pNdxEw" sourceX="-793" sourceY="-234" targetY="282"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qn56oMFnEeumirn8pNdxEw" targetItem="_qn7v0MFnEeumirn8pNdxEw" sourceItem="_qn5TkcFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qn56oMFnEeumirn8pNdxEw" targetItem="_qn7v0MFnEeumirn8pNdxEw"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_qoABQMFnEeumirn8pNdxEw" sourceAnchor="461.0,36.0" targetAnchor="246.0,308.0" superClass="_qoTjScFnEeumirn8pNdxEw" subClass="_qoCdgMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mCRzUsFnEeumirn8pNdxEw"/>
     <bendpoints xmi:id="_q4xBJMFnEeumirn8pNdxEw" sourceX="265" targetX="1058" targetY="659"/>
     <bendpoints xmi:id="_q4xBJcFnEeumirn8pNdxEw" sourceX="265" sourceY="-377" targetX="1058" targetY="282"/>
     <bendpoints xmi:id="_q4xBJsFnEeumirn8pNdxEw" sourceX="-793" sourceY="-377" targetY="282"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qoAoUcFnEeumirn8pNdxEw" targetItem="_qoCdgMFnEeumirn8pNdxEw" sourceItem="_qoAoUMFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qoAoUcFnEeumirn8pNdxEw" targetItem="_qoCdgMFnEeumirn8pNdxEw"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_qoLncMFnEeumirn8pNdxEw" sourceAnchor="0.0,36.0" targetAnchor="246.0,308.0" superClass="_qoTjScFnEeumirn8pNdxEw" subClass="_qoM1kMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mCbkUcFnEeumirn8pNdxEw"/>
     <bendpoints xmi:id="_q4xoMMFnEeumirn8pNdxEw" sourceX="-577" targetX="-261" targetY="807"/>
     <bendpoints xmi:id="_q4xoMcFnEeumirn8pNdxEw" sourceX="-577" sourceY="-525" targetX="-261" targetY="282"/>
     <bendpoints xmi:id="_q4xoMsFnEeumirn8pNdxEw" sourceX="-316" sourceY="-525" targetY="282"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qoLncsFnEeumirn8pNdxEw" targetItem="_qoM1kMFnEeumirn8pNdxEw" sourceItem="_qoLnccFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qoLncsFnEeumirn8pNdxEw" targetItem="_qoM1kMFnEeumirn8pNdxEw"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_qoSVIMFnEeumirn8pNdxEw" source="_qoTjScFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mD6LAMFnEeumirn8pNdxEw"/>
     <stereotypes xmi:id="_qoSVIcFnEeumirn8pNdxEw" name="Reference">
@@ -67,6 +67,9 @@
     </sourceRole>
     <targetRole xmi:id="_qoSVJsFnEeumirn8pNdxEw" aggregationKind="NONE" name="i" navigable="true">
       <modelElement href="Projet_Java.uml#_mDHg0MFnEeumirn8pNdxEw"/>
+      <stereotypes xmi:id="_7mWt4MFpEeumirn8pNdxEw" name="LegacyStyledElement">
+        <modelElement href="Projet_Java.uml#_mDHg0cFnEeumirn8pNdxEw"/>
+      </stereotypes>
       <visibility xmi:id="_qoSVJ8FnEeumirn8pNdxEw" label="~"/>
       <cardinality xmi:id="_qoSVKMFnEeumirn8pNdxEw" label="1" max="1" min="1"/>
     </targetRole>
@@ -84,6 +87,9 @@
     </sourceRole>
     <targetRole xmi:id="_qoTjRsFnEeumirn8pNdxEw" aggregationKind="NONE" name="icon" navigable="true">
       <modelElement href="Projet_Java.uml#_mDIH4MFnEeumirn8pNdxEw"/>
+      <stereotypes xmi:id="_7mXU8MFpEeumirn8pNdxEw" name="LegacyStyledElement">
+        <modelElement href="Projet_Java.uml#_mDIH4cFnEeumirn8pNdxEw"/>
+      </stereotypes>
       <visibility xmi:id="_qoTjR8FnEeumirn8pNdxEw" label="~"/>
       <cardinality xmi:id="_qoTjSMFnEeumirn8pNdxEw" label="1" max="1" min="1"/>
     </targetRole>
@@ -93,7 +99,7 @@
     <bendpoints xmi:id="_q4yPQMFnEeumirn8pNdxEw" sourceY="-185" targetX="34" targetY="282"/>
     <bendpoints xmi:id="_q4yPQcFnEeumirn8pNdxEw" sourceX="-34" sourceY="-185" targetY="282"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qo2V0sFnEeumirn8pNdxEw" targetItem="_qo4yEMFnEeumirn8pNdxEw" sourceItem="_qo2V0cFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qo2V0sFnEeumirn8pNdxEw" targetItem="_qo4yEMFnEeumirn8pNdxEw"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_qo9DgMFnEeumirn8pNdxEw" sourceAnchor="83.0,0.0" targetAnchor="101.0,116.0" target="_qmJAF8FnEeumirn8pNdxEw" source="_qpFmYcFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mD8nQMFnEeumirn8pNdxEw"/>
     <stereotypes xmi:id="_qpAt4cFnEeumirn8pNdxEw" name="Reference">
@@ -111,12 +117,18 @@
     <targetRole xmi:id="_qpAt4MFnEeumirn8pNdxEw" aggregationKind="NONE" name="plateau" navigable="true">
       <modelElement href="Projet_Java.uml#_mDJWAMFnEeumirn8pNdxEw"/>
       <visualProperties xmi:id="_q42gsMFnEeumirn8pNdxEw" position="-37.05611935493441,340.14743486318196"/>
+      <stereotypes xmi:id="_7mX8AMFpEeumirn8pNdxEw" name="Array">
+        <modelElement href="Projet_Java.uml#_mDJ9EMFnEeumirn8pNdxEw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_7mX8AcFpEeumirn8pNdxEw" name="LegacyStyledElement">
+        <modelElement href="Projet_Java.uml#_mDKkIMFnEeumirn8pNdxEw"/>
+      </stereotypes>
       <visibility xmi:id="_qpCjE8FnEeumirn8pNdxEw" label="-"/>
       <cardinality xmi:id="_qpCjEsFnEeumirn8pNdxEw" label="1..*" max="-1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qpAG0cFnEeumirn8pNdxEw" targetItem="_qpFmYcFnEeumirn8pNdxEw" sourceItem="_qpAG0MFnEeumirn8pNdxEw"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qpAt48FnEeumirn8pNdxEw" targetItem="_qpFmcMFnEeumirn8pNdxEw" sourceItem="_qpAt4sFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qpAG0cFnEeumirn8pNdxEw" targetItem="_qpFmYcFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qpAt48FnEeumirn8pNdxEw" targetItem="_qpFmcMFnEeumirn8pNdxEw"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_qpE_UMFnEeumirn8pNdxEw" sourceAnchor="0.0,55.0" targetAnchor="151.0,192.0" target="_qpUP6cFnEeumirn8pNdxEw" source="_qpFmYcFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mD9OUcFnEeumirn8pNdxEw"/>
     <bendpoints xmi:id="_q4y2UMFnEeumirn8pNdxEw" sourceX="-240" targetY="110"/>
@@ -135,11 +147,17 @@
     <targetRole xmi:id="_qpE_VsFnEeumirn8pNdxEw" aggregationKind="NONE" name="reserveJoueur" navigable="true">
       <modelElement href="Projet_Java.uml#_mDKkIcFnEeumirn8pNdxEw"/>
       <visualProperties xmi:id="_q44V4MFnEeumirn8pNdxEw" position="177.85912362247197,77.22378306175165"/>
+      <stereotypes xmi:id="_7mYjEMFpEeumirn8pNdxEw" name="Array">
+        <modelElement href="Projet_Java.uml#_mDKkI8FnEeumirn8pNdxEw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_7mYjEcFpEeumirn8pNdxEw" name="LegacyStyledElement">
+        <modelElement href="Projet_Java.uml#_mDLLMcFnEeumirn8pNdxEw"/>
+      </stereotypes>
       <visibility xmi:id="_qpE_V8FnEeumirn8pNdxEw" label="-"/>
       <cardinality xmi:id="_qpFmYMFnEeumirn8pNdxEw" label="1..*" max="-1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qpRMkcFnEeumirn8pNdxEw" targetItem="_qpUP98FnEeumirn8pNdxEw" sourceItem="_qpRMkMFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qpRMkcFnEeumirn8pNdxEw" targetItem="_qpUP98FnEeumirn8pNdxEw"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_qpUP4MFnEeumirn8pNdxEw" source="_qpUP6cFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mD91YcFnEeumirn8pNdxEw"/>
     <stereotypes xmi:id="_qpUP4cFnEeumirn8pNdxEw" name="Reference">
@@ -153,6 +171,12 @@
     </sourceRole>
     <targetRole xmi:id="_qpUP5sFnEeumirn8pNdxEw" aggregationKind="NONE" name="pieces" navigable="true">
       <modelElement href="Projet_Java.uml#_mDLyQMFnEeumirn8pNdxEw"/>
+      <stereotypes xmi:id="_7mYjEsFpEeumirn8pNdxEw" name="Generics">
+        <modelElement href="Projet_Java.uml#_mDMZUMFnEeumirn8pNdxEw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_7mYjE8FpEeumirn8pNdxEw" name="LegacyStyledElement">
+        <modelElement href="Projet_Java.uml#_mDNAYMFnEeumirn8pNdxEw"/>
+      </stereotypes>
       <visibility xmi:id="_qpUP58FnEeumirn8pNdxEw" label="-"/>
       <cardinality xmi:id="_qpUP6MFnEeumirn8pNdxEw" label="1" max="1" min="1"/>
     </targetRole>
@@ -162,61 +186,30 @@
     <bendpoints xmi:id="_q4y2UcFnEeumirn8pNdxEw" sourceY="-337" targetX="-203" targetY="282"/>
     <bendpoints xmi:id="_q4y2UsFnEeumirn8pNdxEw" sourceX="203" sourceY="-337" targetY="282"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qpdZ0cFnEeumirn8pNdxEw" targetItem="_qpfPAMFnEeumirn8pNdxEw" sourceItem="_qpdZ0MFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qpdZ0cFnEeumirn8pNdxEw" targetItem="_qpfPAMFnEeumirn8pNdxEw"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_qpjgcMFnEeumirn8pNdxEw" sourceAnchor="137.0,0.0" targetAnchor="246.0,308.0" superClass="_qoTjScFnEeumirn8pNdxEw" subClass="_qpl8sMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mCsDAMFnEeumirn8pNdxEw"/>
     <bendpoints xmi:id="_q4y2U8FnEeumirn8pNdxEw" sourceY="-651" targetX="301" targetY="282"/>
     <bendpoints xmi:id="_q4y2VMFnEeumirn8pNdxEw" sourceX="-301" sourceY="-651" targetY="282"/>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qpkHgcFnEeumirn8pNdxEw" targetItem="_qpl8sMFnEeumirn8pNdxEw" sourceItem="_qpkHgMFnEeumirn8pNdxEw"/>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_ql_PEMFnEeumirn8pNdxEw" sourceConnectionVisual="_qmAdMMFnEeumirn8pNdxEw" text="Classe Case, objets independants avec des coordonnees x et y, qui sont ensuite associes dans la classe Plateau" item="_qmJAF8FnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDvy8MFnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qniuQMFnEeumirn8pNdxEw" sourceConnectionVisual="_qniuQcFnEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;Cavalier&quot;" item="_qnsfQMFnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDvy8cFnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qnlxkMFnEeumirn8pNdxEw" sourceConnectionVisual="_qnlxkcFnEeumirn8pNdxEw" text="Classe principale Piece. Definit les caracteristiques de base communes ï¿½ tout type de piece,&#xD;&#xA;et dont toutes les pieces heriteront par la suite." item="_qoTjScFnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDxBEMFnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qnm_sMFnEeumirn8pNdxEw" sourceConnectionVisual="_qnm_scFnEeumirn8pNdxEw" text="Definit les attributs de la classe &quot;Piece&quot; :&#xD;&#xA;&#x9; *  &#xD;&#xA;&#x9; * @param nom attribue une chaine de carateres comme nom de la piece&#xD;&#xA;&#x9; * @param joueur determine si la piece appartient au joueur 1 ou 2&#xD;&#xA;&#x9; * @param i associe une icone a la piece (attribut temporaire permettant la conversion vers Image)&#xD;&#xA;&#x9; * @param icon associe une icone a la piece&#xD;&#xA;&#x9; * @param promu attribut booleen indiquant si la piece est promue ou non" item="_qoTjZMFnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDxBEcFnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qnyl4MFnEeumirn8pNdxEw" sourceConnectionVisual="_qnyl4cFnEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;Fou&quot;" item="_qn0bEMFnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDwaAMFnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qn5TkcFnEeumirn8pNdxEw" sourceConnectionVisual="_qn56oMFnEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;General d'argent (aussi appelee &quot;argent&quot;)&quot;" item="_qn7v0MFnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDwaAcFnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qoAoUMFnEeumirn8pNdxEw" sourceConnectionVisual="_qoAoUcFnEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;General d'or (aussi appelee &quot;or&quot;)&quot;" item="_qoCdgMFnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDwaAsFnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qoLnccFnEeumirn8pNdxEw" sourceConnectionVisual="_qoLncsFnEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;Lancier&quot;" item="_qoM1kMFnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDwaA8FnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qo2V0cFnEeumirn8pNdxEw" sourceConnectionVisual="_qo2V0sFnEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;Pion&quot;" item="_qo4yEMFnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDxBEsFnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qpAG0MFnEeumirn8pNdxEw" sourceConnectionVisual="_qpAG0cFnEeumirn8pNdxEw" text=" Classe Plateau pour creer un plateau de jeu" item="_qpFmYcFnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDxoIMFnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qpAt4sFnEeumirn8pNdxEw" sourceConnectionVisual="_qpAt48FnEeumirn8pNdxEw" text="Definit les attributs de la classe &quot;Plateau&quot; :&#xD;&#xA;&#x9; *  &#xD;&#xA;&#x9; * @param plateau plateau de jeu constitue comme un tableau a 2 dimensions de 9x9 objets de type &quot;Case&quot;&#xD;&#xA;&#x9; * &#x9;&#x9;&#x9;&#x9;&#x9;(soit 100 cases : 10 cases (0-9) en abscisse, 10 cases en ordonnee)&#xD;&#xA;&#x9; * @param reserveJoueur objet de type &quot;Reserve&quot; qui constitue la reserve de chaque joueur" item="_qpFmcMFnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDxoIcFnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qpRMkMFnEeumirn8pNdxEw" sourceConnectionVisual="_qpRMkcFnEeumirn8pNdxEw" text="Definit les attributs de la classe &quot;Reserve&quot; :&#xA;&#x9; *  &#xA;&#x9; * @param pieces cree une ArrayList pour stocker les pieces presentes dans la reserve de chaque joueur&#xA;&#x9; * @param joueur determine si la reserve appartient au joueur 1 ou 2" item="_qpUP98FnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDxoIsFnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qpdZ0MFnEeumirn8pNdxEw" sourceConnectionVisual="_qpdZ0cFnEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;Roi (aussi appelee &quot;Regnant&quot;)&quot;" item="_qpfPAMFnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDxoI8FnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_qpkHgMFnEeumirn8pNdxEw" sourceConnectionVisual="_qpkHgcFnEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;Tour (aussi appelee &quot;Chariot&quot;)&quot;" item="_qpl8sMFnEeumirn8pNdxEw">
-    <modelElement href="Projet_Java.uml#_mDyPMMFnEeumirn8pNdxEw"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qmJAF8FnEeumirn8pNdxEw" comments="_ql_PEMFnEeumirn8pNdxEw" targetConnectionVisual="_qmAdMMFnEeumirn8pNdxEw" name="Case" associationsIn="_qmIZAMFnEeumirn8pNdxEw _qo9DgMFnEeumirn8pNdxEw">
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_qpkHgcFnEeumirn8pNdxEw" targetItem="_qpl8sMFnEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7mZKIcFpEeumirn8pNdxEw" targetItem="_qmJAF8FnEeumirn8pNdxEw" sourceItem="_7mZKIMFpEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7maYQcFpEeumirn8pNdxEw" targetItem="_qnsfQMFnEeumirn8pNdxEw" sourceItem="_7maYQMFpEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7ma_UcFpEeumirn8pNdxEw" targetItem="_qn0bEMFnEeumirn8pNdxEw" sourceItem="_7ma_UMFpEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7mcNccFpEeumirn8pNdxEw" targetItem="_qn7v0MFnEeumirn8pNdxEw" sourceItem="_7mcNcMFpEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7mc0gcFpEeumirn8pNdxEw" targetItem="_qoCdgMFnEeumirn8pNdxEw" sourceItem="_7mc0gMFpEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7meCocFpEeumirn8pNdxEw" targetItem="_qoM1kMFnEeumirn8pNdxEw" sourceItem="_7meCoMFpEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7mepscFpEeumirn8pNdxEw" targetItem="_qoTjScFnEeumirn8pNdxEw" sourceItem="_7mepsMFpEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7mf30cFpEeumirn8pNdxEw" targetItem="_qoTjZMFnEeumirn8pNdxEw" sourceItem="_7mf30MFpEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7mhF8cFpEeumirn8pNdxEw" targetItem="_qo4yEMFnEeumirn8pNdxEw" sourceItem="_7mhF8MFpEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7mhtAcFpEeumirn8pNdxEw" targetItem="_qpFmYcFnEeumirn8pNdxEw" sourceItem="_7mhtAMFpEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7mjiMcFpEeumirn8pNdxEw" targetItem="_qpFmcMFnEeumirn8pNdxEw" sourceItem="_7mjiMMFpEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7mlXYcFpEeumirn8pNdxEw" targetItem="_qpUP98FnEeumirn8pNdxEw" sourceItem="_7mlXYMFpEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7ml-ccFpEeumirn8pNdxEw" targetItem="_qpfPAMFnEeumirn8pNdxEw" sourceItem="_7ml-cMFpEeumirn8pNdxEw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_7mmlgcFpEeumirn8pNdxEw" targetItem="_qpl8sMFnEeumirn8pNdxEw" sourceItem="_7mmlgMFpEeumirn8pNdxEw"/>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qmJAF8FnEeumirn8pNdxEw" comments="_7mZKIMFpEeumirn8pNdxEw" targetConnectionVisual="_qmAdMMFnEeumirn8pNdxEw _7mZKIcFpEeumirn8pNdxEw" name="Case" associationsIn="_qmIZAMFnEeumirn8pNdxEw _qo9DgMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mAFa8MFnEeumirn8pNdxEw"/>
     <visualProperties xmi:id="_qmJAGMFnEeumirn8pNdxEw" position="30.0,30.0" size="-1.0,-1.0"/>
-    <stereotypes xmi:id="_qmJAGcFnEeumirn8pNdxEw" name="Patch">
-      <modelElement href="Projet_Java.uml#_qlv-gMFnEeumirn8pNdxEw"/>
-    </stereotypes>
     <visibility xmi:id="_qmJAGsFnEeumirn8pNdxEw" label="+"/>
     <attributes xmi:id="_qmJAG8FnEeumirn8pNdxEw" name="x">
       <modelElement href="Projet_Java.uml#_mDEdgMFnEeumirn8pNdxEw"/>
@@ -269,7 +262,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qnsfQMFnEeumirn8pNdxEw" comments="_qniuQMFnEeumirn8pNdxEw" targetConnectionVisual="_qniuQcFnEeumirn8pNdxEw" name="Cavalier" generalizations="_qnj8YMFnEeumirn8pNdxEw">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qnsfQMFnEeumirn8pNdxEw" comments="_7maYQMFpEeumirn8pNdxEw" targetConnectionVisual="_qniuQcFnEeumirn8pNdxEw _7maYQcFpEeumirn8pNdxEw" name="Cavalier" generalizations="_qnj8YMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mARoMMFnEeumirn8pNdxEw"/>
     <visualProperties xmi:id="_qnsfQcFnEeumirn8pNdxEw" position="884.0,417.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_qnsfQsFnEeumirn8pNdxEw" label="+"/>
@@ -325,7 +318,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qn0bEMFnEeumirn8pNdxEw" comments="_qnyl4MFnEeumirn8pNdxEw" targetConnectionVisual="_qnyl4cFnEeumirn8pNdxEw" name="Fou" generalizations="_qnx-0MFnEeumirn8pNdxEw">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qn0bEMFnEeumirn8pNdxEw" comments="_7ma_UMFpEeumirn8pNdxEw" targetConnectionVisual="_qnyl4cFnEeumirn8pNdxEw _7ma_UcFpEeumirn8pNdxEw" name="Fou" generalizations="_qnx-0MFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mAWgsMFnEeumirn8pNdxEw"/>
     <visualProperties xmi:id="_qn0bEcFnEeumirn8pNdxEw" position="868.0,821.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_qn0bEsFnEeumirn8pNdxEw" label="+"/>
@@ -381,7 +374,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qn7v0MFnEeumirn8pNdxEw" comments="_qn5TkcFnEeumirn8pNdxEw" targetConnectionVisual="_qn56oMFnEeumirn8pNdxEw" name="GeneralArgent" generalizations="_qn5TkMFnEeumirn8pNdxEw">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qn7v0MFnEeumirn8pNdxEw" comments="_7mcNcMFpEeumirn8pNdxEw" targetConnectionVisual="_qn56oMFnEeumirn8pNdxEw _7mcNccFpEeumirn8pNdxEw" name="GeneralArgent" generalizations="_qn5TkMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mAayIMFnEeumirn8pNdxEw"/>
     <visualProperties xmi:id="_qn7v0cFnEeumirn8pNdxEw" position="884.0,976.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_qn7v0sFnEeumirn8pNdxEw" label="+"/>
@@ -437,7 +430,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qoCdgMFnEeumirn8pNdxEw" comments="_qoAoUMFnEeumirn8pNdxEw" targetConnectionVisual="_qoAoUcFnEeumirn8pNdxEw" name="GeneralOr" generalizations="_qoABQMFnEeumirn8pNdxEw">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qoCdgMFnEeumirn8pNdxEw" comments="_7mc0gMFpEeumirn8pNdxEw" targetConnectionVisual="_qoAoUcFnEeumirn8pNdxEw _7mc0gcFpEeumirn8pNdxEw" name="GeneralOr" generalizations="_qoABQMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mAg4wMFnEeumirn8pNdxEw"/>
     <visualProperties xmi:id="_qoCdgcFnEeumirn8pNdxEw" position="884.0,1132.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_qoCdgsFnEeumirn8pNdxEw" label="+"/>
@@ -515,7 +508,7 @@
       <cardinality xmi:id="_qoH9G8FnEeumirn8pNdxEw" label="1" max="1" min="1"/>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qoM1kMFnEeumirn8pNdxEw" comments="_qoLnccFnEeumirn8pNdxEw" targetConnectionVisual="_qoLncsFnEeumirn8pNdxEw" name="Lancier" generalizations="_qoLncMFnEeumirn8pNdxEw">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qoM1kMFnEeumirn8pNdxEw" comments="_7meCoMFpEeumirn8pNdxEw" targetConnectionVisual="_qoLncsFnEeumirn8pNdxEw _7meCocFpEeumirn8pNdxEw" name="Lancier" generalizations="_qoLncMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mAnmcMFnEeumirn8pNdxEw"/>
     <visualProperties xmi:id="_qoM1kcFnEeumirn8pNdxEw" position="868.0,1280.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_qoM1ksFnEeumirn8pNdxEw" label="+"/>
@@ -571,7 +564,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qoTjScFnEeumirn8pNdxEw" comments="_qnlxkMFnEeumirn8pNdxEw" targetConnectionVisual="_qnlxkcFnEeumirn8pNdxEw" name="Piece" associationsOut="_qmIZAMFnEeumirn8pNdxEw _qoSVIMFnEeumirn8pNdxEw _qoTjQMFnEeumirn8pNdxEw" subclassedBy="_qnj8YMFnEeumirn8pNdxEw _qnx-0MFnEeumirn8pNdxEw _qn5TkMFnEeumirn8pNdxEw _qoABQMFnEeumirn8pNdxEw _qoLncMFnEeumirn8pNdxEw _qo2V0MFnEeumirn8pNdxEw _qpcywMFnEeumirn8pNdxEw _qpjgcMFnEeumirn8pNdxEw">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qoTjScFnEeumirn8pNdxEw" comments="_7mepsMFpEeumirn8pNdxEw" targetConnectionVisual="_qnlxkcFnEeumirn8pNdxEw _7mepscFpEeumirn8pNdxEw" name="Piece" abstractClass="true" associationsOut="_qmIZAMFnEeumirn8pNdxEw _qoSVIMFnEeumirn8pNdxEw _qoTjQMFnEeumirn8pNdxEw" subclassedBy="_qnj8YMFnEeumirn8pNdxEw _qnx-0MFnEeumirn8pNdxEw _qn5TkMFnEeumirn8pNdxEw _qoABQMFnEeumirn8pNdxEw _qoLncMFnEeumirn8pNdxEw _qo2V0MFnEeumirn8pNdxEw _qpcywMFnEeumirn8pNdxEw _qpjgcMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mAr34MFnEeumirn8pNdxEw"/>
     <visualProperties xmi:id="_qoTjSsFnEeumirn8pNdxEw" position="306.0,201.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_qoTjS8FnEeumirn8pNdxEw" label="+"/>
@@ -596,9 +589,9 @@
     </attributes>
     <attributes xmi:id="_qoTjVcFnEeumirn8pNdxEw" name="i">
       <modelElement href="Projet_Java.uml#_mDHg0MFnEeumirn8pNdxEw"/>
-      <stereotypes xmi:id="_qoTjVsFnEeumirn8pNdxEw" name="LegacyStyledElement">
-        <modelElement href="Projet_Java.uml#_mDHg0cFnEeumirn8pNdxEw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_7mnzoMFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_7moasMFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_7mvIYMFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
       <visibility xmi:id="_qoTjV8FnEeumirn8pNdxEw" label="~"/>
       <cardinality xmi:id="_qoTjWMFnEeumirn8pNdxEw" label="1" max="1" min="1"/>
       <type xmi:id="_qoTjWcFnEeumirn8pNdxEw" name="ImageIcon">
@@ -607,9 +600,9 @@
     </attributes>
     <attributes xmi:id="_qoTjWsFnEeumirn8pNdxEw" name="icon">
       <modelElement href="Projet_Java.uml#_mDIH4MFnEeumirn8pNdxEw"/>
-      <stereotypes xmi:id="_qoTjW8FnEeumirn8pNdxEw" name="LegacyStyledElement">
-        <modelElement href="Projet_Java.uml#_mDIH4cFnEeumirn8pNdxEw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_7mpBwMFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_7mpo0MFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_7mvIYcFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
       <visibility xmi:id="_qoTjXMFnEeumirn8pNdxEw" label="~"/>
       <cardinality xmi:id="_qoTjXcFnEeumirn8pNdxEw" label="1" max="1" min="1"/>
       <type xmi:id="_qoTjXsFnEeumirn8pNdxEw" name="ImageIcon">
@@ -627,7 +620,7 @@
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
       </type>
     </attributes>
-    <operations xmi:id="_qoTjZMFnEeumirn8pNdxEw" comments="_qnm_sMFnEeumirn8pNdxEw" targetConnectionVisual="_qnm_scFnEeumirn8pNdxEw" name="Piece">
+    <operations xmi:id="_qoTjZMFnEeumirn8pNdxEw" comments="_7mf30MFpEeumirn8pNdxEw" targetConnectionVisual="_qnm_scFnEeumirn8pNdxEw _7mf30cFpEeumirn8pNdxEw" name="Piece">
       <modelElement href="Projet_Java.uml#_mAttEMFnEeumirn8pNdxEw"/>
       <keywords xmi:id="_qoTjZcFnEeumirn8pNdxEw" keyword="create"/>
       <visibility xmi:id="_qoTjZsFnEeumirn8pNdxEw" label="+"/>
@@ -740,7 +733,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qo4yEMFnEeumirn8pNdxEw" comments="_qo2V0cFnEeumirn8pNdxEw" targetConnectionVisual="_qo2V0sFnEeumirn8pNdxEw" name="Pion" generalizations="_qo2V0MFnEeumirn8pNdxEw">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qo4yEMFnEeumirn8pNdxEw" comments="_7mhF8MFpEeumirn8pNdxEw" targetConnectionVisual="_qo2V0sFnEeumirn8pNdxEw _7mhF8cFpEeumirn8pNdxEw" name="Pion" generalizations="_qo2V0MFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mA1B0MFnEeumirn8pNdxEw"/>
     <visualProperties xmi:id="_qo4yEcFnEeumirn8pNdxEw" position="364.0,976.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_qo4yEsFnEeumirn8pNdxEw" label="+"/>
@@ -796,18 +789,18 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qpFmYcFnEeumirn8pNdxEw" comments="_qpAG0MFnEeumirn8pNdxEw" targetConnectionVisual="_qpAG0cFnEeumirn8pNdxEw" name="Plateau" associationsOut="_qo9DgMFnEeumirn8pNdxEw _qpE_UMFnEeumirn8pNdxEw">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qpFmYcFnEeumirn8pNdxEw" comments="_7mhtAMFpEeumirn8pNdxEw" targetConnectionVisual="_qpAG0cFnEeumirn8pNdxEw _7mhtAcFpEeumirn8pNdxEw" name="Plateau" associationsOut="_qo9DgMFnEeumirn8pNdxEw _qpE_UMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mA4sMMFnEeumirn8pNdxEw"/>
     <visualProperties xmi:id="_qpFmYsFnEeumirn8pNdxEw" position="48.0,587.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_qpFmY8FnEeumirn8pNdxEw" label="+"/>
     <attributes xmi:id="_qpFmZMFnEeumirn8pNdxEw" defaultValue="new Case[9][9]" name="plateau">
       <modelElement href="Projet_Java.uml#_mDJWAMFnEeumirn8pNdxEw"/>
-      <stereotypes xmi:id="_qpFmZcFnEeumirn8pNdxEw" name="Array">
-        <modelElement href="Projet_Java.uml#_mDJ9EMFnEeumirn8pNdxEw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_qpFmZsFnEeumirn8pNdxEw" name="LegacyStyledElement">
-        <modelElement href="Projet_Java.uml#_mDKkIMFnEeumirn8pNdxEw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_7mqP4MFpEeumirn8pNdxEw" name="Array"/>
+      <stereotypes xmi:id="_7mqP4cFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_7mq28MFpEeumirn8pNdxEw" name="Array"/>
+      <stereotypes xmi:id="_7mq28cFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_7mvvcMFpEeumirn8pNdxEw" name="Array"/>
+      <stereotypes xmi:id="_7mwWgMFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
       <visibility xmi:id="_qpFmZ8FnEeumirn8pNdxEw" label="-"/>
       <cardinality xmi:id="_qpFmaMFnEeumirn8pNdxEw" label="1..*" max="-1" min="1"/>
       <type xmi:id="_qpFmacFnEeumirn8pNdxEw" name="Case">
@@ -816,19 +809,19 @@
     </attributes>
     <attributes xmi:id="_qpFmasFnEeumirn8pNdxEw" defaultValue="{null, new Reserve(1), new Reserve(2)}" name="reserveJoueur">
       <modelElement href="Projet_Java.uml#_mDKkIcFnEeumirn8pNdxEw"/>
-      <stereotypes xmi:id="_qpFma8FnEeumirn8pNdxEw" name="Array">
-        <modelElement href="Projet_Java.uml#_mDKkI8FnEeumirn8pNdxEw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_qpFmbMFnEeumirn8pNdxEw" name="LegacyStyledElement">
-        <modelElement href="Projet_Java.uml#_mDLLMcFnEeumirn8pNdxEw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_7mreAMFpEeumirn8pNdxEw" name="Array"/>
+      <stereotypes xmi:id="_7mreAcFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_7msFEMFpEeumirn8pNdxEw" name="Array"/>
+      <stereotypes xmi:id="_7msFEcFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_7mw9kMFpEeumirn8pNdxEw" name="Array"/>
+      <stereotypes xmi:id="_7mw9kcFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
       <visibility xmi:id="_qpFmbcFnEeumirn8pNdxEw" label="-"/>
       <cardinality xmi:id="_qpFmbsFnEeumirn8pNdxEw" label="1..*" max="-1" min="1"/>
       <type xmi:id="_qpFmb8FnEeumirn8pNdxEw" name="Reserve">
         <modelElement href="Projet_Java.uml#_mBAA8MFnEeumirn8pNdxEw"/>
       </type>
     </attributes>
-    <operations xmi:id="_qpFmcMFnEeumirn8pNdxEw" comments="_qpAt4sFnEeumirn8pNdxEw" targetConnectionVisual="_qpAt48FnEeumirn8pNdxEw" name="Plateau">
+    <operations xmi:id="_qpFmcMFnEeumirn8pNdxEw" comments="_7mjiMMFpEeumirn8pNdxEw" targetConnectionVisual="_qpAt48FnEeumirn8pNdxEw _7mjiMcFpEeumirn8pNdxEw" name="Plateau">
       <modelElement href="Projet_Java.uml#_mA6hYMFnEeumirn8pNdxEw"/>
       <keywords xmi:id="_qpFmccFnEeumirn8pNdxEw" keyword="create"/>
       <visibility xmi:id="_qpFmcsFnEeumirn8pNdxEw" label="+"/>
@@ -921,18 +914,15 @@
   <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qpUP6cFnEeumirn8pNdxEw" name="Reserve" associationsIn="_qpE_UMFnEeumirn8pNdxEw" associationsOut="_qpUP4MFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mBAA8MFnEeumirn8pNdxEw"/>
     <visualProperties xmi:id="_qpUP6sFnEeumirn8pNdxEw" position="-343.0,340.0" size="-1.0,-1.0"/>
-    <stereotypes xmi:id="_qpUP68FnEeumirn8pNdxEw" name="Patch">
-      <modelElement href="Projet_Java.uml#_qlxzsMFnEeumirn8pNdxEw"/>
-    </stereotypes>
     <visibility xmi:id="_qpUP7MFnEeumirn8pNdxEw" label="+"/>
     <attributes xmi:id="_qpUP7cFnEeumirn8pNdxEw" defaultValue="new ArrayList&lt;Piece>()" name="pieces">
       <modelElement href="Projet_Java.uml#_mDLyQMFnEeumirn8pNdxEw"/>
-      <stereotypes xmi:id="_qpUP7sFnEeumirn8pNdxEw" name="Generics">
-        <modelElement href="Projet_Java.uml#_mDMZUMFnEeumirn8pNdxEw"/>
-      </stereotypes>
-      <stereotypes xmi:id="_qpUP78FnEeumirn8pNdxEw" name="LegacyStyledElement">
-        <modelElement href="Projet_Java.uml#_mDNAYMFnEeumirn8pNdxEw"/>
-      </stereotypes>
+      <stereotypes xmi:id="_7mssIMFpEeumirn8pNdxEw" name="Generics"/>
+      <stereotypes xmi:id="_7mtTMMFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_7mtTMcFpEeumirn8pNdxEw" name="Generics"/>
+      <stereotypes xmi:id="_7mt6QMFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_7mxkoMFpEeumirn8pNdxEw" name="Generics"/>
+      <stereotypes xmi:id="_7mxkocFpEeumirn8pNdxEw" name="LegacyStyledElement"/>
       <visibility xmi:id="_qpUP8MFnEeumirn8pNdxEw" label="-"/>
       <cardinality xmi:id="_qpUP8cFnEeumirn8pNdxEw" label="1" max="1" min="1"/>
       <type xmi:id="_qpUP8sFnEeumirn8pNdxEw" name="ArrayList">
@@ -947,7 +937,7 @@
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </type>
     </attributes>
-    <operations xmi:id="_qpUP98FnEeumirn8pNdxEw" comments="_qpRMkMFnEeumirn8pNdxEw" targetConnectionVisual="_qpRMkcFnEeumirn8pNdxEw" name="Reserve">
+    <operations xmi:id="_qpUP98FnEeumirn8pNdxEw" comments="_7mlXYMFpEeumirn8pNdxEw" targetConnectionVisual="_qpRMkcFnEeumirn8pNdxEw _7mlXYcFpEeumirn8pNdxEw" name="Reserve">
       <modelElement href="Projet_Java.uml#_mBBPEMFnEeumirn8pNdxEw"/>
       <keywords xmi:id="_qpUP-MFnEeumirn8pNdxEw" keyword="create"/>
       <visibility xmi:id="_qpUP-cFnEeumirn8pNdxEw" label="+"/>
@@ -1028,12 +1018,9 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qpfPAMFnEeumirn8pNdxEw" comments="_qpdZ0MFnEeumirn8pNdxEw" targetConnectionVisual="_qpdZ0cFnEeumirn8pNdxEw" name="Roi" generalizations="_qpcywMFnEeumirn8pNdxEw">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qpfPAMFnEeumirn8pNdxEw" comments="_7ml-cMFpEeumirn8pNdxEw" targetConnectionVisual="_qpdZ0cFnEeumirn8pNdxEw _7ml-ccFpEeumirn8pNdxEw" name="Roi" generalizations="_qpcywMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mBFggMFnEeumirn8pNdxEw"/>
     <visualProperties xmi:id="_qpfPAcFnEeumirn8pNdxEw" position="338.0,1128.0" size="-1.0,-1.0"/>
-    <stereotypes xmi:id="_qpfPAsFnEeumirn8pNdxEw" name="Patch">
-      <modelElement href="Projet_Java.uml#_qlyawMFnEeumirn8pNdxEw"/>
-    </stereotypes>
     <visibility xmi:id="_qpfPA8FnEeumirn8pNdxEw" label="+"/>
     <operations xmi:id="_qpfPBMFnEeumirn8pNdxEw" name="Roi">
       <modelElement href="Projet_Java.uml#_mBGuoMFnEeumirn8pNdxEw"/>
@@ -1087,7 +1074,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qpl8sMFnEeumirn8pNdxEw" comments="_qpkHgMFnEeumirn8pNdxEw" targetConnectionVisual="_qpkHgcFnEeumirn8pNdxEw" name="Tour" generalizations="_qpjgcMFnEeumirn8pNdxEw">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_qpl8sMFnEeumirn8pNdxEw" comments="_7mmlgMFpEeumirn8pNdxEw" targetConnectionVisual="_qpkHgcFnEeumirn8pNdxEw _7mmlgcFpEeumirn8pNdxEw" name="Tour" generalizations="_qpjgcMFnEeumirn8pNdxEw">
     <modelElement href="Projet_Java.uml#_mBJK4MFnEeumirn8pNdxEw"/>
     <visualProperties xmi:id="_qpl8scFnEeumirn8pNdxEw" position="716.0,1442.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_qpl8ssFnEeumirn8pNdxEw" label="+"/>
@@ -1142,5 +1129,47 @@
         </type>
       </parameters>
     </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7mZKIMFpEeumirn8pNdxEw" sourceConnectionVisual="_7mZKIcFpEeumirn8pNdxEw" text="Classe Case, objets independants avec des coordonnees x et y, qui sont ensuite associes dans la classe Plateau" item="_qmJAF8FnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_ayLGIMFpEeumirn8pNdxEw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7maYQMFpEeumirn8pNdxEw" sourceConnectionVisual="_7maYQcFpEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;Cavalier&quot;" item="_qnsfQMFnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_b_Ch4MFpEeumirn8pNdxEw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7ma_UMFpEeumirn8pNdxEw" sourceConnectionVisual="_7ma_UcFpEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;Fou&quot;" item="_qn0bEMFnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_ZlnzcMFpEeumirn8pNdxEw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7mcNcMFpEeumirn8pNdxEw" sourceConnectionVisual="_7mcNccFpEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;General d'argent (aussi appelee &quot;argent&quot;)&quot;" item="_qn7v0MFnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_db0o8MFpEeumirn8pNdxEw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7mc0gMFpEeumirn8pNdxEw" sourceConnectionVisual="_7mc0gcFpEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;General d'or (aussi appelee &quot;or&quot;)&quot;" item="_qoCdgMFnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_epc5sMFpEeumirn8pNdxEw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7meCoMFpEeumirn8pNdxEw" sourceConnectionVisual="_7meCocFpEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;Lancier&quot;" item="_qoM1kMFnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_yHiqEMFpEeumirn8pNdxEw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7mepsMFpEeumirn8pNdxEw" sourceConnectionVisual="_7mepscFpEeumirn8pNdxEw" text="Classe principale Piece. Definit les caracteristiques de base communes ï¿½ tout type de piece,&#xD;&#xA;et dont toutes les pieces heriteront par la suite." item="_qoTjScFnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_xIH0cMFpEeumirn8pNdxEw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7mf30MFpEeumirn8pNdxEw" sourceConnectionVisual="_7mf30cFpEeumirn8pNdxEw" text="Definit les attributs de la classe &quot;Piece&quot; :&#xD;&#xA;&#x9; *  &#xD;&#xA;&#x9; * @param nom attribue une chaine de carateres comme nom de la piece&#xD;&#xA;&#x9; * @param joueur determine si la piece appartient au joueur 1 ou 2&#xD;&#xA;&#x9; * @param i associe une icone a la piece (attribut temporaire permettant la conversion vers Image)&#xD;&#xA;&#x9; * @param icon associe une icone a la piece&#xD;&#xA;&#x9; * @param promu attribut booleen indiquant si la piece est promue ou non" item="_qoTjZMFnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_xIH0ccFpEeumirn8pNdxEw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7mhF8MFpEeumirn8pNdxEw" sourceConnectionVisual="_7mhF8cFpEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;Pion&quot;" item="_qo4yEMFnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_uiOJMMFpEeumirn8pNdxEw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7mhtAMFpEeumirn8pNdxEw" sourceConnectionVisual="_7mhtAcFpEeumirn8pNdxEw" text=" Classe Plateau pour creer un plateau de jeu" item="_qpFmYcFnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_thz1EMFpEeumirn8pNdxEw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7mjiMMFpEeumirn8pNdxEw" sourceConnectionVisual="_7mjiMcFpEeumirn8pNdxEw" text="Definit les attributs de la classe &quot;Plateau&quot; :&#xD;&#xA;&#x9; *  &#xD;&#xA;&#x9; * @param plateau plateau de jeu constitue comme un tableau a 2 dimensions de 9x9 objets de type &quot;Case&quot;&#xD;&#xA;&#x9; * &#x9;&#x9;&#x9;&#x9;&#x9;(soit 100 cases : 10 cases (0-9) en abscisse, 10 cases en ordonnee)&#xD;&#xA;&#x9; * @param reserveJoueur objet de type &quot;Reserve&quot; qui constitue la reserve de chaque joueur" item="_qpFmcMFnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_thz1EcFpEeumirn8pNdxEw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7mlXYMFpEeumirn8pNdxEw" sourceConnectionVisual="_7mlXYcFpEeumirn8pNdxEw" text="Definit les attributs de la classe &quot;Reserve&quot; :&#xA;&#x9; *  &#xA;&#x9; * @param pieces cree une ArrayList pour stocker les pieces presentes dans la reserve de chaque joueur&#xA;&#x9; * @param joueur determine si la reserve appartient au joueur 1 ou 2" item="_qpUP98FnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_riOi8MFpEeumirn8pNdxEw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7ml-cMFpEeumirn8pNdxEw" sourceConnectionVisual="_7ml-ccFpEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;Roi (aussi appelee &quot;Regnant&quot;)&quot;" item="_qpfPAMFnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_lfKNQMFpEeumirn8pNdxEw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_7mmlgMFpEeumirn8pNdxEw" sourceConnectionVisual="_7mmlgcFpEeumirn8pNdxEw" text="Caracteristiques de la piece &quot;Tour (aussi appelee &quot;Chariot&quot;)&quot;" item="_qpl8sMFnEeumirn8pNdxEw">
+    <modelElement href="Projet_Java.uml#_kV6tQMFpEeumirn8pNdxEw"/>
   </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

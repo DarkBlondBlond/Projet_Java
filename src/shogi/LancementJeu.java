@@ -19,7 +19,7 @@ public class LancementJeu {
     }
 
     // Initialisation de la fenetre de lancement 
-    public static void creationFenetre(){
+    public static void creationFenetre() {
         final JFrame fenetreLancement = new JFrame();
         JPanel contenu = new JPanel();
         JButton nouvellePartie = new JButton("Nouvelle partie");

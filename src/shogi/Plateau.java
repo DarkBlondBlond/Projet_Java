@@ -232,6 +232,7 @@ public class Plateau {
     }
 }
 
+
 /* Methode pour connaitre l'occupation du plateau
 public String toString() {
     String chaine = "";

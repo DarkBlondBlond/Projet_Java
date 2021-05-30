@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_lofaUMFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_lofaUcFnEeumirn8pNdxEw" source="codegen">
         <details xmi:id="_lofaUsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
-        <details xmi:id="_qlzo4MFnEeumirn8pNdxEw" key="AssociatedSourceCode" value="/Projet_Java/Rendu_final/shogi/Case.java;1458760025/1;/Projet_Java/Rendu_final/shogi/Cavalier.java;4221848916/1;/Projet_Java/Rendu_final/shogi/Fou.java;330802068/1;/Projet_Java/Rendu_final/shogi/GeneralArgent.java;3947490855/1;/Projet_Java/Rendu_final/shogi/GeneralOr.java;2152669903/1;/Projet_Java/Rendu_final/shogi/LancementJeu.java;3709672941/1;/Projet_Java/Rendu_final/shogi/Lancier.java;525408402/1;/Projet_Java/Rendu_final/shogi/Piece.java;2650115100/1;/Projet_Java/Rendu_final/shogi/Pion.java;1696572704/1;/Projet_Java/Rendu_final/shogi/Plateau.java;1414947396/1;/Projet_Java/Rendu_final/shogi/Reserve.java;2762679257/1;/Projet_Java/Rendu_final/shogi/Roi.java;2781976691/1;/Projet_Java/Rendu_final/shogi/Tour.java;384482819/1;/Projet_Java/src/shogi/Case.java;3222007348/1;/Projet_Java/src/shogi/Cavalier.java;4154406433/1;/Projet_Java/src/shogi/Fou.java;1674463338/1;/Projet_Java/src/shogi/GeneralArgent.java;4032121006/1;/Projet_Java/src/shogi/GeneralOr.java;1331578091/1;/Projet_Java/src/shogi/LancementJeu.java;1960081361/1;/Projet_Java/src/shogi/Lancier.java;3951715395/1;/Projet_Java/src/shogi/Piece.java;2532815838/1;/Projet_Java/src/shogi/Pion.java;2082896921/1;/Projet_Java/src/shogi/Plateau.java;1675397510/1;/Projet_Java/src/shogi/Reserve.java;3405448019/1;/Projet_Java/src/shogi/Roi.java;1256380251/1;/Projet_Java/src/shogi/Tour.java;3146560568/1;/Projet_Java/Rendu_final/shogi/Interface.java;265070084/0;/Projet_Java/src/shogi/Interface.java;4214821314/0;"/>
+        <details xmi:id="_qlzo4MFnEeumirn8pNdxEw" key="AssociatedSourceCode" value="/Projet_Java/src/shogi/Case.java;329513416/1;/Projet_Java/src/shogi/Cavalier.java;1468527177/1;/Projet_Java/src/shogi/Fou.java;4088900845/1;/Projet_Java/src/shogi/GeneralArgent.java;1545678140/1;/Projet_Java/src/shogi/GeneralOr.java;3633931612/1;/Projet_Java/src/shogi/LancementJeu.java;2414662201/1;/Projet_Java/src/shogi/Lancier.java;2234111905/1;/Projet_Java/src/shogi/Piece.java;1920681389/1;/Projet_Java/src/shogi/Pion.java;3591466373/1;/Projet_Java/src/shogi/Plateau.java;1630405130/1;/Projet_Java/src/shogi/Reserve.java;3229613534/1;/Projet_Java/src/shogi/Roi.java;3458493496/1;/Projet_Java/src/shogi/Tour.java;3079614085/1;/Projet_Java/src/shogi/Interface.java;2229906369/0;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_l-m0QMFnEeumirn8pNdxEw">
@@ -41,7 +41,7 @@
             <details xmi:id="_mAH3MsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
           </contents>
         </eAnnotations>
-        <ownedComment xmi:id="_mDvy8MFnEeumirn8pNdxEw">
+        <ownedComment xmi:id="_ayLGIMFpEeumirn8pNdxEw">
           <body>Classe Case, objets independants avec des coordonnees x et y, qui sont ensuite associes dans la classe Plateau</body>
         </ownedComment>
         <ownedAttribute xmi:id="_mDEdgMFnEeumirn8pNdxEw" name="x" isReadOnly="true">
@@ -85,7 +85,7 @@
             <details xmi:id="_mASPQsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
           </contents>
         </eAnnotations>
-        <ownedComment xmi:id="_mDvy8cFnEeumirn8pNdxEw">
+        <ownedComment xmi:id="_b_Ch4MFpEeumirn8pNdxEw">
           <body>Caracteristiques de la piece &quot;Cavalier&quot;</body>
         </ownedComment>
         <generalization xmi:id="_mCOwAMFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
@@ -202,7 +202,7 @@
             <details xmi:id="_mAXHwsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
           </contents>
         </eAnnotations>
-        <ownedComment xmi:id="_mDwaAMFnEeumirn8pNdxEw">
+        <ownedComment xmi:id="_ZlnzcMFpEeumirn8pNdxEw">
           <body>Caracteristiques de la piece &quot;Fou&quot;</body>
         </ownedComment>
         <generalization xmi:id="_mCP-IMFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
@@ -304,7 +304,7 @@
             <details xmi:id="_mAcAQsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
           </contents>
         </eAnnotations>
-        <ownedComment xmi:id="_mDwaAcFnEeumirn8pNdxEw">
+        <ownedComment xmi:id="_db0o8MFpEeumirn8pNdxEw">
           <body>Caracteristiques de la piece &quot;General d'argent (aussi appelee &quot;argent&quot;)&quot;</body>
         </ownedComment>
         <generalization xmi:id="_mCRMQMFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
@@ -434,7 +434,7 @@
             <details xmi:id="_mAhf0sFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
           </contents>
         </eAnnotations>
-        <ownedComment xmi:id="_mDwaAsFnEeumirn8pNdxEw">
+        <ownedComment xmi:id="_epc5sMFpEeumirn8pNdxEw">
           <body>Caracteristiques de la piece &quot;General d'or (aussi appelee &quot;or&quot;)&quot;</body>
         </ownedComment>
         <generalization xmi:id="_mCRzUsFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
@@ -573,7 +573,7 @@
             <details xmi:id="_mAoNgsFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
           </contents>
         </eAnnotations>
-        <ownedComment xmi:id="_mDwaA8FnEeumirn8pNdxEw">
+        <ownedComment xmi:id="_yHiqEMFpEeumirn8pNdxEw">
           <body>Caracteristiques de la piece &quot;Lancier&quot;</body>
         </ownedComment>
         <generalization xmi:id="_mCbkUcFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
@@ -719,13 +719,13 @@
           </ownedParameter>
         </ownedOperation>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_mAr34MFnEeumirn8pNdxEw" name="Piece">
+      <packagedElement xmi:type="uml:Class" xmi:id="_mAr34MFnEeumirn8pNdxEw" name="Piece" isAbstract="true">
         <eAnnotations xmi:id="_mAse8MFnEeumirn8pNdxEw" source="http://ns.yatta.de/umllab">
           <contents xmi:type="ecore:EAnnotation" xmi:id="_mAse8cFnEeumirn8pNdxEw" source="codegen">
             <details xmi:id="_mAse8sFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
           </contents>
         </eAnnotations>
-        <ownedComment xmi:id="_mDxBEMFnEeumirn8pNdxEw">
+        <ownedComment xmi:id="_xIH0cMFpEeumirn8pNdxEw">
           <body>Classe principale Piece. Definit les caracteristiques de base communes ï¿½ tout type de piece,&#xD;
 et dont toutes les pieces heriteront par la suite.</body>
         </ownedComment>
@@ -844,7 +844,7 @@ et dont toutes les pieces heriteront par la suite.</body>
           <eAnnotations xmi:id="_mAttEsFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_mAttE8FnEeumirn8pNdxEw" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_mDxBEcFnEeumirn8pNdxEw">
+          <ownedComment xmi:id="_xIH0ccFpEeumirn8pNdxEw">
             <body>Definit les attributs de la classe &quot;Piece&quot; :&#xD;
 	 *  &#xD;
 	 * @param nom attribue une chaine de carateres comme nom de la piece&#xD;
@@ -894,7 +894,7 @@ et dont toutes les pieces heriteront par la suite.</body>
             <details xmi:id="_mA1o4sFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
           </contents>
         </eAnnotations>
-        <ownedComment xmi:id="_mDxBEsFnEeumirn8pNdxEw">
+        <ownedComment xmi:id="_uiOJMMFpEeumirn8pNdxEw">
           <body>Caracteristiques de la piece &quot;Pion&quot;</body>
         </ownedComment>
         <generalization xmi:id="_mCiSAMFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
@@ -1011,7 +1011,7 @@ et dont toutes les pieces heriteront par la suite.</body>
             <details xmi:id="_mA56UMFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
           </contents>
         </eAnnotations>
-        <ownedComment xmi:id="_mDxoIMFnEeumirn8pNdxEw">
+        <ownedComment xmi:id="_thz1EMFpEeumirn8pNdxEw">
           <body> Classe Plateau pour creer un plateau de jeu</body>
         </ownedComment>
         <ownedAttribute xmi:id="_mDJWAMFnEeumirn8pNdxEw" name="plateau" visibility="private" type="_mAFa8MFnEeumirn8pNdxEw" association="_mD8nQMFnEeumirn8pNdxEw">
@@ -1261,7 +1261,7 @@ et dont toutes les pieces heriteront par la suite.</body>
           <eAnnotations xmi:id="_mA6hYcFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_mA6hYsFnEeumirn8pNdxEw" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_mDxoIcFnEeumirn8pNdxEw">
+          <ownedComment xmi:id="_thz1EcFpEeumirn8pNdxEw">
             <body>Definit les attributs de la classe &quot;Plateau&quot; :&#xD;
 	 *  &#xD;
 	 * @param plateau plateau de jeu constitue comme un tableau a 2 dimensions de 9x9 objets de type &quot;Case&quot;&#xD;
@@ -1285,7 +1285,7 @@ et dont toutes les pieces heriteront par la suite.</body>
           </ownedParameter>
           <ownedParameter xmi:id="_mCkHMcFnEeumirn8pNdxEw" type="_mBAA8MFnEeumirn8pNdxEw" direction="return"/>
         </ownedOperation>
-        <ownedOperation xmi:id="_mCkuQMFnEeumirn8pNdxEw" name="deplacementPiece" method="_mDkMx8FnEeumirn8pNdxEw" raisedException="_mC8hsMFnEeumirn8pNdxEw">
+        <ownedOperation xmi:id="_mCkuQMFnEeumirn8pNdxEw" name="deplacementPiece" method="_mDkMx8FnEeumirn8pNdxEw" raisedException="_thym8cFpEeumirn8pNdxEw">
           <ownedParameter xmi:id="_mCkuQcFnEeumirn8pNdxEw" name="posDepart" type="_mAFa8MFnEeumirn8pNdxEw"/>
           <ownedParameter xmi:id="_mCkuQsFnEeumirn8pNdxEw" name="posArrivee" type="_mAFa8MFnEeumirn8pNdxEw"/>
           <ownedParameter xmi:id="_mCkuQ8FnEeumirn8pNdxEw" name="tour">
@@ -1380,7 +1380,7 @@ et dont toutes les pieces heriteront par la suite.</body>
           <eAnnotations xmi:id="_mBB2IMFnEeumirn8pNdxEw" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_mBB2IcFnEeumirn8pNdxEw" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_mDxoIsFnEeumirn8pNdxEw">
+          <ownedComment xmi:id="_riOi8MFpEeumirn8pNdxEw">
             <body>Definit les attributs de la classe &quot;Reserve&quot; :
 	 *  
 	 * @param pieces cree une ArrayList pour stocker les pieces presentes dans la reserve de chaque joueur
@@ -1416,7 +1416,7 @@ et dont toutes les pieces heriteront par la suite.</body>
             <details xmi:id="_mBGHksFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
           </contents>
         </eAnnotations>
-        <ownedComment xmi:id="_mDxoI8FnEeumirn8pNdxEw">
+        <ownedComment xmi:id="_lfKNQMFpEeumirn8pNdxEw">
           <body>Caracteristiques de la piece &quot;Roi (aussi appelee &quot;Regnant&quot;)&quot;</body>
         </ownedComment>
         <generalization xmi:id="_mCq04MFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
@@ -1489,7 +1489,7 @@ et dont toutes les pieces heriteront par la suite.</body>
             <details xmi:id="_mBJx8sFnEeumirn8pNdxEw" key="codegenDirectory" value="/Projet_Java/src"/>
           </contents>
         </eAnnotations>
-        <ownedComment xmi:id="_mDyPMMFnEeumirn8pNdxEw">
+        <ownedComment xmi:id="_kV6tQMFpEeumirn8pNdxEw">
           <body>Caracteristiques de la piece &quot;Tour (aussi appelee &quot;Chariot&quot;)&quot;</body>
         </ownedComment>
         <generalization xmi:id="_mCsDAMFnEeumirn8pNdxEw" general="_mAr34MFnEeumirn8pNdxEw"/>
@@ -1645,6 +1645,9 @@ et dont toutes les pieces heriteront par la suite.</body>
       <packagedElement xmi:type="uml:Package" xmi:id="_l_NRMMFnEeumirn8pNdxEw" name="util">
         <packagedElement xmi:type="uml:Class" xmi:id="_mCl8YMFnEeumirn8pNdxEw" name="ArrayList"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_thym8MFpEeumirn8pNdxEw" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_thym8cFpEeumirn8pNdxEw" name="Exception"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_l-_OwcFnEeumirn8pNdxEw" name="javax">
       <packagedElement xmi:type="uml:Package" xmi:id="_l-_OwsFnEeumirn8pNdxEw" name="swing">
@@ -1691,7 +1694,5 @@ et dont toutes les pieces heriteront par la suite.</body>
   <UMLLabProfile:Reference xmi:id="_mD9OUMFnEeumirn8pNdxEw" base_Element="_mD8nQMFnEeumirn8pNdxEw"/>
   <UMLLabProfile:Reference xmi:id="_mD91YMFnEeumirn8pNdxEw" base_Element="_mD9OUcFnEeumirn8pNdxEw"/>
   <UMLLabProfile:Reference xmi:id="_mD_DgMFnEeumirn8pNdxEw" base_Element="_mD91YcFnEeumirn8pNdxEw"/>
-  <UMLLabProfile:Patch xmi:id="_qlv-gMFnEeumirn8pNdxEw" base_Element="_mAFa8MFnEeumirn8pNdxEw" patchText="@@ -11,11 +11,9 @@&#xA; ogi;&#xA;-%0D%0A%0D&#xA;+%0A&#xA; %0A/**&#xA;" conflicting="false"/>
-  <UMLLabProfile:Patch xmi:id="_qlxzsMFnEeumirn8pNdxEw" base_Element="_mBAA8MFnEeumirn8pNdxEw" patchText="@@ -11,16 +11,13 @@&#xA; ogi;&#xA;-%0D%0A%0D&#xA;+%0A&#xA; %0A/**&#xA;-%0D&#xA; %0A * &#xA;@@ -113,14 +113,12 @@&#xA; aire&#xA;-%0D&#xA; %0A */&#xA;-%0D&#xA; %0A%0Aim&#xA;@@ -143,17 +143,16 @@&#xA; ayList;%0A&#xA;-%0D&#xA; %0Apublic &#xA;@@ -172,9 +172,8 @@&#xA;  %7B%0A%09&#xA;-%0D&#xA; %0A   &#xA;" conflicting="false"/>
-  <UMLLabProfile:Patch xmi:id="_qlyawMFnEeumirn8pNdxEw" base_Element="_mBFggMFnEeumirn8pNdxEw" patchText="@@ -11,11 +11,9 @@&#xA; ogi;&#xA;-%0D%0A%0D&#xA;+%0A&#xA; %0A/**&#xA;" conflicting="false"/>
+  <UMLLabProfile:Reference xmi:id="_thzOAMFpEeumirn8pNdxEw" base_Element="_thym8cFpEeumirn8pNdxEw"/>
 </xmi:XMI>
