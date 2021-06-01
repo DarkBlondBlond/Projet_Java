@@ -25,6 +25,7 @@ public class LancementJeu {
         JButton nouvellePartie = new JButton("Nouvelle partie");
         fenetreLancement.setSize(486, 300);
         fenetreLancement.setTitle("Jeu de shogi");
+        fenetreLancement.setLocationRelativeTo(null);
         contenu.setLayout(new BorderLayout());
         contenu.add(nouvellePartie);
         fenetreLancement.add(contenu);

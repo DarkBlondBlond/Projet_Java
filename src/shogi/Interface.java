@@ -46,6 +46,7 @@ public class Interface extends JFrame {
 		// Creation de la fenetre du jeu
 		fenetre.setLayout(new BorderLayout());
 		fenetre.setSize(1080, 972);
+        fenetre.setLocationRelativeTo(null);
 		fenetre.setTitle("Jeu de shogi");
 		fenetre.add(UIplateau, BorderLayout.CENTER);
 		fenetre.setResizable(false);
