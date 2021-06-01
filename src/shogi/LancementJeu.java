@@ -7,6 +7,8 @@ package shogi;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileNotFoundException;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -32,7 +34,12 @@ public class LancementJeu {
         fenetreLancement.setVisible(true);
         nouvellePartie.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                new Interface();
+                try {
+					new Interface();
+				} catch (FileNotFoundException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
                 fenetreLancement.dispose();
                 
                 /* Cree une nouvelle fenetre (JFrame), constituee d'un panneau (JPanel) et 
