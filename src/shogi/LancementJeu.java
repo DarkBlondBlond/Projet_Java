@@ -46,7 +46,8 @@ public class LancementJeu {
                  * d'un bouton (JButton) pour lancer une nouvelle partie.
                  * Definit les differrentes caracteristiques de la fenetre de lancement 
                  * (taille, titre, contenu) ainsi que l'action a effectuer lorsque l'on 
-                 * clique sur le JButton */
+                 * clique sur le JButton.
+                 * L'exception mentionnee ici renvoie a celle de la classe "Interface". */
             }
         });
     }
