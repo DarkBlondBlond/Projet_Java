@@ -207,7 +207,7 @@ public class Interface extends JFrame {
 					cases[x][y].setText("");
 					cases[x][y].setBackground(Color.decode("#704a37"));
 					
-					/* La 1ere ligne permet de recuperer l'icone associee Ã  la piece presente sur la case :
+					/* La 1ere ligne permet de recuperer l'icone associee à la piece presente sur la case :
 					 * 		- "p.getCase(x, y).getP().getIcon()" => receupere l'icone de la piece sur la case
 					 * 		- "cases[x][y].setIcon" => associe cette icone a la case.
 					 * La 2e ligne affiche l'icone recuperee dans la console.
@@ -251,3 +251,39 @@ public class Interface extends JFrame {
 	}
 }
 
+/* ORIGINAUX :
+		public static void miseAJourPlateau() {
+		//For pieces in the 9x9 board
+		for(int r = 0; r < 9; r++) {
+			for(int c = 0; c < 9; c++) {
+				if(p.getCase(r, c).getP() != null) {
+					//Set the piece text based on the piece symbol
+					//cases[r][c].setText(p.getCase(r, c).getP().getNom());
+					cases[r][c].setIcon(p.getCase(r, c).getP().getIcon());
+					System.out.println(p.getCase(r,c).getP().getIcon());
+					cases[r][c].setText("");
+					cases[r][c].setBackground(Color.decode("#704a37"));
+				} else {
+					//If square is empty, clear text
+					cases[r][c].setText("");
+					cases[r][c].setIcon(null);
+					cases[r][c].setForeground(Color.BLACK);
+					cases[r][c].setBackground(Color.decode("#704a37"));
+				}
+			}
+		}
+		//For pieces in the players' hands
+		for(int j = 1; j <= 2; j++) {
+			for(int i=0;i<38;i++) {
+				if(p.getReserve(j).getPiece(i) != null) {
+					//Set the square text to the piece symbol
+					boutonReserve[j][i].setText(p.getReserve(j).getPiece(i).getNom());
+					//If there's a piece, make the button visible
+					boutonReserve[j][i].setVisible(true);
+				} else {
+					//If there are no pieces in the hand button, hide it
+					boutonReserve[j][i].setVisible(false);
+				}
+			}
+		}
+*/
