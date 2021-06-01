@@ -71,12 +71,13 @@ public class Interface extends JFrame {
 		fenetre.add(regles, BorderLayout.LINE_END);
 		regles.setSize(154, 972);
 		JTextArea rgles = new JTextArea(readFile("regles.txt"));
-		//rgles.append();
 		regles.add(rgles);
 		regles.setVisible(true);
 		
-		/* Ajoute 2 nouveaux Layouts dans la fenetre de jeu, 1 pour le joueur 1 en haut de la fenetre et 1 pour le joueur 2 
-		 * en bas de la fenetre */
+		/* Ajoute 3 nouveaux Layouts dans la fenetre de jeu :
+		 *   - 1 pour le joueur 1 en haut de la fenetre 
+		 *   - 1 pour le joueur 2 en bas de la fenetre 
+		 *   - 1 pour les regles */
 		
 		// Taille des differents elements de la fenetre de jeu
 		UIplateau.setSize(1226, 972);
