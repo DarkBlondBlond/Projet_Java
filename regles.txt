@@ -1,63 +1,53 @@
 Objectif : 
-	Prendre le Roi adverse : si le roi ne peut pas fuir il est 'mat'
+      Prendre le Roi adverse (si le roi ne peut pas fuir il est 'mat')
 
-Joueurs : 
-	2 joueurs
-	Le joueur 1 commence systématiquement
+Pieces : 
+      20 pieces par joueurs :
+         1 Roi
+         1 Tour
+         1 Fou
+         2 Generaux d'Or
+         2 Generaux d'Argent
+         2 Cavaliers
+         2 Lanciers
+         9 Pions
+      Les pieces font face a leurs adversaires
 
-Plateau : 
-	Le plateau fait 9x9 cases soit 81.
-	Les trois lignes les plus éloignées forment la zone de promotion
-
-Pièces : 
-	20 pièces par joueurs :
-		1 roi
-		1 tour
-		1 fou
-		2 généraux d'or
-		2 généraux d'argent
-		2 cavaliers
-		2 lanciers
-		9 pions
-		Les pièces font face à leurs adversaires
-
-Déplacement :
-	Roi : Toutes directions / 1 case
-	Tour : Ligne droite à l'horizontal ou vertical / Autant que voulu ; Promu : rajoute à ces déplacement 1 case en diagnnale toutes directions
-	Fou : Diagonales / Autant que voulu ; Promu : Ajoute 1 une case vertical ou horizontal
-	Général d'or : Toutes directions sauf diagonales en arrière / 1 case
-	Général d'argent : Toutes directions avant et diagonales arrière / 1 case ; Promu = Même que le général d'or
-	Cavalier : 2 en avant + 1 à l'horizontal uniquement ; Promu = Même que le général d'or
-	Lance : En avant / Autant que voulu ; Promu = Même que général d'or
-	Pion : 1 en avant ; Promu = Même que général d'or
+Deplacement :
+      Roi : 1 case / toutes directions,
+            pas de promotion.
+      Tour : autant de cases que voulu, lignes droites horizontales ou verticales 
+             promotion : idem + 1 case en diagonale toutes directions.
+      Fou : autant de cases que voulu / toutes directions en diagonale, 
+            promotion : idem + 1 case verticale ou horizontale.
+      General d'Or : 1 case / toutes directions sauf diagonales en arriere,
+                     pas de promotion.
+      General d'Argent : 1 case / toutes directions en avant + diagonales arrieres,
+                         promotion : memes deplacements que le General d'Or.
+      Cavalier : 2 cases en avant + 1 case horizontale,
+                 promotion : memes deplacements que le General d'Or.
+      Lancier : autant de cases que voulues / lignes droites horizontales en avant,
+                promotion : memes deplacements que le General d'Or.
+      Pion : 1 case en avant,
+              promotion : memes deplacements que le General d'Or.
 
 Prise :
-	Lorsqu'on prend une pièce, on la garde en évidence sur son côté droit du plateau
+      Lorsqu'un joueur prend une piece, elle integre sa reserve.
 
 Promotion : 
-	Lorsqu'une pièce pénètre la zone de promotion (elle passe la 3e ligne la plus éloigné du joueur) elle peut être promue si on le souhaite.
-	Lorsque la pièce est immobilisé dans la zone de promotion elle DOIT être promue.
-	Une pièce parachuté dans la zone de promotions ne peut être promue de suite, il faut que cela suive un déplacement;
-	cepandant si elle se déplace (entre où sort du camp adverse) elle pourra être promu.
+      Zone de promotion = a partir de la 3e ligne la plus eloignee du joueur 
+sur le plateau.
+      Si une piece passe cette ligne, elle est promue.   
+      Une piece parachutee dans la zone de promotion ne peut etre promue de suite, 
+elle doit d'abord effectuer un deplacement.
 
 Parachutage :
-	Une pièce est toujours parachutée non promue.
-	Pour promouvoir une pièce parachutée, il faut la déplacer entièrement ou partiellement dans la zone de promotion.
-	On ne peut pas parachuter une pièce sur une case d'où elle ne pourrait plus partir.
-	Un pion ne peut pas être parachuté sur une colonne où se trouve déjà un pion non promu du même camp.
-	Un pion ne peut pas être parachuté devant le roi pour faire échec et mat directement.
-
-Disposition : 
-
-J = Jade = Roi opposant
-
-	0 1 2 3 4 5 6 7 8 
-	L C A O J O A C L 0
-	  T	      F	  1
-	P P P P P P P P P 2
-			  3
-			  4
-			  5
-	P P P P P P P P P 6
-	  F	      T	  7
-	L C A O R O A C L 8
+      Un joueur peut choisir de placer une piece de sa reserve sur le plateau de jeu
+(parachutage).
+      Une piece est toujours parachutee non promue (cf ci-dessus).
+      Une piece ne peut pas etre parachutee sur une case d'ou elle ne pourrait plus
+partir.
+      Un pion ne peut pas etre parachute sur une colonne ou se trouve deja un pion non
+promu du meme camp.
+      Un pion ne peut pas etre parachute directement devant le roi pour faire echec 
+et mat.

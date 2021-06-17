@@ -9,9 +9,13 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JTextArea;
 import javax.swing.border.LineBorder;
 
 public class Interface extends JFrame {
@@ -20,6 +24,7 @@ public class Interface extends JFrame {
 	static JFrame fenetre = new JFrame();
 	static JPanel UIplateau = new JPanel(new GridLayout(9,9));
 	static JPanel[] UIreserve = {null, new JPanel(), new JPanel()};
+	static JPanel regles = new JPanel();
 	static JButton[][] cases = new JButton[9][9];
 	public static JButton[] boutonReserve[] = {null, new JButton[38], new JButton[38]};
 	static Plateau p = new Plateau();
@@ -37,18 +42,20 @@ public class Interface extends JFrame {
 	 * @param p objet de type "Plateau"
 	 * @param caseSelectionnee objet de type "Case" permettant de stocker temporairement la case d'arrivee selectionnee par le joueur actif 
 	 * @param tour variable contenant le numero de tour de jeu
+	 * @throws FileNotFoundException 
 	 */
 	
 	
 	// Constructeur
-	public Interface() {
+	public Interface() throws FileNotFoundException {
 		
 		// Creation de la fenetre du jeu
 		fenetre.setLayout(new BorderLayout());
-		fenetre.setSize(1080, 972);
+		fenetre.setSize(1380, 972);
+        fenetre.setLocationRelativeTo(null);
 		fenetre.setTitle("Jeu de shogi");
 		fenetre.add(UIplateau, BorderLayout.CENTER);
-		fenetre.setResizable(false);
+		fenetre.setResizable(true);
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		/* Cree une fenetre (objet de type JFrame) a qui l'on attribue une taille (".setSize") et un titre (".setTitre").
@@ -60,13 +67,22 @@ public class Interface extends JFrame {
 		fenetre.add(UIreserve[1], BorderLayout.PAGE_START);
 		fenetre.add(UIreserve[2], BorderLayout.PAGE_END);
 		
-		/* Ajoute 2 nouveaux Layouts dans la fenetre de jeu, 1 pour le joueur 1 en haut de la fenetre et 1 pour le joueur 2 
-		 * en bas de la fenetre */
+		// Creation du panneau contenant les regles 
+		fenetre.add(regles, BorderLayout.LINE_END);
+		regles.setSize(154, 972);
+		JTextArea rgles = new JTextArea(readFile("regles.txt"));
+		regles.add(rgles);
+		regles.setVisible(true);
+		
+		/* Ajoute 3 nouveaux Layouts dans la fenetre de jeu :
+		 *   - 1 pour le joueur 1 en haut de la fenetre 
+		 *   - 1 pour le joueur 2 en bas de la fenetre 
+		 *   - 1 pour les regles */
 		
 		// Taille des differents elements de la fenetre de jeu
-		UIplateau.setSize(972, 972);
-		UIreserve[1].setSize(1080, 54);
-		UIreserve[2].setSize(1080, 54);
+		UIplateau.setSize(1226, 972);
+		UIreserve[1].setSize(972, 54);
+		UIreserve[2].setSize(972, 54);
 		
 		// Ajoute des JButtons pour les pieces presentes dans les reserves
 		for(int joueur = 1; joueur <= 2; joueur++) {
@@ -206,7 +222,7 @@ public class Interface extends JFrame {
 					cases[x][y].setText("");
 					cases[x][y].setBackground(Color.decode("#704a37"));
 					
-					/* La 1ere ligne permet de recuperer l'icone associee Ã  la piece presente sur la case :
+					/* La 1ere ligne permet de recuperer l'icone associee Ã  la piece presente sur la case :
 					 * 		- "p.getCase(x, y).getP().getIcon()" => receupere l'icone de la piece sur la case
 					 * 		- "cases[x][y].setIcon" => associe cette icone a la case.
 					 * La 2e ligne affiche l'icone recuperee dans la console.
@@ -248,5 +264,56 @@ public class Interface extends JFrame {
 			}
 		}
 	}
+	
+	public String readFile(String file){
+		String lines = "";
+		String line;
+		try{
+			BufferedReader reader = new BufferedReader(new FileReader(file));
+			while((line = reader.readLine()) != null){
+				lines += line + "\n";
+			}
+		}
+		catch(Exception eF){
+			lines = "Erreur lecture du flux";
+		}
+		return lines;
+	}
 }
 
+/* ORIGINAUX :
+		public static void miseAJourPlateau() {
+		//For pieces in the 9x9 board
+		for(int r = 0; r < 9; r++) {
+			for(int c = 0; c < 9; c++) {
+				if(p.getCase(r, c).getP() != null) {
+					//Set the piece text based on the piece symbol
+					//cases[r][c].setText(p.getCase(r, c).getP().getNom());
+					cases[r][c].setIcon(p.getCase(r, c).getP().getIcon());
+					System.out.println(p.getCase(r,c).getP().getIcon());
+					cases[r][c].setText("");
+					cases[r][c].setBackground(Color.decode("#704a37"));
+				} else {
+					//If square is empty, clear text
+					cases[r][c].setText("");
+					cases[r][c].setIcon(null);
+					cases[r][c].setForeground(Color.BLACK);
+					cases[r][c].setBackground(Color.decode("#704a37"));
+				}
+			}
+		}
+		//For pieces in the players' hands
+		for(int j = 1; j <= 2; j++) {
+			for(int i=0;i<38;i++) {
+				if(p.getReserve(j).getPiece(i) != null) {
+					//Set the square text to the piece symbol
+					boutonReserve[j][i].setText(p.getReserve(j).getPiece(i).getNom());
+					//If there's a piece, make the button visible
+					boutonReserve[j][i].setVisible(true);
+				} else {
+					//If there are no pieces in the hand button, hide it
+					boutonReserve[j][i].setVisible(false);
+				}
+			}
+		}
+*/
